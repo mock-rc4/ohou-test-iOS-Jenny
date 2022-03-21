@@ -16,11 +16,20 @@ class MyPageTabManViewController: TabmanViewController {
     
     private let bar = TMBar.ButtonBar()
     
-    private var viewControllers: [UIViewController] = [ProfileViewController(), MyShoppingViewController()]
+    private var viewControllers: [UIViewController] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupVCs()
         setupTabMan()
+    }
+    
+    // MARK: 프로필 / 나의 쇼핑
+    private func setupVCs() {
+        let sb = UIStoryboard(name: "MyPage", bundle: nil)
+        let vc1 = sb.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
+        let vc2 = sb.instantiateViewController(withIdentifier: "MyShoppingViewController") as! MyShoppingViewController
+        viewControllers = [vc1, vc2]
     }
     
     // MARK: TabMan

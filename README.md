@@ -39,7 +39,7 @@
 ---
 ### 03/20(일)
 
-<img width = "50%" src = "https://user-images.githubusercontent.com/74968390/159229702-17eddfa9-b6f4-4cec-9339-173dd5f00f53.gif"/>
+<img width = "30%" src = "https://user-images.githubusercontent.com/74968390/159229702-17eddfa9-b6f4-4cec-9339-173dd5f00f53.gif"/>
 
 1. 로그인 
 
@@ -60,7 +60,7 @@
 ---
 ### 03/21(월)
 
-<img width = "50%" src = "https://user-images.githubusercontent.com/74968390/159230068-2c01b47c-d726-4349-a3c8-25b61e3c8fc9.gif"/>
+<img width = "30%" src = "https://user-images.githubusercontent.com/74968390/159230068-2c01b47c-d726-4349-a3c8-25b61e3c8fc9.gif"/>
 
 1. 카카오 소셜로그인
 

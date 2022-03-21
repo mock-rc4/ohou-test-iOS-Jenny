@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2BFBCAE60CA64D27F7AFDF2E /* Pods_Bucketplace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7ACC5E93A413BD60776E538 /* Pods_Bucketplace.framework */; };
+		A90B1BEE27E89947007A70D0 /* HomeTabManViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90B1BED27E89947007A70D0 /* HomeTabManViewController.swift */; };
+		A90B1BF127E899E6007A70D0 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90B1BF027E899E6007A70D0 /* TopViewController.swift */; };
+		A90B1BF827E89B17007A70D0 /* FollowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90B1BF727E89B17007A70D0 /* FollowingViewController.swift */; };
+		A90B1BFA27E89B1E007A70D0 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90B1BF927E89B1E007A70D0 /* PhotoViewController.swift */; };
+		A90B1BFC27E89B28007A70D0 /* HousewarmingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90B1BFB27E89B28007A70D0 /* HousewarmingViewController.swift */; };
+		A90B1BFE27E89B2E007A70D0 /* KnowHowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90B1BFD27E89B2E007A70D0 /* KnowHowViewController.swift */; };
+		A90B1C0027E89B35007A70D0 /* QnAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90B1BFF27E89B35007A70D0 /* QnAViewController.swift */; };
 		A9A6621A27E5F7C90081064C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621927E5F7C90081064C /* AppDelegate.swift */; };
 		A9A6621C27E5F7C90081064C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621B27E5F7C90081064C /* SceneDelegate.swift */; };
 		A9A6621E27E5F7C90081064C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621D27E5F7C90081064C /* TabBarController.swift */; };
@@ -30,10 +37,19 @@
 		A9BC5C4927E716EB00D91901 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9BC5C4827E716EB00D91901 /* Home.storyboard */; };
 		A9EA67AF27E863B1001B1C68 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9EA67AE27E863B1001B1C68 /* Login.storyboard */; };
 		A9EA67B227E86BBE001B1C68 /* SecretKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA67B127E86BBE001B1C68 /* SecretKey.swift */; };
+		A9EA67B727E8811F001B1C68 /* AdCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA67B527E8811F001B1C68 /* AdCollectionViewCell.swift */; };
+		A9EA67B827E8811F001B1C68 /* AdCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9EA67B627E8811F001B1C68 /* AdCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		487DC1C365E7CE127E7E49B9 /* Pods-Bucketplace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bucketplace.debug.xcconfig"; path = "Target Support Files/Pods-Bucketplace/Pods-Bucketplace.debug.xcconfig"; sourceTree = "<group>"; };
+		A90B1BED27E89947007A70D0 /* HomeTabManViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabManViewController.swift; sourceTree = "<group>"; };
+		A90B1BF027E899E6007A70D0 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		A90B1BF727E89B17007A70D0 /* FollowingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingViewController.swift; sourceTree = "<group>"; };
+		A90B1BF927E89B1E007A70D0 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		A90B1BFB27E89B28007A70D0 /* HousewarmingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousewarmingViewController.swift; sourceTree = "<group>"; };
+		A90B1BFD27E89B2E007A70D0 /* KnowHowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowHowViewController.swift; sourceTree = "<group>"; };
+		A90B1BFF27E89B35007A70D0 /* QnAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QnAViewController.swift; sourceTree = "<group>"; };
 		A9A6621627E5F7C90081064C /* Bucketplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bucketplace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A6621927E5F7C90081064C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9A6621B27E5F7C90081064C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +74,8 @@
 		A9BC5C4827E716EB00D91901 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		A9EA67AE27E863B1001B1C68 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		A9EA67B127E86BBE001B1C68 /* SecretKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretKey.swift; sourceTree = "<group>"; };
+		A9EA67B527E8811F001B1C68 /* AdCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCollectionViewCell.swift; sourceTree = "<group>"; };
+		A9EA67B627E8811F001B1C68 /* AdCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdCollectionViewCell.xib; sourceTree = "<group>"; };
 		DA0E1ED45C5E01C8C9D2A98B /* Pods-Bucketplace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bucketplace.release.xcconfig"; path = "Target Support Files/Pods-Bucketplace/Pods-Bucketplace.release.xcconfig"; sourceTree = "<group>"; };
 		F7ACC5E93A413BD60776E538 /* Pods_Bucketplace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bucketplace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -89,6 +107,54 @@
 				DA0E1ED45C5E01C8C9D2A98B /* Pods-Bucketplace.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A90B1BEF27E899B0007A70D0 /* Top */ = {
+			isa = PBXGroup;
+			children = (
+				A90B1BF027E899E6007A70D0 /* TopViewController.swift */,
+			);
+			path = Top;
+			sourceTree = "<group>";
+		};
+		A90B1BF227E899F2007A70D0 /* Following */ = {
+			isa = PBXGroup;
+			children = (
+				A90B1BF727E89B17007A70D0 /* FollowingViewController.swift */,
+			);
+			path = Following;
+			sourceTree = "<group>";
+		};
+		A90B1BF327E89A0C007A70D0 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				A90B1BF927E89B1E007A70D0 /* PhotoViewController.swift */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		A90B1BF427E89A23007A70D0 /* Housewarming */ = {
+			isa = PBXGroup;
+			children = (
+				A90B1BFB27E89B28007A70D0 /* HousewarmingViewController.swift */,
+			);
+			path = Housewarming;
+			sourceTree = "<group>";
+		};
+		A90B1BF527E89A83007A70D0 /* KnowHow */ = {
+			isa = PBXGroup;
+			children = (
+				A90B1BFD27E89B2E007A70D0 /* KnowHowViewController.swift */,
+			);
+			path = KnowHow;
+			sourceTree = "<group>";
+		};
+		A90B1BF627E89A98007A70D0 /* QnA */ = {
+			isa = PBXGroup;
+			children = (
+				A90B1BFF27E89B35007A70D0 /* QnAViewController.swift */,
+			);
+			path = QnA;
 			sourceTree = "<group>";
 		};
 		A9A6620D27E5F7C90081064C = {
@@ -172,6 +238,8 @@
 				A9BC5C2E27E6FEA400D91901 /* MyPageViewController.swift */,
 				A9BC5C3A27E700CC00D91901 /* MyPageTabManViewController.swift */,
 				A9BC5C3627E7008C00D91901 /* ProfileViewController.swift */,
+				A9EA67B627E8811F001B1C68 /* AdCollectionViewCell.xib */,
+				A9EA67B527E8811F001B1C68 /* AdCollectionViewCell.swift */,
 				A9BC5C3827E7009D00D91901 /* MyShoppingViewController.swift */,
 			);
 			path = MyPage;
@@ -191,6 +259,13 @@
 			children = (
 				A9BC5C4827E716EB00D91901 /* Home.storyboard */,
 				A9BC5C4627E716C000D91901 /* HomeViewController.swift */,
+				A90B1BED27E89947007A70D0 /* HomeTabManViewController.swift */,
+				A90B1BEF27E899B0007A70D0 /* Top */,
+				A90B1BF227E899F2007A70D0 /* Following */,
+				A90B1BF327E89A0C007A70D0 /* Photo */,
+				A90B1BF427E89A23007A70D0 /* Housewarming */,
+				A90B1BF527E89A83007A70D0 /* KnowHow */,
+				A90B1BF627E89A98007A70D0 /* QnA */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -268,6 +343,7 @@
 				A9EA67AF27E863B1001B1C68 /* Login.storyboard in Resources */,
 				A9BC5C4927E716EB00D91901 /* Home.storyboard in Resources */,
 				A9A6622127E5F7C90081064C /* Main.storyboard in Resources */,
+				A9EA67B827E8811F001B1C68 /* AdCollectionViewCell.xib in Resources */,
 				A9BC5C3D27E7021E00D91901 /* MyPage.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,20 +398,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9BC5C4127E70F5600D91901 /* LoginViewController.swift in Sources */,
+				A90B1C0027E89B35007A70D0 /* QnAViewController.swift in Sources */,
 				A9A6621E27E5F7C90081064C /* TabBarController.swift in Sources */,
+				A90B1BFE27E89B2E007A70D0 /* KnowHowViewController.swift in Sources */,
 				A9BC5C2427E6FDAF00D91901 /* UIColor.swift in Sources */,
 				A9BC5C3927E7009D00D91901 /* MyShoppingViewController.swift in Sources */,
+				A9EA67B727E8811F001B1C68 /* AdCollectionViewCell.swift in Sources */,
 				A9A6621A27E5F7C90081064C /* AppDelegate.swift in Sources */,
 				A9BC5C4727E716C000D91901 /* HomeViewController.swift in Sources */,
 				A9BC5C2227E6FDA800D91901 /* String.swift in Sources */,
 				A9BC5C2A27E6FE2000D91901 /* IndicatorView.swift in Sources */,
 				A9BC5C2F27E6FEA400D91901 /* MyPageViewController.swift in Sources */,
+				A90B1BFC27E89B28007A70D0 /* HousewarmingViewController.swift in Sources */,
 				A9EA67B227E86BBE001B1C68 /* SecretKey.swift in Sources */,
+				A90B1BFA27E89B1E007A70D0 /* PhotoViewController.swift in Sources */,
 				A9BC5C3727E7008C00D91901 /* ProfileViewController.swift in Sources */,
+				A90B1BEE27E89947007A70D0 /* HomeTabManViewController.swift in Sources */,
 				A9A6621C27E5F7C90081064C /* SceneDelegate.swift in Sources */,
 				A9BC5C3B27E700CC00D91901 /* MyPageTabManViewController.swift in Sources */,
 				A9BC5C1E27E6FD8B00D91901 /* Constant.swift in Sources */,
+				A90B1BF827E89B17007A70D0 /* FollowingViewController.swift in Sources */,
 				A9BC5C2827E6FDBF00D91901 /* UIViewController.swift in Sources */,
+				A90B1BF127E899E6007A70D0 /* TopViewController.swift in Sources */,
 				A9BC5C2627E6FDB700D91901 /* UINavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
