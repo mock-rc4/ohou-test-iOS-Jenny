@@ -20,8 +20,14 @@ class MyPageTabManViewController: TabmanViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupControllers()
         setupVCs()
         setupTabMan()
+    }
+    
+    private func setupControllers() {
+        self.setupTabBarLine()
+        //self.navigationController?.navigationBarHidden()
     }
     
     // MARK: 프로필 / 나의 쇼핑
@@ -63,7 +69,6 @@ extension MyPageTabManViewController: PageboyViewControllerDataSource, TMBarData
         switch index {
         case 0:
             return TMBarItem(title: "프로필")
-            
         case 1:
             return TMBarItem(title: "나의 쇼핑")
         default:

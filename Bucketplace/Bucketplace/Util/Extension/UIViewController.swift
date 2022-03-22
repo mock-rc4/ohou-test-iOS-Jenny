@@ -62,4 +62,11 @@ extension UIViewController {
         IndicatorView.shared.dismiss()
     }
     
+    // MARK: 탭바 위에 선
+    func setupTabBarLine() {
+        self.tabBarController?.tabBar.barTintColor = .systemBackground
+        self.tabBarController?.tabBar.layer.borderWidth = 0.3
+        self.tabBarController?.tabBar.layer.borderColor = UIColor.lightGray.cgColor
+    }
+    
 }
