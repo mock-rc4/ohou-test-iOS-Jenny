@@ -15,11 +15,10 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     @IBAction func goMainBtnClick(_ sender: Any) {
-        self.dismiss(animated: false)
+        self.dismiss(animated: true)
     }
     
     @IBAction func kakaoBtnClick(_ sender: Any) {
@@ -32,6 +31,7 @@ class LoginViewController: UIViewController {
             loginWithWeb()
         }
     }
+    
     
     // MARK: 토큰 존재 여부 확인
     // AppDelegate.swift에서 앱 실행시, 첫 화면의 분기처리 위해 사용가능
@@ -70,7 +70,7 @@ class LoginViewController: UIViewController {
 extension LoginViewController {
     // MARK: 카카오톡 앱으로 로그인
     private func loginWithApp() {
-        UserApi.shared.loginWithKakaoTalk { ( _ , error) in
+        UserApi.shared.loginWithKakaoTalk { (oauthToken , error) in
             if let error = error {
                 print(error)
             } else {

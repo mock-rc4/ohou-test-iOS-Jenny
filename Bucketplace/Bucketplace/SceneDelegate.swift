@@ -11,6 +11,8 @@ import KakaoSDKAuth
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
+//    var isLogged: Bool = false // 로그인 했는지 안했느지 확인
+    
     var window: UIWindow?
 
     func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
@@ -22,10 +24,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+//        let mainSB = UIStoryboard(name: "Main", bundle: nil)
+//        let loginSB = UIStoryboard(name: "Login", bundle: nil)
+//
+//        if isLogged == false {
+//           let loginVC = loginSB.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+//            let loginNVC = UINavigationController(rootViewController: loginVC)
+//            window?.rootViewController = loginNVC
+//        } else {
+//            let mainVC = mainSB.instantiateViewController(withIdentifier: "TabBarController") as! TabBarController
+//            window?.rootViewController = mainVC
+//        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

@@ -15,8 +15,22 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0cO-tf-vMp">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <connections>
+                                    <segue destination="Ryl-Kx-09u" kind="embed" id="0Ja-PQ-Twa"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0cO-tf-vMp" secondAttribute="trailing" id="Ime-KF-XHL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0cO-tf-vMp" secondAttribute="bottom" id="NHn-4Z-HaQ"/>
+                            <constraint firstItem="0cO-tf-vMp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jEg-YV-HXc"/>
+                            <constraint firstItem="0cO-tf-vMp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qdU-5L-pHe"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="홈" id="yF5-BJ-Kmk"/>
                 </viewController>
@@ -42,6 +56,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GBU-cw-85N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1410.144927536232" y="798.88392857142856"/>
+        </scene>
+        <!--Home Tab Man View Controller-->
+        <scene sceneID="9sF-rM-bzy">
+            <objects>
+                <viewController storyboardIdentifier="HomeTabManViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ryl-Kx-09u" customClass="HomeTabManViewController" customModule="Bucketplace" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SmV-uy-tj0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DGF-72-vU6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="eCx-Al-Pnd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DGF-72-vU6" secondAttribute="trailing" id="bOJ-JI-gze"/>
+                            <constraint firstItem="DGF-72-vU6" firstAttribute="leading" secondItem="SmV-uy-tj0" secondAttribute="leading" id="p6G-or-SJY"/>
+                            <constraint firstItem="DGF-72-vU6" firstAttribute="top" secondItem="SmV-uy-tj0" secondAttribute="top" id="qqZ-rw-PZt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tabView" destination="DGF-72-vU6" id="LIc-mK-8jG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d9l-Te-BMp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="387" y="812"/>
         </scene>
     </scenes>
     <resources>
