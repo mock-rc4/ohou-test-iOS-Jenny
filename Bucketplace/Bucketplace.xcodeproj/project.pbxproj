@@ -48,6 +48,12 @@
 		A9EA67B727E8811F001B1C68 /* AdCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA67B527E8811F001B1C68 /* AdCollectionViewCell.swift */; };
 		A9EA67B827E8811F001B1C68 /* AdCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9EA67B627E8811F001B1C68 /* AdCollectionViewCell.xib */; };
 		A9FFE45E27E9D3CE004F3B33 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE45D27E9D3CE004F3B33 /* MyPageViewController.swift */; };
+		A9FFE46027E9D88C004F3B33 /* KakaoDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE45F27E9D88C004F3B33 /* KakaoDataManager.swift */; };
+		A9FFE46427E9DE14004F3B33 /* KakaoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE46327E9DE14004F3B33 /* KakaoResponse.swift */; };
+		A9FFE46627E9E93B004F3B33 /* SignUpDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE46527E9E93B004F3B33 /* SignUpDataManager.swift */; };
+		A9FFE46827E9EAA4004F3B33 /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE46727E9EAA4004F3B33 /* SignUpRequest.swift */; };
+		A9FFE46A27E9F26E004F3B33 /* SignInResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE46927E9F26E004F3B33 /* SignInResponse.swift */; };
+		A9FFE46C27E9F335004F3B33 /* SignUpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE46B27E9F335004F3B33 /* SignUpResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +100,12 @@
 		A9EA67B527E8811F001B1C68 /* AdCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCollectionViewCell.swift; sourceTree = "<group>"; };
 		A9EA67B627E8811F001B1C68 /* AdCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdCollectionViewCell.xib; sourceTree = "<group>"; };
 		A9FFE45D27E9D3CE004F3B33 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		A9FFE45F27E9D88C004F3B33 /* KakaoDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoDataManager.swift; sourceTree = "<group>"; };
+		A9FFE46327E9DE14004F3B33 /* KakaoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoResponse.swift; sourceTree = "<group>"; };
+		A9FFE46527E9E93B004F3B33 /* SignUpDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpDataManager.swift; sourceTree = "<group>"; };
+		A9FFE46727E9EAA4004F3B33 /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
+		A9FFE46927E9F26E004F3B33 /* SignInResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInResponse.swift; sourceTree = "<group>"; };
+		A9FFE46B27E9F335004F3B33 /* SignUpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResponse.swift; sourceTree = "<group>"; };
 		DA0E1ED45C5E01C8C9D2A98B /* Pods-Bucketplace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bucketplace.release.xcconfig"; path = "Target Support Files/Pods-Bucketplace/Pods-Bucketplace.release.xcconfig"; sourceTree = "<group>"; };
 		F7ACC5E93A413BD60776E538 /* Pods_Bucketplace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bucketplace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -281,6 +293,8 @@
 			isa = PBXGroup;
 			children = (
 				A9EA67AE27E863B1001B1C68 /* Login.storyboard */,
+				A9FFE46127E9D8A1004F3B33 /* Entity */,
+				A9FFE46227E9D8A9004F3B33 /* DataManager */,
 				A9BC5C3F27E70F5600D91901 /* LoginViewController.swift */,
 				A90B1C1E27E986BF007A70D0 /* SignInViewController.swift */,
 				A90B1C2027E986DF007A70D0 /* SignUpViewController.swift */,
@@ -311,6 +325,26 @@
 				A9EA67B127E86BBE001B1C68 /* SecretKey.swift */,
 			);
 			path = Secret;
+			sourceTree = "<group>";
+		};
+		A9FFE46127E9D8A1004F3B33 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				A9FFE46327E9DE14004F3B33 /* KakaoResponse.swift */,
+				A9FFE46727E9EAA4004F3B33 /* SignUpRequest.swift */,
+				A9FFE46B27E9F335004F3B33 /* SignUpResponse.swift */,
+				A9FFE46927E9F26E004F3B33 /* SignInResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		A9FFE46227E9D8A9004F3B33 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				A9FFE45F27E9D88C004F3B33 /* KakaoDataManager.swift */,
+				A9FFE46527E9E93B004F3B33 /* SignUpDataManager.swift */,
+			);
+			path = DataManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -443,6 +477,8 @@
 				A9A6621E27E5F7C90081064C /* TabBarController.swift in Sources */,
 				A90B1C1527E89F12007A70D0 /* KnowHowViewController.swift in Sources */,
 				A9BC5C2427E6FDAF00D91901 /* UIColor.swift in Sources */,
+				A9FFE46027E9D88C004F3B33 /* KakaoDataManager.swift in Sources */,
+				A9FFE46A27E9F26E004F3B33 /* SignInResponse.swift in Sources */,
 				A9BC5C3927E7009D00D91901 /* MyShoppingViewController.swift in Sources */,
 				A9EA67B727E8811F001B1C68 /* AdCollectionViewCell.swift in Sources */,
 				A9A6621A27E5F7C90081064C /* AppDelegate.swift in Sources */,
@@ -454,17 +490,21 @@
 				A90B1C2527E9B2FA007A70D0 /* NavigationController.swift in Sources */,
 				A90B1C1F27E986BF007A70D0 /* SignInViewController.swift in Sources */,
 				A90B1C0527E89CC3007A70D0 /* TopViewController.swift in Sources */,
+				A9FFE46827E9EAA4004F3B33 /* SignUpRequest.swift in Sources */,
 				A90B1C0D27E89EFB007A70D0 /* PhotoViewController.swift in Sources */,
 				A9EA67B227E86BBE001B1C68 /* SecretKey.swift in Sources */,
 				A9BC5C3727E7008C00D91901 /* ProfileViewController.swift in Sources */,
 				A90B1BEE27E89947007A70D0 /* HomeTabManViewController.swift in Sources */,
 				A9A6621C27E5F7C90081064C /* SceneDelegate.swift in Sources */,
 				A9BC5C3B27E700CC00D91901 /* MyPageTabManViewController.swift in Sources */,
+				A9FFE46C27E9F335004F3B33 /* SignUpResponse.swift in Sources */,
 				A90B1C0927E89EEF007A70D0 /* FollowingViewController.swift in Sources */,
 				A9BC5C1E27E6FD8B00D91901 /* Constant.swift in Sources */,
 				A9BC5C2827E6FDBF00D91901 /* UIViewController.swift in Sources */,
 				A90B1C2127E986DF007A70D0 /* SignUpViewController.swift in Sources */,
+				A9FFE46627E9E93B004F3B33 /* SignUpDataManager.swift in Sources */,
 				A9BC5C2627E6FDB700D91901 /* UINavigationController.swift in Sources */,
+				A9FFE46427E9DE14004F3B33 /* KakaoResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,8 @@ import KakaoSDKUser
 
 class LoginViewController: UIViewController {
     
+    lazy var dataManager: KakaoDataManager = KakaoDataManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -82,11 +84,12 @@ extension LoginViewController {
     
     // MARK: 카카오톡 웹으로 로그인
     private func loginWithWeb() {
-        UserApi.shared.loginWithKakaoAccount { ( _ , error) in
+        UserApi.shared.loginWithKakaoAccount { (oauthToken, error) in
             if let error = error {
                 print(error)
             } else {
                 print("🟨 로그인 성공")
+                self.dataManager.getKakaoLogin(oauthToken?.accessToken ?? "")
                 self.getUserInfo()
                 self.dismiss(animated: false)
             }

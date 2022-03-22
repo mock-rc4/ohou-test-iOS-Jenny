@@ -5,3 +5,6 @@
 //  Created by 김영인 on 2022/03/20.
 //
 
+class Constant {
+    static let BASE_URL = "https://ozip.shop"
+}
