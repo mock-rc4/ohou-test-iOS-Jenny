@@ -16,5 +16,5 @@ struct KakaoResponse: Decodable {
 
 struct Results: Decodable {
     var userId: CLong
-    var jwt: CLong
+    var jwt: String
 }

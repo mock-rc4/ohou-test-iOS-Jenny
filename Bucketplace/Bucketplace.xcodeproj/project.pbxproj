@@ -54,6 +54,8 @@
 		A9FFE46827E9EAA4004F3B33 /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE46727E9EAA4004F3B33 /* SignUpRequest.swift */; };
 		A9FFE46A27E9F26E004F3B33 /* SignInResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE46927E9F26E004F3B33 /* SignInResponse.swift */; };
 		A9FFE46C27E9F335004F3B33 /* SignUpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE46B27E9F335004F3B33 /* SignUpResponse.swift */; };
+		A9FFE46E27EA0500004F3B33 /* SignInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE46D27EA0500004F3B33 /* SignInRequest.swift */; };
+		A9FFE47027EA050B004F3B33 /* SignInDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE46F27EA050B004F3B33 /* SignInDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +108,8 @@
 		A9FFE46727E9EAA4004F3B33 /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
 		A9FFE46927E9F26E004F3B33 /* SignInResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInResponse.swift; sourceTree = "<group>"; };
 		A9FFE46B27E9F335004F3B33 /* SignUpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResponse.swift; sourceTree = "<group>"; };
+		A9FFE46D27EA0500004F3B33 /* SignInRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRequest.swift; sourceTree = "<group>"; };
+		A9FFE46F27EA050B004F3B33 /* SignInDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInDataManager.swift; sourceTree = "<group>"; };
 		DA0E1ED45C5E01C8C9D2A98B /* Pods-Bucketplace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bucketplace.release.xcconfig"; path = "Target Support Files/Pods-Bucketplace/Pods-Bucketplace.release.xcconfig"; sourceTree = "<group>"; };
 		F7ACC5E93A413BD60776E538 /* Pods_Bucketplace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bucketplace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -333,6 +337,7 @@
 				A9FFE46327E9DE14004F3B33 /* KakaoResponse.swift */,
 				A9FFE46727E9EAA4004F3B33 /* SignUpRequest.swift */,
 				A9FFE46B27E9F335004F3B33 /* SignUpResponse.swift */,
+				A9FFE46D27EA0500004F3B33 /* SignInRequest.swift */,
 				A9FFE46927E9F26E004F3B33 /* SignInResponse.swift */,
 			);
 			path = Entity;
@@ -343,6 +348,7 @@
 			children = (
 				A9FFE45F27E9D88C004F3B33 /* KakaoDataManager.swift */,
 				A9FFE46527E9E93B004F3B33 /* SignUpDataManager.swift */,
+				A9FFE46F27EA050B004F3B33 /* SignInDataManager.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -482,6 +488,7 @@
 				A9BC5C3927E7009D00D91901 /* MyShoppingViewController.swift in Sources */,
 				A9EA67B727E8811F001B1C68 /* AdCollectionViewCell.swift in Sources */,
 				A9A6621A27E5F7C90081064C /* AppDelegate.swift in Sources */,
+				A9FFE47027EA050B004F3B33 /* SignInDataManager.swift in Sources */,
 				A9BC5C4727E716C000D91901 /* HomeViewController.swift in Sources */,
 				A9BC5C2227E6FDA800D91901 /* String.swift in Sources */,
 				A9FFE45E27E9D3CE004F3B33 /* MyPageViewController.swift in Sources */,
@@ -501,6 +508,7 @@
 				A90B1C0927E89EEF007A70D0 /* FollowingViewController.swift in Sources */,
 				A9BC5C1E27E6FD8B00D91901 /* Constant.swift in Sources */,
 				A9BC5C2827E6FDBF00D91901 /* UIViewController.swift in Sources */,
+				A9FFE46E27EA0500004F3B33 /* SignInRequest.swift in Sources */,
 				A90B1C2127E986DF007A70D0 /* SignUpViewController.swift in Sources */,
 				A9FFE46627E9E93B004F3B33 /* SignUpDataManager.swift in Sources */,
 				A9BC5C2627E6FDB700D91901 /* UINavigationController.swift in Sources */,
