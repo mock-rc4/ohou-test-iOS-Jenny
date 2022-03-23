@@ -66,6 +66,7 @@
 		A9FFE49927EAEDB8004F3B33 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9FFE49727EAEDB8004F3B33 /* CategoryCollectionViewCell.xib */; };
 		A9FFE49D27EB1785004F3B33 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE49C27EB1785004F3B33 /* CategoryModel.swift */; };
 		A9FFE49F27EB1790004F3B33 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE49E27EB1790004F3B33 /* Category.swift */; };
+		A9FFE4A127EB28B8004F3B33 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE4A027EB28B8004F3B33 /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -130,6 +131,7 @@
 		A9FFE49727EAEDB8004F3B33 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		A9FFE49C27EB1785004F3B33 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		A9FFE49E27EB1790004F3B33 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		A9FFE4A027EB28B8004F3B33 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		DA0E1ED45C5E01C8C9D2A98B /* Pods-Bucketplace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bucketplace.release.xcconfig"; path = "Target Support Files/Pods-Bucketplace/Pods-Bucketplace.release.xcconfig"; sourceTree = "<group>"; };
 		F7ACC5E93A413BD60776E538 /* Pods_Bucketplace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bucketplace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -300,6 +302,7 @@
 				A9BC5C2327E6FDAF00D91901 /* UIColor.swift */,
 				A9BC5C2527E6FDB700D91901 /* UINavigationController.swift */,
 				A9BC5C2727E6FDBF00D91901 /* UIViewController.swift */,
+				A9FFE4A027EB28B8004F3B33 /* UIView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -579,6 +582,7 @@
 				A90B1C0927E89EEF007A70D0 /* FollowingViewController.swift in Sources */,
 				A9BC5C1E27E6FD8B00D91901 /* Constant.swift in Sources */,
 				A9BC5C2827E6FDBF00D91901 /* UIViewController.swift in Sources */,
+				A9FFE4A127EB28B8004F3B33 /* UIView.swift in Sources */,
 				A9FFE46E27EA0500004F3B33 /* SignInRequest.swift in Sources */,
 				A90B1C2127E986DF007A70D0 /* SignUpViewController.swift in Sources */,
 				A9FFE47327EA1AD4004F3B33 /* StoreViewController.swift in Sources */,

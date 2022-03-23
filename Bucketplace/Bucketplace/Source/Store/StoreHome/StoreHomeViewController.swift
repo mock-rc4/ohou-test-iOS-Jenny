@@ -38,7 +38,7 @@ extension StoreHomeViewController {
         pageControl.numberOfPages = images.count
         pageControl.currentPage = 0
         pageControl.pageIndicatorTintColor = .init(hex: 0xFFFFFF, alpha: 0.3)
-        pageControl.currentPageIndicatorTintColor = .white  // 현재 페이지
+        pageControl.currentPageIndicatorTintColor = .white 
     }
 
     private func bannerTimer(){
@@ -66,13 +66,24 @@ extension StoreHomeViewController {
 extension StoreHomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return images.count
+        switch collectionView {
+        case self.collectionView:
+            return images.count
+        default:
+            return 0
+        }
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StoreAdCollectionViewCell", for: indexPath) as! StoreAdCollectionViewCell
-        cell.setData(images[indexPath.row])
-        return cell
+        switch collectionView {
+        case self.collectionView:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StoreAdCollectionViewCell", for: indexPath) as! StoreAdCollectionViewCell
+            cell.setData(images[indexPath.row])
+            return cell
+        default:
+            let cell = UICollectionViewCell()
+            return cell
+        }
     }
 
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
@@ -100,12 +111,3 @@ extension StoreHomeViewController: UIScrollViewDelegate {
         }
     }
 }
-
-//// MARK: 카테고리 설정
-//extension StoreHomeViewController {
-//    private func setupCategory() {
-//        categoryCollectionView.delegate = self
-//        categoryCollectionView.dataSource = self
-//        collectionView.register(UINib(nibName: "CategoryCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CategoryCollectionViewCell")
-//    }
-//}

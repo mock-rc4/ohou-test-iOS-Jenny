@@ -8,7 +8,6 @@
 import UIKit
 
 import KakaoSDKCommon
-
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
