@@ -42,7 +42,9 @@
         <scene sceneID="to7-j5-lgb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uf8-A1-CRA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" id="S32-AG-gVA"/>
+                    <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" selectedImage="house.fill" id="S32-AG-gVA">
+                        <color key="badgeColor" red="0.3921568627" green="0.76078431369999999" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ALS-cc-gfE">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -73,6 +75,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="EM0-CI-KpC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="DGF-72-vU6" secondAttribute="trailing" id="bOJ-JI-gze"/>
@@ -91,6 +94,7 @@
     </scenes>
     <resources>
         <image name="house" catalog="system" width="128" height="106"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

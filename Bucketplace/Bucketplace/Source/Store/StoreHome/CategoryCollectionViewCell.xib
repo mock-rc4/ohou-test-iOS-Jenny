@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCollectionViewCell" id="gTV-IL-0wX" customClass="CategoryCollectionViewCell" customModule="Bucketplace" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S96-mx-Ope">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="120"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S2F-B7-9AT">
+                                <rect key="frame" x="25" y="10" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="S2F-B7-9AT" secondAttribute="height" multiplier="1:1" id="ACM-cf-iOV"/>
+                                    <constraint firstAttribute="width" constant="50" id="H2E-2j-ZP4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가구" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5d-mW-XP6">
+                                <rect key="frame" x="37" y="70" width="26" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="소파, 침대, 의자" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8b-Jf-SB1">
+                                <rect key="frame" x="25" y="98" width="50" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="AVN-lp-bo9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="U8b-Jf-SB1" firstAttribute="centerX" secondItem="S96-mx-Ope" secondAttribute="centerX" id="BDb-2v-fNO"/>
+                            <constraint firstItem="U8b-Jf-SB1" firstAttribute="top" secondItem="z5d-mW-XP6" secondAttribute="bottom" constant="10" id="M5S-Gt-wli"/>
+                            <constraint firstItem="z5d-mW-XP6" firstAttribute="centerX" secondItem="S96-mx-Ope" secondAttribute="centerX" id="NZv-yr-4Rh"/>
+                            <constraint firstItem="z5d-mW-XP6" firstAttribute="top" secondItem="S2F-B7-9AT" secondAttribute="bottom" constant="10" id="UUI-uS-xRY"/>
+                            <constraint firstItem="S2F-B7-9AT" firstAttribute="top" secondItem="S96-mx-Ope" secondAttribute="top" constant="10" id="Zx5-SJ-KKk"/>
+                            <constraint firstItem="S2F-B7-9AT" firstAttribute="centerX" secondItem="S96-mx-Ope" secondAttribute="centerX" id="nwB-pD-xHM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="S96-mx-Ope" secondAttribute="bottom" id="6B5-fv-aCD"/>
+                <constraint firstItem="S96-mx-Ope" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="W8B-oQ-9kT"/>
+                <constraint firstAttribute="trailing" secondItem="S96-mx-Ope" secondAttribute="trailing" id="hEf-IB-I7a"/>
+                <constraint firstItem="S96-mx-Ope" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ihr-MU-aZD"/>
+            </constraints>
+            <connections>
+                <outlet property="category" destination="z5d-mW-XP6" id="9B8-pY-ffp"/>
+                <outlet property="detail" destination="U8b-Jf-SB1" id="QNO-dO-KXG"/>
+                <outlet property="img" destination="S2F-B7-9AT" id="3J9-lU-ae6"/>
+                <outlet property="view" destination="S96-mx-Ope" id="vIB-Ty-hCz"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="93"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

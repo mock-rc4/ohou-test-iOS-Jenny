@@ -1,8 +1,8 @@
 //
-//  MyPageTabManViewController.swift
+//  StoreTabManViewController.swift
 //  Bucketplace
 //
-//  Created by 김영인 on 2022/03/20.
+//  Created by 김영인 on 2022/03/23.
 //
 
 import UIKit
@@ -10,7 +10,7 @@ import UIKit
 import Pageboy
 import Tabman
 
-class MyPageTabManViewController: TabmanViewController {
+class StoreTabManViewController: TabmanViewController {
     
     @IBOutlet weak var tabView: UIView!
     
@@ -20,38 +20,29 @@ class MyPageTabManViewController: TabmanViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupControllers()
         setupVCs()
         setupTabMan()
     }
     
-    private func setupControllers() {
-        self.setupTabBarLine()
-    }
-    
-    // MARK: 프로필 / 나의 쇼핑
+    // MARK: 상단바
     private func setupVCs() {
-        let sb = UIStoryboard(name: "MyPage", bundle: nil)
-        let vc1 = sb.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
-        let vc2 = sb.instantiateViewController(withIdentifier: "MyShoppingViewController") as! MyShoppingViewController
-        viewControllers = [vc1, vc2]
+        let sb = UIStoryboard(name: "Store", bundle: nil)
+        let vc1 = sb.instantiateViewController(withIdentifier: "StoreHomeViewController") as! StoreHomeViewController
+        viewControllers = [vc1, UIViewController(), UIViewController(), UIViewController(), UIViewController(), UIViewController(), UIViewController()]
     }
     
-    // MARK: TabMan
+    
     private func setupTabMan() {
         self.dataSource = self
         
-        let spacer = self.view.bounds.width
         bar.backgroundView.style = .blur(style: .light)
-        bar.layout.contentInset = UIEdgeInsets(top: 0, left: spacer / 5, bottom: 0, right: 0)
-        bar.layout.interButtonSpacing = spacer / 3
-        //bar.layout.contentMode = .fit   // view 크기에 맞게 나눔
+        bar.layout.contentInset = UIEdgeInsets(top: 10, left: 20, bottom: 0, right: 20)
         
         bar.buttons.customize { (button) in
-            button.tintColor = .lightGray
+            button.tintColor = .darkGray
             button.selectedTintColor = .mainBlue
-            button.font = UIFont.systemFont(ofSize: 15, weight: .bold)
-            button.selectedFont = UIFont.systemFont(ofSize: 15, weight: .bold)
+            button.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
+            button.selectedFont = UIFont.systemFont(ofSize: 17, weight: .bold)
         }
         
         bar.indicator.weight = .custom(value: 3)
@@ -62,14 +53,24 @@ class MyPageTabManViewController: TabmanViewController {
     
 }
 
-extension MyPageTabManViewController: PageboyViewControllerDataSource, TMBarDataSource {
+extension StoreTabManViewController: PageboyViewControllerDataSource, TMBarDataSource {
 
     func barItem(for bar: TMBar, at index: Int) -> TMBarItemable {
         switch index {
         case 0:
-            return TMBarItem(title: "프로필")
+            return TMBarItem(title: "스토어홈")
         case 1:
-            return TMBarItem(title: "나의 쇼핑")
+            return TMBarItem(title: "베스트")
+        case 2:
+            return TMBarItem(title: "오늘의딜")
+        case 3:
+            return TMBarItem(title: "3월한정특가")
+        case 4:
+            return TMBarItem(title: "인기가구세일")
+        case 5:
+            return TMBarItem(title: "빠른가구배송")
+        case 6:
+            return TMBarItem(title: "리퍼마켓")
         default:
             let title = "Page \(index)"
             return TMBarItem(title: title)
@@ -89,3 +90,4 @@ extension MyPageTabManViewController: PageboyViewControllerDataSource, TMBarData
     }
 
 }
+

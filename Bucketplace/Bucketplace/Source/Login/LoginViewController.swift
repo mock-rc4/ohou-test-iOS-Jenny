@@ -42,7 +42,7 @@ class LoginViewController: UIViewController {
         
         // 유효한 토큰 검사
         if (AuthApi.hasToken()) {
-            UserApi.shared.accessTokenInfo { (_ , error) in
+            UserApi.shared.accessTokenInfo { (accessTokenInfo , error) in
                 if let error = error {
                     if let sdkError = error as? SdkError, sdkError.isInvalidTokenError() == true  {
                         print(error)
@@ -90,12 +90,20 @@ extension LoginViewController {
             } else {
                 print("🟨 로그인 성공")
                 self.dataManager.getKakaoLogin(oauthToken?.accessToken ?? "")
+                print(oauthToken?.accessToken)
                 self.getUserInfo()
                 self.dismiss(animated: false)
             }
         }
     }
     
+}
+
+
+extension LoginViewController {
+    private func getAccessTokenInfo() {
+        
+    }
 }
 
 // MARK: 사용자 정보 가져오기

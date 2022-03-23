@@ -12,7 +12,9 @@
         <scene sceneID="64w-6n-jRG">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r8m-jh-iXg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="마이페이지" image="person.fill" catalog="system" id="khH-FS-0Ys"/>
+                    <tabBarItem key="tabBarItem" title="마이페이지" image="person" catalog="system" selectedImage="person.fill" id="khH-FS-0Ys">
+                        <color key="badgeColor" red="0.3921568627" green="0.76078431369999999" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zon-1w-OZA">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -366,7 +368,7 @@
                                                             <constraint firstAttribute="height" constant="110" id="JbJ-7z-JdH"/>
                                                             <constraint firstAttribute="width" constant="390" id="smK-c0-tpO"/>
                                                         </constraints>
-                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zjx-bb-UWD">
+                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="zjx-bb-UWD">
                                                             <size key="itemSize" width="128" height="128"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -745,7 +747,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="9L7-SF-f8q"/>
-                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wme-Zy-9fs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -755,7 +757,6 @@
         <!--My Page Tab Man View Controller-->
         <scene sceneID="0Al-VX-ba6">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kxn-H6-Bp9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="MyPageTabManViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qr5-lq-yhc" customClass="MyPageTabManViewController" customModule="Bucketplace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5lb-Yx-5Eq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
@@ -781,6 +782,7 @@
                         <outlet property="tabView" destination="wUq-I6-jKI" id="Yks-8q-JTO"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kxn-H6-Bp9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3323" y="840"/>
         </scene>
@@ -791,15 +793,13 @@
         <image name="camera.fill" catalog="system" width="128" height="94"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -14,5 +14,5 @@ struct SignInResponse: Decodable {
 
 struct SignInResult: Decodable {
     var userId: CLong
-    var jwt: CLong
+    var jwt: String
 }

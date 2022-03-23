@@ -8,23 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
-        <scene sceneID="Zc3-Lz-jsG">
-            <objects>
-                <viewController id="Y8p-iw-h60" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="RF4-Lh-w5U">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="5Yj-Sv-Hjz"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="7O4-pT-Hra"/>
-                    <navigationItem key="navigationItem" id="zkv-IE-aiK"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XKh-fQ-Xd1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-380" y="799"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="qz2-cc-iJ3">
             <objects>
@@ -41,7 +24,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="ey9-aV-h3h" kind="relationship" relationship="viewControllers" id="Rr1-sc-VWE"/>
-                        <segue destination="Y8p-iw-h60" kind="relationship" relationship="viewControllers" id="Dp9-1D-XoC"/>
+                        <segue destination="osJ-mR-g81" kind="relationship" relationship="viewControllers" id="Dp9-1D-XoC"/>
                         <segue destination="hG9-Fl-iQb" kind="relationship" relationship="viewControllers" id="Bz2-Tm-Eq9"/>
                         <segue destination="WEY-Tj-d8J" kind="relationship" relationship="viewControllers" id="eKp-Ve-1iT"/>
                     </connections>
@@ -50,7 +33,7 @@
             </objects>
             <point key="canvasLocation" x="139" y="37"/>
         </scene>
-        <!--Item-->
+        <!--인테리어시공-->
         <scene sceneID="Xdg-gV-eN8">
             <objects>
                 <viewController id="hG9-Fl-iQb" sceneMemberID="viewController">
@@ -60,7 +43,9 @@
                         <viewLayoutGuide key="safeArea" id="Q49-rB-jYz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="PyB-5M-Dkl"/>
+                    <tabBarItem key="tabBarItem" title="인테리어시공" image="work" selectedImage="work.fill" id="PyB-5M-Dkl">
+                        <color key="badgeColor" red="0.3921568627" green="0.76078431369999999" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="L4f-Eg-wE6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6V4-KH-LxP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -75,7 +60,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5JB-6T-p1o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1094" y="235"/>
+            <point key="canvasLocation" x="1088" y="178"/>
         </scene>
         <!--Home-->
         <scene sceneID="qbn-9r-Q3z">
@@ -86,10 +71,22 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Vm-vX-STD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1086" y="-129"/>
+            <point key="canvasLocation" x="1080" y="-133"/>
+        </scene>
+        <!--Store-->
+        <scene sceneID="jbC-dZ-ey4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Store" id="osJ-mR-g81" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="zqn-Ua-dk6"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="djl-pg-fbS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1078" y="-25"/>
         </scene>
     </scenes>
     <resources>
+        <image name="work" width="24" height="27"/>
+        <image name="work.fill" width="24" height="26"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

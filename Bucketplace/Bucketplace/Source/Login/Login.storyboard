@@ -467,6 +467,9 @@
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="signupBtnClick:" destination="eRA-cl-wI7" eventType="touchUpInside" id="h3x-K2-kXH"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -531,8 +534,11 @@
                         <outlet property="agreeTitleView" destination="EkE-rE-uU8" id="8lI-zB-GNy"/>
                         <outlet property="agreeView" destination="EI5-eq-mIg" id="9Ak-la-uPL"/>
                         <outlet property="allBtn" destination="teo-hP-QvN" id="7xp-fG-xVb"/>
+                        <outlet property="emailTextField" destination="2bB-Pm-9gq" id="rVQ-sC-wnK"/>
                         <outlet property="firstBtn" destination="mzx-40-Jd5" id="Wl1-Bk-rqV"/>
                         <outlet property="fourthBtn" destination="Lud-ys-ui3" id="7rR-ct-4LM"/>
+                        <outlet property="nicknameTextField" destination="y6K-B7-wvy" id="f50-UL-eej"/>
+                        <outlet property="pwTextField" destination="21c-Lt-Rwd" id="qf5-be-Dth"/>
                         <outlet property="secondBtn" destination="7dD-PE-Gih" id="Jal-dM-4Cd"/>
                         <outlet property="thirdBtn" destination="cjP-1o-kv6" id="IYL-tc-H9s"/>
                     </connections>
@@ -578,6 +584,9 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginBtnClick:" destination="809-zy-pDr" eventType="touchUpInside" id="Jx9-XJ-bWp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHH-bI-p5E">
                                 <rect key="frame" x="154" y="313" width="106.5" height="30"/>
@@ -605,6 +614,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="이메일로 로그인" id="vvN-6d-US7"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="xAR-2Y-73b" id="MFK-Wh-Yz9"/>
+                        <outlet property="pwTextField" destination="gSX-Kk-M0x" id="BtP-uC-EGw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpg-2p-Sva" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

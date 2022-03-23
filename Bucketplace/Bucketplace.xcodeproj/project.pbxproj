@@ -56,6 +56,16 @@
 		A9FFE46C27E9F335004F3B33 /* SignUpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE46B27E9F335004F3B33 /* SignUpResponse.swift */; };
 		A9FFE46E27EA0500004F3B33 /* SignInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE46D27EA0500004F3B33 /* SignInRequest.swift */; };
 		A9FFE47027EA050B004F3B33 /* SignInDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE46F27EA050B004F3B33 /* SignInDataManager.swift */; };
+		A9FFE47327EA1AD4004F3B33 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE47227EA1AD4004F3B33 /* StoreViewController.swift */; };
+		A9FFE47527EACB8C004F3B33 /* Store.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9FFE47427EACB8C004F3B33 /* Store.storyboard */; };
+		A9FFE47E27EAD367004F3B33 /* StoreTabManViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE47D27EAD367004F3B33 /* StoreTabManViewController.swift */; };
+		A9FFE48D27EAE07F004F3B33 /* StoreHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE48C27EAE07F004F3B33 /* StoreHomeViewController.swift */; };
+		A9FFE49027EAE2A3004F3B33 /* StoreAdCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE48E27EAE2A3004F3B33 /* StoreAdCollectionViewCell.swift */; };
+		A9FFE49127EAE2A3004F3B33 /* StoreAdCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9FFE48F27EAE2A3004F3B33 /* StoreAdCollectionViewCell.xib */; };
+		A9FFE49827EAEDB8004F3B33 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE49627EAEDB8004F3B33 /* CategoryCollectionViewCell.swift */; };
+		A9FFE49927EAEDB8004F3B33 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9FFE49727EAEDB8004F3B33 /* CategoryCollectionViewCell.xib */; };
+		A9FFE49D27EB1785004F3B33 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE49C27EB1785004F3B33 /* CategoryModel.swift */; };
+		A9FFE49F27EB1790004F3B33 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE49E27EB1790004F3B33 /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +120,16 @@
 		A9FFE46B27E9F335004F3B33 /* SignUpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResponse.swift; sourceTree = "<group>"; };
 		A9FFE46D27EA0500004F3B33 /* SignInRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRequest.swift; sourceTree = "<group>"; };
 		A9FFE46F27EA050B004F3B33 /* SignInDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInDataManager.swift; sourceTree = "<group>"; };
+		A9FFE47227EA1AD4004F3B33 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		A9FFE47427EACB8C004F3B33 /* Store.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Store.storyboard; sourceTree = "<group>"; };
+		A9FFE47D27EAD367004F3B33 /* StoreTabManViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTabManViewController.swift; sourceTree = "<group>"; };
+		A9FFE48C27EAE07F004F3B33 /* StoreHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreHomeViewController.swift; sourceTree = "<group>"; };
+		A9FFE48E27EAE2A3004F3B33 /* StoreAdCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreAdCollectionViewCell.swift; sourceTree = "<group>"; };
+		A9FFE48F27EAE2A3004F3B33 /* StoreAdCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreAdCollectionViewCell.xib; sourceTree = "<group>"; };
+		A9FFE49627EAEDB8004F3B33 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		A9FFE49727EAEDB8004F3B33 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		A9FFE49C27EB1785004F3B33 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		A9FFE49E27EB1790004F3B33 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		DA0E1ED45C5E01C8C9D2A98B /* Pods-Bucketplace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bucketplace.release.xcconfig"; path = "Target Support Files/Pods-Bucketplace/Pods-Bucketplace.release.xcconfig"; sourceTree = "<group>"; };
 		F7ACC5E93A413BD60776E538 /* Pods_Bucketplace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bucketplace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -200,6 +220,10 @@
 		A90B1C1D27E98614007A70D0 /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				A9FFE47427EACB8C004F3B33 /* Store.storyboard */,
+				A9FFE47227EA1AD4004F3B33 /* StoreViewController.swift */,
+				A9FFE47D27EAD367004F3B33 /* StoreTabManViewController.swift */,
+				A9FFE47F27EAD464004F3B33 /* StoreHome */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -226,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				A9BC5C1B27E6FD4B00D91901 /* Configuration */,
+				A9FFE47627EACE2E004F3B33 /* Base */,
 				A9BC5C1F27E6FD9200D91901 /* Util */,
 				A9BC5C1C27E6FD5200D91901 /* Source */,
 				A9A6622227E5F7CA0081064C /* Assets.xcassets */,
@@ -353,6 +378,43 @@
 			path = DataManager;
 			sourceTree = "<group>";
 		};
+		A9FFE47627EACE2E004F3B33 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A9FFE47F27EAD464004F3B33 /* StoreHome */ = {
+			isa = PBXGroup;
+			children = (
+				A9FFE49B27EB1715004F3B33 /* Entity */,
+				A9FFE49A27EB1709004F3B33 /* Model */,
+				A9FFE48C27EAE07F004F3B33 /* StoreHomeViewController.swift */,
+				A9FFE48F27EAE2A3004F3B33 /* StoreAdCollectionViewCell.xib */,
+				A9FFE48E27EAE2A3004F3B33 /* StoreAdCollectionViewCell.swift */,
+				A9FFE49727EAEDB8004F3B33 /* CategoryCollectionViewCell.xib */,
+				A9FFE49627EAEDB8004F3B33 /* CategoryCollectionViewCell.swift */,
+			);
+			path = StoreHome;
+			sourceTree = "<group>";
+		};
+		A9FFE49A27EB1709004F3B33 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A9FFE49C27EB1785004F3B33 /* CategoryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A9FFE49B27EB1715004F3B33 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				A9FFE49E27EB1790004F3B33 /* Category.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -417,14 +479,17 @@
 				A90B1C0627E89CC3007A70D0 /* TopViewController.xib in Resources */,
 				A90B1C0E27E89EFB007A70D0 /* PhotoViewController.xib in Resources */,
 				A90B1C1227E89F06007A70D0 /* HousewarmingViewController.xib in Resources */,
+				A9FFE49927EAEDB8004F3B33 /* CategoryCollectionViewCell.xib in Resources */,
 				A9A6622627E5F7CA0081064C /* LaunchScreen.storyboard in Resources */,
 				A90B1C0A27E89EEF007A70D0 /* FollowingViewController.xib in Resources */,
 				A9A6622327E5F7CA0081064C /* Assets.xcassets in Resources */,
 				A90B1C1627E89F12007A70D0 /* KnowHowViewController.xib in Resources */,
 				A9EA67AF27E863B1001B1C68 /* Login.storyboard in Resources */,
+				A9FFE49127EAE2A3004F3B33 /* StoreAdCollectionViewCell.xib in Resources */,
 				A9BC5C4927E716EB00D91901 /* Home.storyboard in Resources */,
 				A9A6622127E5F7C90081064C /* Main.storyboard in Resources */,
 				A9EA67B827E8811F001B1C68 /* AdCollectionViewCell.xib in Resources */,
+				A9FFE47527EACB8C004F3B33 /* Store.storyboard in Resources */,
 				A9BC5C3D27E7021E00D91901 /* MyPage.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,6 +543,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9FFE47E27EAD367004F3B33 /* StoreTabManViewController.swift in Sources */,
+				A9FFE49F27EB1790004F3B33 /* Category.swift in Sources */,
 				A9BC5C4127E70F5600D91901 /* LoginViewController.swift in Sources */,
 				A90B1C1927E89F1B007A70D0 /* QnAViewController.swift in Sources */,
 				A9A6621E27E5F7C90081064C /* TabBarController.swift in Sources */,
@@ -493,9 +560,13 @@
 				A9BC5C2227E6FDA800D91901 /* String.swift in Sources */,
 				A9FFE45E27E9D3CE004F3B33 /* MyPageViewController.swift in Sources */,
 				A9BC5C2A27E6FE2000D91901 /* IndicatorView.swift in Sources */,
+				A9FFE49D27EB1785004F3B33 /* CategoryModel.swift in Sources */,
+				A9FFE49827EAEDB8004F3B33 /* CategoryCollectionViewCell.swift in Sources */,
 				A90B1C1127E89F06007A70D0 /* HousewarmingViewController.swift in Sources */,
 				A90B1C2527E9B2FA007A70D0 /* NavigationController.swift in Sources */,
 				A90B1C1F27E986BF007A70D0 /* SignInViewController.swift in Sources */,
+				A9FFE48D27EAE07F004F3B33 /* StoreHomeViewController.swift in Sources */,
+				A9FFE49027EAE2A3004F3B33 /* StoreAdCollectionViewCell.swift in Sources */,
 				A90B1C0527E89CC3007A70D0 /* TopViewController.swift in Sources */,
 				A9FFE46827E9EAA4004F3B33 /* SignUpRequest.swift in Sources */,
 				A90B1C0D27E89EFB007A70D0 /* PhotoViewController.swift in Sources */,
@@ -510,6 +581,7 @@
 				A9BC5C2827E6FDBF00D91901 /* UIViewController.swift in Sources */,
 				A9FFE46E27EA0500004F3B33 /* SignInRequest.swift in Sources */,
 				A90B1C2127E986DF007A70D0 /* SignUpViewController.swift in Sources */,
+				A9FFE47327EA1AD4004F3B33 /* StoreViewController.swift in Sources */,
 				A9FFE46627E9E93B004F3B33 /* SignUpDataManager.swift in Sources */,
 				A9BC5C2627E6FDB700D91901 /* UINavigationController.swift in Sources */,
 				A9FFE46427E9DE14004F3B33 /* KakaoResponse.swift in Sources */,

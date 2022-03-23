@@ -32,6 +32,7 @@ class SignInDataManager {
                 } else {
                     switch response.code {
                     case 2016: delegate.failedToRequest(message: "잘못된 이메일 형식입니다.")
+                    case 3014: delegate.failedToRequest(message: "이메일이 존재하지 않거나 비밀번호가 틀립니다.")
                     case 4011, 4012:
                         delegate.failedToRequest(message: "비밀번호가 틀립니다.")
                     default: delegate.failedToRequest(message: "로그인에 실패하였습니다.")
