@@ -84,7 +84,7 @@ extension HomeTabManViewController: PageboyViewControllerDataSource, TMBarDataSo
     }
 
     func defaultPage(for pageboyViewController: PageboyViewController) -> PageboyViewController.Page? {
-        return nil
+        return .at(index: TabManIndex.shared.index)
     }
-
+    
 }

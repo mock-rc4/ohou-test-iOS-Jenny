@@ -50,7 +50,7 @@ class SignInViewController: UIViewController {
 extension SignInViewController {
     func didSuccessSignUp() {
         self.presentVCAlert(title: "로그인이 완료되었습니다.", sb: "Main", vc: "TabBarController")
-        Constant.loginFlag = true
+        Constant.firstFlag = false
     }
     func failedToRequest(message: String) {
         self.presentAlert(title: message)

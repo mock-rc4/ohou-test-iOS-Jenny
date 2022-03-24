@@ -85,8 +85,8 @@
                                                             <constraint firstAttribute="height" constant="100" id="5vl-Ox-pbY"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0inn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbM-2o-KBB">
-                                                        <rect key="frame" x="140" y="25" width="42" height="24"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그인 &amp; 가입하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbM-2o-KBB">
+                                                        <rect key="frame" x="140" y="25" width="144.5" height="24"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1860,7 +1860,7 @@
         <image name="p9" width="205" height="205"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
-        <image name="profile" width="145" height="145"/>
+        <image name="profile" width="178" height="181"/>
         <image name="쿠폰" width="98" height="63"/>
         <image name="포인트" width="98" height="62"/>
         <image name="회원등급" width="98" height="63"/>

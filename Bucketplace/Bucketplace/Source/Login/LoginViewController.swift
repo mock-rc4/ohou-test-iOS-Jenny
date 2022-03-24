@@ -21,6 +21,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func goMainBtnClick(_ sender: Any) {
         self.dismiss(animated: true)
+        Constant.firstFlag = false
     }
     
     @IBAction func kakaoBtnClick(_ sender: Any) {
