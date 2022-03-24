@@ -6,5 +6,6 @@
 //
 
 class Constant {
+    static var loginFlag = false
     static let BASE_URL = "https://ozip.shop"
 }
