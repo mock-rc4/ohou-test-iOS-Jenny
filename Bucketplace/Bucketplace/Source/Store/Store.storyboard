@@ -884,17 +884,31 @@
                                                     <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                             </button>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dwf-an-6VE">
+                                                <rect key="frame" x="0.0" y="870" width="414" height="128"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="W44-5c-BH9">
+                                                    <size key="itemSize" width="128" height="128"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells/>
+                                            </collectionView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="koW-7l-2yh" firstAttribute="top" secondItem="rpF-6E-O6r" secondAttribute="bottom" constant="20" id="0hG-W4-Th5"/>
+                                            <constraint firstItem="dwf-an-6VE" firstAttribute="top" secondItem="16T-qE-DUv" secondAttribute="bottom" constant="15" id="2ak-aV-Yux"/>
                                             <constraint firstAttribute="trailing" secondItem="U7N-Wu-xIN" secondAttribute="trailing" constant="15" id="6p4-BW-B5t"/>
                                             <constraint firstItem="koW-7l-2yh" firstAttribute="leading" secondItem="bBb-Dh-ce5" secondAttribute="leading" constant="15" id="7bX-MH-oP2"/>
+                                            <constraint firstItem="dwf-an-6VE" firstAttribute="leading" secondItem="bBb-Dh-ce5" secondAttribute="leading" id="KId-yP-DOd"/>
                                             <constraint firstItem="0FL-g5-ZsL" firstAttribute="centerY" secondItem="koW-7l-2yh" secondAttribute="centerY" id="Lza-KN-fZW"/>
                                             <constraint firstAttribute="trailing" secondItem="0FL-g5-ZsL" secondAttribute="trailing" constant="15" id="NCr-ae-NWa"/>
                                             <constraint firstAttribute="trailing" secondItem="rpF-6E-O6r" secondAttribute="trailing" id="Poj-dA-AHF"/>
                                             <constraint firstItem="rpF-6E-O6r" firstAttribute="leading" secondItem="bBb-Dh-ce5" secondAttribute="leading" id="Qde-cR-T4X"/>
                                             <constraint firstAttribute="height" constant="1500" id="QkV-bR-p2f"/>
+                                            <constraint firstAttribute="trailing" secondItem="dwf-an-6VE" secondAttribute="trailing" id="Qx5-7m-JCc"/>
                                             <constraint firstItem="6H8-fy-Ygt" firstAttribute="top" secondItem="0FL-g5-ZsL" secondAttribute="bottom" constant="20" id="dSS-i6-e4A"/>
                                             <constraint firstItem="16T-qE-DUv" firstAttribute="top" secondItem="6H8-fy-Ygt" secondAttribute="bottom" constant="40" id="dkl-zS-Vfx"/>
                                             <constraint firstItem="J5E-4J-Xge" firstAttribute="bottom" secondItem="rpF-6E-O6r" secondAttribute="bottom" id="gOi-O1-hTa"/>
