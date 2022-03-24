@@ -23,7 +23,21 @@ class StoreHomeViewController: UIViewController {
         setupPageControl()
         bannerTimer()
     }
-
+    
+    // MARK: 오늘의딜
+    @IBAction func moreBtnClick(_ sender: Any) {
+        presentTodayDeal()
+    }
+    
+    @IBAction func moreBtnClick2(_ sender: Any) {
+        presentTodayDeal()
+    }
+    
+    private func presentTodayDeal() {
+        let vc = TodayDealViewController()
+        vc.hidesBottomBarWhenPushed = true
+        self.presentNVC(vc)
+    }
 }
 
 // MARK: 광고 배너

@@ -26,7 +26,7 @@ class MyPageTabManViewController: TabmanViewController {
     }
     
     private func setupControllers() {
-        self.setupTabBarLine()
+        self.tabBarController?.setupTabBarLine()
     }
     
     // MARK: 프로필 / 나의 쇼핑

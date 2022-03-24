@@ -69,6 +69,9 @@
 		A9FFE4A127EB28B8004F3B33 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE4A027EB28B8004F3B33 /* UIView.swift */; };
 		A9FFE4A527EC6E35004F3B33 /* LoginKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE4A427EC6E35004F3B33 /* LoginKey.swift */; };
 		A9FFE4AB27EC8D62004F3B33 /* TabManIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE4AA27EC8D62004F3B33 /* TabManIndex.swift */; };
+		A9FFE4AF27ECA026004F3B33 /* TodayDealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE4AD27ECA025004F3B33 /* TodayDealViewController.swift */; };
+		A9FFE4B027ECA026004F3B33 /* TodayDealViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9FFE4AE27ECA025004F3B33 /* TodayDealViewController.xib */; };
+		A9FFE4B227ECA30B004F3B33 /* UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE4B127ECA30B004F3B33 /* UITabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,6 +139,9 @@
 		A9FFE4A027EB28B8004F3B33 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		A9FFE4A427EC6E35004F3B33 /* LoginKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginKey.swift; sourceTree = "<group>"; };
 		A9FFE4AA27EC8D62004F3B33 /* TabManIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabManIndex.swift; sourceTree = "<group>"; };
+		A9FFE4AD27ECA025004F3B33 /* TodayDealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayDealViewController.swift; sourceTree = "<group>"; };
+		A9FFE4AE27ECA025004F3B33 /* TodayDealViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayDealViewController.xib; sourceTree = "<group>"; };
+		A9FFE4B127ECA30B004F3B33 /* UITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarController.swift; sourceTree = "<group>"; };
 		DA0E1ED45C5E01C8C9D2A98B /* Pods-Bucketplace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bucketplace.release.xcconfig"; path = "Target Support Files/Pods-Bucketplace/Pods-Bucketplace.release.xcconfig"; sourceTree = "<group>"; };
 		F7ACC5E93A413BD60776E538 /* Pods_Bucketplace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bucketplace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -230,6 +236,7 @@
 				A9FFE47227EA1AD4004F3B33 /* StoreViewController.swift */,
 				A9FFE47D27EAD367004F3B33 /* StoreTabManViewController.swift */,
 				A9FFE47F27EAD464004F3B33 /* StoreHome */,
+				A9FFE4AC27ECA005004F3B33 /* TodayDeal */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -308,6 +315,7 @@
 				A9BC5C2527E6FDB700D91901 /* UINavigationController.swift */,
 				A9BC5C2727E6FDBF00D91901 /* UIViewController.swift */,
 				A9FFE4A027EB28B8004F3B33 /* UIView.swift */,
+				A9FFE4B127ECA30B004F3B33 /* UITabBarController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -424,6 +432,15 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		A9FFE4AC27ECA005004F3B33 /* TodayDeal */ = {
+			isa = PBXGroup;
+			children = (
+				A9FFE4AE27ECA025004F3B33 /* TodayDealViewController.xib */,
+				A9FFE4AD27ECA025004F3B33 /* TodayDealViewController.swift */,
+			);
+			path = TodayDeal;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -490,6 +507,7 @@
 				A90B1C1227E89F06007A70D0 /* HousewarmingViewController.xib in Resources */,
 				A9FFE49927EAEDB8004F3B33 /* CategoryCollectionViewCell.xib in Resources */,
 				A9A6622627E5F7CA0081064C /* LaunchScreen.storyboard in Resources */,
+				A9FFE4B027ECA026004F3B33 /* TodayDealViewController.xib in Resources */,
 				A90B1C0A27E89EEF007A70D0 /* FollowingViewController.xib in Resources */,
 				A9A6622327E5F7CA0081064C /* Assets.xcassets in Resources */,
 				A90B1C1627E89F12007A70D0 /* KnowHowViewController.xib in Resources */,
@@ -562,6 +580,7 @@
 				A9BC5C2427E6FDAF00D91901 /* UIColor.swift in Sources */,
 				A9FFE46027E9D88C004F3B33 /* KakaoDataManager.swift in Sources */,
 				A9FFE46A27E9F26E004F3B33 /* SignInResponse.swift in Sources */,
+				A9FFE4B227ECA30B004F3B33 /* UITabBarController.swift in Sources */,
 				A9BC5C3927E7009D00D91901 /* MyShoppingViewController.swift in Sources */,
 				A9EA67B727E8811F001B1C68 /* AdCollectionViewCell.swift in Sources */,
 				A9A6621A27E5F7C90081064C /* AppDelegate.swift in Sources */,
@@ -592,6 +611,7 @@
 				A9BC5C2827E6FDBF00D91901 /* UIViewController.swift in Sources */,
 				A9FFE4A127EB28B8004F3B33 /* UIView.swift in Sources */,
 				A9FFE46E27EA0500004F3B33 /* SignInRequest.swift in Sources */,
+				A9FFE4AF27ECA026004F3B33 /* TodayDealViewController.swift in Sources */,
 				A90B1C2127E986DF007A70D0 /* SignUpViewController.swift in Sources */,
 				A9FFE47327EA1AD4004F3B33 /* StoreViewController.swift in Sources */,
 				A9FFE46627E9E93B004F3B33 /* SignUpDataManager.swift in Sources */,
