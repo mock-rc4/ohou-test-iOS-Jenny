@@ -1082,6 +1082,7 @@
                     <size key="freeformSize" width="414" height="1700"/>
                     <connections>
                         <outlet property="collectionView" destination="ail-om-czs" id="6bd-Gq-BPT"/>
+                        <outlet property="nickname" destination="nbM-2o-KBB" id="Gvs-Oz-cY7"/>
                         <outlet property="pageControl" destination="Dcf-NH-CEG" id="ZWY-uA-QQc"/>
                     </connections>
                 </viewController>

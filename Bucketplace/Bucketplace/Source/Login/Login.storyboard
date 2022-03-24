@@ -623,10 +623,10 @@
             </objects>
             <point key="canvasLocation" x="1183" y="-212"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Login Navigation Controller-->
         <scene sceneID="eA6-Xx-kgg">
             <objects>
-                <navigationController storyboardIdentifier="NavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Q3p-vX-SWY" customClass="NavigationController" customModule="Bucketplace" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LoginNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Q3p-vX-SWY" customClass="LoginNavigationController" customModule="Bucketplace" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zzx-3D-VNf">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

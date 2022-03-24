@@ -150,6 +150,7 @@ class SignUpViewController: UIViewController {
     
     // MARK: 커스텀
     private func setupDisplay() {
+        pwTextField.isSecureTextEntry = true
         agreeTitleView.layer.borderColor = UIColor.lightGray.cgColor
         agreeTitleView.layer.borderWidth = 0.5
         agreeView.layer.borderColor = UIColor.lightGray.cgColor
@@ -161,7 +162,7 @@ class SignUpViewController: UIViewController {
 
 extension SignUpViewController {
     func didSuccessSignUp() {
-        self.presentAlert(title: "회원가입이 완료되었습니다.")
+        self.presentVCAlert(title: "회원가입이 완료되었습니다.", sb: "Login", vc: "LoginNavigationController")
     }
     func failedToRequest(message: String) {
         self.presentAlert(title: message)

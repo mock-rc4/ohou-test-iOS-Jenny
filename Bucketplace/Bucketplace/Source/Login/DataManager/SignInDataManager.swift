@@ -29,6 +29,7 @@ class SignInDataManager {
             case .success(let response):
                 if response.isSuccess {
                     delegate.didSuccessSignUp()
+                    LoginKey.shared.jwt = response.result?.jwt ?? ""
                 } else {
                     switch response.code {
                     case 2016: delegate.failedToRequest(message: "잘못된 이메일 형식입니다.")

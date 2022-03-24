@@ -23,7 +23,7 @@
 		A90B1C1A27E89F1B007A70D0 /* QnAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A90B1C1827E89F1B007A70D0 /* QnAViewController.xib */; };
 		A90B1C1F27E986BF007A70D0 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90B1C1E27E986BF007A70D0 /* SignInViewController.swift */; };
 		A90B1C2127E986DF007A70D0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90B1C2027E986DF007A70D0 /* SignUpViewController.swift */; };
-		A90B1C2527E9B2FA007A70D0 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90B1C2427E9B2FA007A70D0 /* NavigationController.swift */; };
+		A90B1C2527E9B2FA007A70D0 /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90B1C2427E9B2FA007A70D0 /* LoginNavigationController.swift */; };
 		A9A6621A27E5F7C90081064C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621927E5F7C90081064C /* AppDelegate.swift */; };
 		A9A6621C27E5F7C90081064C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621B27E5F7C90081064C /* SceneDelegate.swift */; };
 		A9A6621E27E5F7C90081064C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621D27E5F7C90081064C /* TabBarController.swift */; };
@@ -67,6 +67,7 @@
 		A9FFE49D27EB1785004F3B33 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE49C27EB1785004F3B33 /* CategoryModel.swift */; };
 		A9FFE49F27EB1790004F3B33 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE49E27EB1790004F3B33 /* Category.swift */; };
 		A9FFE4A127EB28B8004F3B33 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE4A027EB28B8004F3B33 /* UIView.swift */; };
+		A9FFE4A527EC6E35004F3B33 /* LoginKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE4A427EC6E35004F3B33 /* LoginKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,7 +87,7 @@
 		A90B1C1827E89F1B007A70D0 /* QnAViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QnAViewController.xib; sourceTree = "<group>"; };
 		A90B1C1E27E986BF007A70D0 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		A90B1C2027E986DF007A70D0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		A90B1C2427E9B2FA007A70D0 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		A90B1C2427E9B2FA007A70D0 /* LoginNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavigationController.swift; sourceTree = "<group>"; };
 		A9A6621627E5F7C90081064C /* Bucketplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bucketplace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A6621927E5F7C90081064C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9A6621B27E5F7C90081064C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +133,7 @@
 		A9FFE49C27EB1785004F3B33 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		A9FFE49E27EB1790004F3B33 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		A9FFE4A027EB28B8004F3B33 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		A9FFE4A427EC6E35004F3B33 /* LoginKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginKey.swift; sourceTree = "<group>"; };
 		DA0E1ED45C5E01C8C9D2A98B /* Pods-Bucketplace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bucketplace.release.xcconfig"; path = "Target Support Files/Pods-Bucketplace/Pods-Bucketplace.release.xcconfig"; sourceTree = "<group>"; };
 		F7ACC5E93A413BD60776E538 /* Pods_Bucketplace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bucketplace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -325,12 +327,12 @@
 			isa = PBXGroup;
 			children = (
 				A9EA67AE27E863B1001B1C68 /* Login.storyboard */,
+				A90B1C2427E9B2FA007A70D0 /* LoginNavigationController.swift */,
 				A9FFE46127E9D8A1004F3B33 /* Entity */,
 				A9FFE46227E9D8A9004F3B33 /* DataManager */,
 				A9BC5C3F27E70F5600D91901 /* LoginViewController.swift */,
 				A90B1C1E27E986BF007A70D0 /* SignInViewController.swift */,
 				A90B1C2027E986DF007A70D0 /* SignUpViewController.swift */,
-				A90B1C2427E9B2FA007A70D0 /* NavigationController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -355,6 +357,7 @@
 			isa = PBXGroup;
 			children = (
 				A9EA67B127E86BBE001B1C68 /* SecretKey.swift */,
+				A9FFE4A427EC6E35004F3B33 /* LoginKey.swift */,
 			);
 			path = Secret;
 			sourceTree = "<group>";
@@ -547,6 +550,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9FFE47E27EAD367004F3B33 /* StoreTabManViewController.swift in Sources */,
+				A9FFE4A527EC6E35004F3B33 /* LoginKey.swift in Sources */,
 				A9FFE49F27EB1790004F3B33 /* Category.swift in Sources */,
 				A9BC5C4127E70F5600D91901 /* LoginViewController.swift in Sources */,
 				A90B1C1927E89F1B007A70D0 /* QnAViewController.swift in Sources */,
@@ -566,7 +570,7 @@
 				A9FFE49D27EB1785004F3B33 /* CategoryModel.swift in Sources */,
 				A9FFE49827EAEDB8004F3B33 /* CategoryCollectionViewCell.swift in Sources */,
 				A90B1C1127E89F06007A70D0 /* HousewarmingViewController.swift in Sources */,
-				A90B1C2527E9B2FA007A70D0 /* NavigationController.swift in Sources */,
+				A90B1C2527E9B2FA007A70D0 /* LoginNavigationController.swift in Sources */,
 				A90B1C1F27E986BF007A70D0 /* SignInViewController.swift in Sources */,
 				A9FFE48D27EAE07F004F3B33 /* StoreHomeViewController.swift in Sources */,
 				A9FFE49027EAE2A3004F3B33 /* StoreAdCollectionViewCell.swift in Sources */,

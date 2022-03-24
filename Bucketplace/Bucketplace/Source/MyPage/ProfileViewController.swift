@@ -13,6 +13,8 @@ class ProfileViewController: UIViewController {
 
     @IBOutlet weak var pageControl: UIPageControl!
 
+    @IBOutlet weak var nickname: UILabel!
+    
     // 광고 마지막 페이지면 다시 처음부터 자동 스크롤 해주기 위해 선언한 변수
     var nowPage: Int = 0
 

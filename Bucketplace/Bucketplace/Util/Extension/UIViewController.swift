@@ -24,8 +24,8 @@ extension UIViewController {
     // MARK: 빈 화면을 눌렀을 때 키보드가 내려가도록 처리
     func dismissKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer =
-            UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
-//        tap.cancelsTouchesInView = false
+        UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        //        tap.cancelsTouchesInView = false
         self.view.addGestureRecognizer(tap)
     }
     
@@ -50,8 +50,18 @@ extension UIViewController {
     }
     
     // MARK: 확인을 눌러 다른 뷰컨으로 이동하는 UIAlertController
-    func presentSignUpAlert(title: String) {
+    func presentVCAlert(title: String, message: String? = nil,
+                        isCancelActionIncluded: Bool = false,
+                        preferredStyle style: UIAlertController.Style = .alert,
+                        handler: ((UIAlertAction) -> Void)? = nil, sb: String, vc: String) {
         self.dismissIndicator()
+        let alert = UIAlertController(title: title, message: message, preferredStyle: style)
+        let actionDone = UIAlertAction(title: "확인", style: .default, handler: { action in
+            let vc = UIStoryboard(name: sb, bundle: nil).instantiateViewController(withIdentifier: vc)
+            self.changeRootViewController(vc)
+        })
+        alert.addAction(actionDone)
+        self.present(alert, animated: true, completion: nil)
     }
     
     // MARK: 커스텀 UIAction이 뜨는 UIAlertController
@@ -92,7 +102,7 @@ extension UIViewController {
         alertSuperview.layer.cornerRadius = 10
         alertSuperview.isHidden = true
         alertSuperview.translatesAutoresizingMaskIntoConstraints = false
-    
+        
         let alertLabel = UILabel()
         //alertLabel.font = .NotoSans(.regular, size: 15)
         alertLabel.textColor = .white

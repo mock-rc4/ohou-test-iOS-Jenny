@@ -17,6 +17,11 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupDisplay()
+    }
+    
+    private func setupDisplay() {
+        pwTextField.isSecureTextEntry = true
     }
     
     // MARK: 로그인 완료 버튼
@@ -44,7 +49,8 @@ class SignInViewController: UIViewController {
 
 extension SignInViewController {
     func didSuccessSignUp() {
-        self.presentAlert(title: "로그인이 완료되었습니다.")
+        self.presentVCAlert(title: "로그인이 완료되었습니다.", sb: "Main", vc: "TabBarController")
+        Constant.loginFlag = true
     }
     func failedToRequest(message: String) {
         self.presentAlert(title: message)
