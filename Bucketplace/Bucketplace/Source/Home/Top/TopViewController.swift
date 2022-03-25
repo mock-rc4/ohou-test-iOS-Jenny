@@ -152,7 +152,7 @@ extension TopViewController {
     func didSuccessFirst(_ result: HomeFirstResponse) {
         let firstInfo = result.result
         for i in 0 ... 3 {
-            setupView(firstInfo[i].thumbnailUrl, self.firstImgs[i])
+            Functions.shared.urlToImg(firstInfo[i].thumbnailUrl, self.firstImgs[i])
             firstLabels[i].text = firstInfo[i].description + firstInfo[i].title
         }
     }
@@ -160,7 +160,7 @@ extension TopViewController {
     func didSuccessSecond(_ result: HomeSecondResponse) {
         let secondInfo = result.result
         for i in 0 ... 3 {
-            setupView(secondInfo[i].thumbnailUrl, self.secondImgs[i])
+            Functions.shared.urlToImg(secondInfo[i].thumbnailUrl, self.secondImgs[i])
             secondLabels[i].text = secondInfo[i].description + secondInfo[i].title
         }
     }
@@ -168,21 +168,16 @@ extension TopViewController {
     func didSuccessThird(_ result: HomeThirdResponse) {
         let thirdInfo = result.result
         for i in 0 ... 3 {
-            setupView(thirdInfo[i].thumbnailUrl, self.thirdImgs[i])
+            Functions.shared.urlToImg(thirdInfo[i].thumbnailUrl, self.thirdImgs[i])
             thirdLabels[i].text = thirdInfo[i].description + thirdInfo[i].title
         }
         self.dismissIndicator()
     }
     
-    func failedToFirst(_ error: String) {
-        print("❌ \(error)")
+    func failedToRequest(_ message: String) {
+        self.presentAlert(title: message)
     }
     
-    private func setupView (_ urlImg: String, _ img: UIImageView) {
-        let url = URL(string: urlImg)
-        let data = try? Data(contentsOf: url!)
-        img.image = UIImage(data: data!)
-    }
 }
 
 // MARK: collectionView 설정

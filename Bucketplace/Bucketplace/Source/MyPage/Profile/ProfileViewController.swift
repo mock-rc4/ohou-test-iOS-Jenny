@@ -10,24 +10,53 @@ import UIKit
 class ProfileViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
-
     @IBOutlet weak var pageControl: UIPageControl!
-
-    @IBOutlet weak var nickname: UILabel!
-    
-    // 광고 마지막 페이지면 다시 처음부터 자동 스크롤 해주기 위해 선언한 변수
     var nowPage: Int = 0
-
-    // Model.swift 만들어서 담는 방식으로 활용
     var images:[String] = ["광고1", "광고2", "광고3","광고4"]
+
+    lazy var profileDataManager = ProfileDataManager()
+    @IBOutlet weak var profileImg: UIImageView!
+    @IBOutlet weak var nickname: UILabel!
+    @IBOutlet weak var follower: UILabel!
+    @IBOutlet weak var following: UILabel!
+    @IBOutlet weak var scrapBook: UILabel!
+    @IBOutlet weak var like: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupProfile()
         setupCollectionView()
         setupPageControl()
         bannerTimer()
     }
+}
 
+// MARK: 내 정보 불러오기
+extension ProfileViewController {
+    private func setupProfile() {
+        self.showIndicator()
+        self.profileDataManager.getProfile(self)
+    }
+    
+    func didSuccessProfile(_ result: ProfileResponse) {
+        let info = result.result
+        Functions.shared.urlToImg(info.profileImageUrl, profileImg)
+        nickname.text = info.nickname
+        follower.text = "\(info.follower)"
+        following.text = "\(info.followee)"
+        scrapBook.text = "\(info.scrapBookFeeds)"
+        like.text = "\(info.likeFeed)"
+        self.dismissIndicator()
+    }
+    
+    func failedToProfile(_ message: String) {
+        self.presentAlert(title: message)
+    }
+}
+
+
+// MARK: 광고 배너
+extension ProfileViewController {
     // 광고 배너 넣는 collectionView 설정
     private func setupCollectionView() {
         collectionView.delegate = self
@@ -64,10 +93,9 @@ class ProfileViewController: UIViewController {
         nowPage += 1
         collectionView.scrollToItem(at: NSIndexPath(item: nowPage, section: 0) as IndexPath, at: .right, animated: true)
     }
-
 }
 
-// MARK: collectionView 설정
+// 광고 collectionView 설정
 extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -98,7 +126,7 @@ extension ProfileViewController: UICollectionViewDelegateFlowLayout {
 
 }
 
-// MARK: PageControl 설정
+// PageControl 설정
 extension ProfileViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let width = scrollView.bounds.size.width

@@ -1,5 +1,5 @@
 //
-//  HomeSecondDataManager.swift
+//  ProfileDataManager.swift
 //  Bucketplace
 //
 //  Created by 김영인 on 2022/03/25.
@@ -7,11 +7,11 @@
 
 import Alamofire
 
-class HomeSecondDataManager {
+class ProfileDataManager {
     
-    func getHomeSecond(_ delegate: TopViewController) {
+    func getProfile(_ delegate: ProfileViewController) {
         
-        let url = "\(Constant.BASE_URL)/app/feeds/hots/2"
+        let url = "\(Constant.BASE_URL)/app/users/me"
         
         let header: HTTPHeaders = [
             "Content-Type": "application/json",
@@ -24,13 +24,17 @@ class HomeSecondDataManager {
                    encoding: JSONEncoding.default,
                    headers: header)
         .validate()
-        .responseDecodable(of: HomeSecondResponse.self) { (response) in
+        .responseDecodable(of: ProfileResponse.self) { (response) in
             switch response.result {
             case .success(let response):
                 if response.isSuccess {
-                    delegate.didSuccessSecond(response)
+                    delegate.didSuccessProfile(response)
                 } else {
-                    print("here")
+                    switch response.code {
+                    case 2001, 2002:
+                        delegate.failedToProfile ("로그인이 필요합니다.")
+                    default: delegate.failedToProfile("연결에 실패하였습니다.")
+                    }
                 }
                 print("🔥\(response)")
             case .failure(let error):
@@ -40,4 +44,3 @@ class HomeSecondDataManager {
         
     }
 }
-

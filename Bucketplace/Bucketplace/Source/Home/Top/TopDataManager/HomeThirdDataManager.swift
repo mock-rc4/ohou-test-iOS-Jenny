@@ -30,7 +30,11 @@ class HomeThirdDataManager {
                 if response.isSuccess {
                     delegate.didSuccessThird(response)
                 } else {
-                    print("here")
+                    switch response.code {
+                    case 2001, 2002:
+                        delegate.failedToRequest("로그인이 필요합니다.")
+                    default: delegate.failedToRequest("연결에 실패하였습니다.")
+                    }
                 }
                 print("🔥\(response)")
             case .failure(let error):

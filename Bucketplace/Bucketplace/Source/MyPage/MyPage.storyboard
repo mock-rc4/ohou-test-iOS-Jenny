@@ -1172,8 +1172,13 @@
                     <size key="freeformSize" width="414" height="1700"/>
                     <connections>
                         <outlet property="collectionView" destination="ail-om-czs" id="6bd-Gq-BPT"/>
+                        <outlet property="follower" destination="c4t-qu-TXl" id="Ttk-S8-uXB"/>
+                        <outlet property="following" destination="r8P-CU-Dvj" id="DX7-nA-vrE"/>
+                        <outlet property="like" destination="nz8-iD-vsU" id="W5x-Vw-itD"/>
                         <outlet property="nickname" destination="nbM-2o-KBB" id="Gvs-Oz-cY7"/>
                         <outlet property="pageControl" destination="Dcf-NH-CEG" id="ZWY-uA-QQc"/>
+                        <outlet property="profileImg" destination="Tex-Zd-8Jt" id="e9F-FR-b91"/>
+                        <outlet property="scrapBook" destination="P5U-gf-A8B" id="qGk-ca-GTb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eac-XO-FNE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -13,7 +13,7 @@ struct HomeThirdResponse: Decodable {
 }
 
 struct HomeThirdResult: Decodable {
-    let feedID: CLong?  // 추후보완
+    let feedId: CLong 
     let thumbnailUrl: String
     let description, title: String
     let isBookmarked, isHomewarming, isKnowhow: Int

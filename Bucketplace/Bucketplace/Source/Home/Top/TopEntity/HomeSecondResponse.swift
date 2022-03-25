@@ -1,20 +1,21 @@
 //
-//  HomeFirstResponse.swift
+//  HomeSecondResponse.swift
 //  Bucketplace
 //
 //  Created by 김영인 on 2022/03/25.
 //
 
-struct HomeFirstResponse: Decodable {
+struct HomeSecondResponse: Decodable {
     let isSuccess: Bool
     let code: Int
     let message: String
-    let result: [HomeFirstResult]
+    let result: [HomeSecondResult]
 }
 
-struct HomeFirstResult: Decodable {
-    let feedID: CLong?  // 추후보완
+struct HomeSecondResult: Decodable {
+    let feedId: CLong
     let thumbnailUrl: String
     let description, title: String
     let isBookmarked, isHomewarming, isKnowhow: Int
 }
+

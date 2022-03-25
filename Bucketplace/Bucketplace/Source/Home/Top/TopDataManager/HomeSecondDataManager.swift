@@ -1,5 +1,5 @@
 //
-//  HomeFirstDataManager.swift
+//  HomeSecondDataManager.swift
 //  Bucketplace
 //
 //  Created by 김영인 on 2022/03/25.
@@ -7,11 +7,11 @@
 
 import Alamofire
 
-class HomeFirstDataManager {
+class HomeSecondDataManager {
     
-    func getHomeFirst(_ delegate: TopViewController) {
+    func getHomeSecond(_ delegate: TopViewController) {
         
-        let url = "\(Constant.BASE_URL)/app/feeds/hots/1"
+        let url = "\(Constant.BASE_URL)/app/feeds/hots/2"
         
         let header: HTTPHeaders = [
             "Content-Type": "application/json",
@@ -24,13 +24,17 @@ class HomeFirstDataManager {
                    encoding: JSONEncoding.default,
                    headers: header)
         .validate()
-        .responseDecodable(of: HomeFirstResponse.self) { (response) in
+        .responseDecodable(of: HomeSecondResponse.self) { (response) in
             switch response.result {
             case .success(let response):
                 if response.isSuccess {
-                    delegate.didSuccessFirst(response)
+                    delegate.didSuccessSecond(response)
                 } else {
-                    print("here")
+                    switch response.code {
+                    case 2001, 2002:
+                        delegate.failedToRequest("로그인이 필요합니다.")
+                    default: delegate.failedToRequest("연결에 실패하였습니다.")
+                    }
                 }
                 print("🔥\(response)")
             case .failure(let error):
@@ -40,3 +44,4 @@ class HomeFirstDataManager {
         
     }
 }
+
