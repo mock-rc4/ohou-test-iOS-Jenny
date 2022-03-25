@@ -28,7 +28,7 @@ class StoreTabManViewController: TabmanViewController {
     private func setupVCs() {
         let sb = UIStoryboard(name: "Store", bundle: nil)
         let vc1 = sb.instantiateViewController(withIdentifier: "StoreHomeViewController") as! StoreHomeViewController
-        viewControllers = [vc1, UIViewController(), UIViewController(), UIViewController(), UIViewController(), UIViewController(), UIViewController()]
+        viewControllers = [vc1, UIViewController(), TodayDealViewController(), UIViewController(), UIViewController(), UIViewController(), UIViewController()]
     }
     
     

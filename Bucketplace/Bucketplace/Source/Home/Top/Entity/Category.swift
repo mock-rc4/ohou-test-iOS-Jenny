@@ -8,5 +8,4 @@
 struct Category {
     var img: String
     var category: String
-    var detail: String
 }

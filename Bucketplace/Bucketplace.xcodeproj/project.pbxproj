@@ -62,8 +62,6 @@
 		A9FFE48D27EAE07F004F3B33 /* StoreHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE48C27EAE07F004F3B33 /* StoreHomeViewController.swift */; };
 		A9FFE49027EAE2A3004F3B33 /* StoreAdCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE48E27EAE2A3004F3B33 /* StoreAdCollectionViewCell.swift */; };
 		A9FFE49127EAE2A3004F3B33 /* StoreAdCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9FFE48F27EAE2A3004F3B33 /* StoreAdCollectionViewCell.xib */; };
-		A9FFE49827EAEDB8004F3B33 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE49627EAEDB8004F3B33 /* CategoryCollectionViewCell.swift */; };
-		A9FFE49927EAEDB8004F3B33 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9FFE49727EAEDB8004F3B33 /* CategoryCollectionViewCell.xib */; };
 		A9FFE49D27EB1785004F3B33 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE49C27EB1785004F3B33 /* CategoryModel.swift */; };
 		A9FFE49F27EB1790004F3B33 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE49E27EB1790004F3B33 /* Category.swift */; };
 		A9FFE4A127EB28B8004F3B33 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE4A027EB28B8004F3B33 /* UIView.swift */; };
@@ -72,6 +70,8 @@
 		A9FFE4AF27ECA026004F3B33 /* TodayDealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE4AD27ECA025004F3B33 /* TodayDealViewController.swift */; };
 		A9FFE4B027ECA026004F3B33 /* TodayDealViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9FFE4AE27ECA025004F3B33 /* TodayDealViewController.xib */; };
 		A9FFE4B227ECA30B004F3B33 /* UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE4B127ECA30B004F3B33 /* UITabBarController.swift */; };
+		A9FFE4BB27EDA045004F3B33 /* HomeCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFE4B927EDA045004F3B33 /* HomeCategoryCollectionViewCell.swift */; };
+		A9FFE4BC27EDA045004F3B33 /* HomeCategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9FFE4BA27EDA045004F3B33 /* HomeCategoryCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -132,8 +132,6 @@
 		A9FFE48C27EAE07F004F3B33 /* StoreHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreHomeViewController.swift; sourceTree = "<group>"; };
 		A9FFE48E27EAE2A3004F3B33 /* StoreAdCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreAdCollectionViewCell.swift; sourceTree = "<group>"; };
 		A9FFE48F27EAE2A3004F3B33 /* StoreAdCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreAdCollectionViewCell.xib; sourceTree = "<group>"; };
-		A9FFE49627EAEDB8004F3B33 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
-		A9FFE49727EAEDB8004F3B33 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		A9FFE49C27EB1785004F3B33 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		A9FFE49E27EB1790004F3B33 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		A9FFE4A027EB28B8004F3B33 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -142,6 +140,8 @@
 		A9FFE4AD27ECA025004F3B33 /* TodayDealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayDealViewController.swift; sourceTree = "<group>"; };
 		A9FFE4AE27ECA025004F3B33 /* TodayDealViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayDealViewController.xib; sourceTree = "<group>"; };
 		A9FFE4B127ECA30B004F3B33 /* UITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarController.swift; sourceTree = "<group>"; };
+		A9FFE4B927EDA045004F3B33 /* HomeCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		A9FFE4BA27EDA045004F3B33 /* HomeCategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		DA0E1ED45C5E01C8C9D2A98B /* Pods-Bucketplace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bucketplace.release.xcconfig"; path = "Target Support Files/Pods-Bucketplace/Pods-Bucketplace.release.xcconfig"; sourceTree = "<group>"; };
 		F7ACC5E93A413BD60776E538 /* Pods_Bucketplace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bucketplace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -178,8 +178,12 @@
 		A90B1BEF27E899B0007A70D0 /* Top */ = {
 			isa = PBXGroup;
 			children = (
+				A9FFE49B27EB1715004F3B33 /* Entity */,
+				A9FFE49A27EB1709004F3B33 /* Model */,
 				A90B1C0427E89CC3007A70D0 /* TopViewController.xib */,
 				A90B1C0327E89CC3007A70D0 /* TopViewController.swift */,
+				A9FFE4BA27EDA045004F3B33 /* HomeCategoryCollectionViewCell.xib */,
+				A9FFE4B927EDA045004F3B33 /* HomeCategoryCollectionViewCell.swift */,
 			);
 			path = Top;
 			sourceTree = "<group>";
@@ -405,13 +409,9 @@
 		A9FFE47F27EAD464004F3B33 /* StoreHome */ = {
 			isa = PBXGroup;
 			children = (
-				A9FFE49B27EB1715004F3B33 /* Entity */,
-				A9FFE49A27EB1709004F3B33 /* Model */,
 				A9FFE48C27EAE07F004F3B33 /* StoreHomeViewController.swift */,
 				A9FFE48F27EAE2A3004F3B33 /* StoreAdCollectionViewCell.xib */,
 				A9FFE48E27EAE2A3004F3B33 /* StoreAdCollectionViewCell.swift */,
-				A9FFE49727EAEDB8004F3B33 /* CategoryCollectionViewCell.xib */,
-				A9FFE49627EAEDB8004F3B33 /* CategoryCollectionViewCell.swift */,
 			);
 			path = StoreHome;
 			sourceTree = "<group>";
@@ -505,9 +505,9 @@
 				A90B1C0627E89CC3007A70D0 /* TopViewController.xib in Resources */,
 				A90B1C0E27E89EFB007A70D0 /* PhotoViewController.xib in Resources */,
 				A90B1C1227E89F06007A70D0 /* HousewarmingViewController.xib in Resources */,
-				A9FFE49927EAEDB8004F3B33 /* CategoryCollectionViewCell.xib in Resources */,
 				A9A6622627E5F7CA0081064C /* LaunchScreen.storyboard in Resources */,
 				A9FFE4B027ECA026004F3B33 /* TodayDealViewController.xib in Resources */,
+				A9FFE4BC27EDA045004F3B33 /* HomeCategoryCollectionViewCell.xib in Resources */,
 				A90B1C0A27E89EEF007A70D0 /* FollowingViewController.xib in Resources */,
 				A9A6622327E5F7CA0081064C /* Assets.xcassets in Resources */,
 				A90B1C1627E89F12007A70D0 /* KnowHowViewController.xib in Resources */,
@@ -583,6 +583,7 @@
 				A9FFE4B227ECA30B004F3B33 /* UITabBarController.swift in Sources */,
 				A9BC5C3927E7009D00D91901 /* MyShoppingViewController.swift in Sources */,
 				A9EA67B727E8811F001B1C68 /* AdCollectionViewCell.swift in Sources */,
+				A9FFE4BB27EDA045004F3B33 /* HomeCategoryCollectionViewCell.swift in Sources */,
 				A9A6621A27E5F7C90081064C /* AppDelegate.swift in Sources */,
 				A9FFE47027EA050B004F3B33 /* SignInDataManager.swift in Sources */,
 				A9BC5C4727E716C000D91901 /* HomeViewController.swift in Sources */,
@@ -590,7 +591,6 @@
 				A9FFE45E27E9D3CE004F3B33 /* MyPageViewController.swift in Sources */,
 				A9BC5C2A27E6FE2000D91901 /* IndicatorView.swift in Sources */,
 				A9FFE49D27EB1785004F3B33 /* CategoryModel.swift in Sources */,
-				A9FFE49827EAEDB8004F3B33 /* CategoryCollectionViewCell.swift in Sources */,
 				A90B1C1127E89F06007A70D0 /* HousewarmingViewController.swift in Sources */,
 				A90B1C2527E9B2FA007A70D0 /* LoginNavigationController.swift in Sources */,
 				A90B1C1F27E986BF007A70D0 /* SignInViewController.swift in Sources */,

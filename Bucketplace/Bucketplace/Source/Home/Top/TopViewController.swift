@@ -13,18 +13,17 @@ import Tabman
 class TopViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
-    
     @IBOutlet weak var pageControl: UIPageControl!
     
     // 광고 마지막 페이지면 다시 처음부터 자동 스크롤 해주기 위해 선언한 변수
     var nowPage: Int = 0
     
-    // Model.swift 만들어서 담는 방식으로 활용
     var images:[String] = ["광고1", "광고2", "광고3","광고4"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
+        setupCategoryCollectionView()
         setupPageControl()
         bannerTimer()
     }
@@ -73,20 +72,56 @@ class TopViewController: UIViewController {
         self.changeRootViewController(vc)
     }
     
+    
+    // MARK: 카테고리
+    var categoryModel: CategoryModel = CategoryModel()
+    @IBOutlet weak var categoryCollectionView: UICollectionView!
+    
+    private func setupCategoryCollectionView() {
+        categoryCollectionView.delegate = self
+        categoryCollectionView.dataSource = self
+        categoryCollectionView.register(UINib(nibName: "HomeCategoryCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "HomeCategoryCollectionViewCell")
+    }
+    
+    // MARK: 오늘의딜
+    @IBAction func TodayDealBtnClick(_ sender: Any) {
+        let vc = TodayDealViewController()
+        vc.hidesBottomBarWhenPushed = true
+        self.presentNVC(vc)
+    }
+    
 }
 
 // MARK: collectionView 설정
 extension TopViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return images.count
+        switch collectionView {
+        case self.collectionView:
+            return images.count
+        case self.categoryCollectionView:
+            return categoryModel.count
+        default:
+            return 0
+        }
     }
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AdCollectionViewCell", for: indexPath) as! AdCollectionViewCell
-        cell.setData(images[indexPath.row])
-        return cell
+        switch collectionView {
+        case self.collectionView:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AdCollectionViewCell", for: indexPath) as! AdCollectionViewCell
+            cell.setData(images[indexPath.row])
+            return cell
+        case self.categoryCollectionView:
+            let cell = categoryCollectionView.dequeueReusableCell(withReuseIdentifier: "HomeCategoryCollectionViewCell", for: indexPath) as! HomeCategoryCollectionViewCell
+            let cellData = categoryModel.itemAt(indexPath.row)
+            cell.setData(cellData)
+            return cell
+        default:
+            let cell = UICollectionViewCell()
+            return cell
+        }
     }
     
     // collectionView 스크롤 끝났을 때 페이지 체크
@@ -101,7 +136,14 @@ extension TopViewController: UICollectionViewDelegate, UICollectionViewDataSourc
 extension TopViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.size.width, height: collectionView.frame.size.height)
+        switch collectionView {
+        case self.collectionView:
+            return CGSize(width: collectionView.frame.size.width, height: collectionView.frame.size.height)
+        case self.categoryCollectionView:
+            return CGSize(width: 80, height: collectionView.frame.size.height)
+        default:
+            return CGSize(width: collectionView.frame.size.width, height: collectionView.frame.size.height)
+        }
     }
     
 }

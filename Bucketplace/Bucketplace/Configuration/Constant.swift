@@ -6,6 +6,6 @@
 //
 
 class Constant {
-    static var firstFlag = true
+    static var firstFlag = false
     static let BASE_URL = "https://ozip.shop"
 }

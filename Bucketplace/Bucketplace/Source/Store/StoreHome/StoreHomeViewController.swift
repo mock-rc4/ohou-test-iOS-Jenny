@@ -19,7 +19,6 @@ class StoreHomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
-        //setupCategory()
         setupPageControl()
         bannerTimer()
     }

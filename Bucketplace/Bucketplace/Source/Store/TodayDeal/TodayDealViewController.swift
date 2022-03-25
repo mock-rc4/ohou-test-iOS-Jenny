@@ -11,6 +11,7 @@ class TodayDealViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .mainBlue
         setupControllers()
     }
     
