@@ -52,7 +52,7 @@ extension TodayDealViewController: UICollectionViewDelegate, UICollectionViewDat
 
 extension TodayDealViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: view.bounds.width, height: 160)
+        return CGSize(width: view.bounds.width, height: 140)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.size.width, height: 200)

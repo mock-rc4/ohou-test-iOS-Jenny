@@ -10,11 +10,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TodayDealHeaderCollectionReusableView" id="U6b-Vx-4bR" customClass="TodayDealHeaderCollectionReusableView" customModule="Bucketplace" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="400" height="200"/>
+            <rect key="frame" x="0.0" y="0.0" width="400" height="140"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="todaydeal" translatesAutoresizingMaskIntoConstraints="NO" id="deY-3m-P7P">
-                    <rect key="frame" x="0.0" y="20" width="400" height="140"/>
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="140"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="140" id="HJw-6m-0Lc"/>
                     </constraints>
@@ -23,7 +23,7 @@
             <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="deY-3m-P7P" secondAttribute="trailing" id="Mtj-Mg-uF7"/>
-                <constraint firstItem="deY-3m-P7P" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="20" id="oAT-a2-koJ"/>
+                <constraint firstItem="deY-3m-P7P" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="oAT-a2-koJ"/>
                 <constraint firstItem="deY-3m-P7P" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="pQM-0s-gNV"/>
                 <constraint firstItem="deY-3m-P7P" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="uo8-N7-hWb"/>
             </constraints>
