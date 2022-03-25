@@ -43,6 +43,12 @@
 		A9BC5C4127E70F5600D91901 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BC5C3F27E70F5600D91901 /* LoginViewController.swift */; };
 		A9BC5C4727E716C000D91901 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BC5C4627E716C000D91901 /* HomeViewController.swift */; };
 		A9BC5C4927E716EB00D91901 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9BC5C4827E716EB00D91901 /* Home.storyboard */; };
+		A9EA077B27EDAC5D00158FCF /* HomeFirstResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA077A27EDAC5D00158FCF /* HomeFirstResponse.swift */; };
+		A9EA077E27EDAE0F00158FCF /* HomeFirstDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA077D27EDAE0F00158FCF /* HomeFirstDataManager.swift */; };
+		A9EA078227EDBF1400158FCF /* HomeSecondDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA078127EDBF1400158FCF /* HomeSecondDataManager.swift */; };
+		A9EA078427EDBF2100158FCF /* HomeSecondResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA078327EDBF2100158FCF /* HomeSecondResponse.swift */; };
+		A9EA078627EDC13500158FCF /* HomeThirdResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA078527EDC13500158FCF /* HomeThirdResponse.swift */; };
+		A9EA078827EDC15600158FCF /* HomeThirdDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA078727EDC15600158FCF /* HomeThirdDataManager.swift */; };
 		A9EA67AF27E863B1001B1C68 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9EA67AE27E863B1001B1C68 /* Login.storyboard */; };
 		A9EA67B227E86BBE001B1C68 /* SecretKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA67B127E86BBE001B1C68 /* SecretKey.swift */; };
 		A9EA67B727E8811F001B1C68 /* AdCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA67B527E8811F001B1C68 /* AdCollectionViewCell.swift */; };
@@ -113,6 +119,12 @@
 		A9BC5C3F27E70F5600D91901 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A9BC5C4627E716C000D91901 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A9BC5C4827E716EB00D91901 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		A9EA077A27EDAC5D00158FCF /* HomeFirstResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFirstResponse.swift; sourceTree = "<group>"; };
+		A9EA077D27EDAE0F00158FCF /* HomeFirstDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFirstDataManager.swift; sourceTree = "<group>"; };
+		A9EA078127EDBF1400158FCF /* HomeSecondDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSecondDataManager.swift; sourceTree = "<group>"; };
+		A9EA078327EDBF2100158FCF /* HomeSecondResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSecondResponse.swift; sourceTree = "<group>"; };
+		A9EA078527EDC13500158FCF /* HomeThirdResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeThirdResponse.swift; sourceTree = "<group>"; };
+		A9EA078727EDC15600158FCF /* HomeThirdDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeThirdDataManager.swift; sourceTree = "<group>"; };
 		A9EA67AE27E863B1001B1C68 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		A9EA67B127E86BBE001B1C68 /* SecretKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretKey.swift; sourceTree = "<group>"; };
 		A9EA67B527E8811F001B1C68 /* AdCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -180,6 +192,7 @@
 			children = (
 				A9FFE49B27EB1715004F3B33 /* Entity */,
 				A9FFE49A27EB1709004F3B33 /* Model */,
+				A9EA077C27EDADF800158FCF /* DataManager */,
 				A90B1C0427E89CC3007A70D0 /* TopViewController.xib */,
 				A90B1C0327E89CC3007A70D0 /* TopViewController.swift */,
 				A9FFE4BA27EDA045004F3B33 /* HomeCategoryCollectionViewCell.xib */,
@@ -368,6 +381,16 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		A9EA077C27EDADF800158FCF /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				A9EA077D27EDAE0F00158FCF /* HomeFirstDataManager.swift */,
+				A9EA078127EDBF1400158FCF /* HomeSecondDataManager.swift */,
+				A9EA078727EDC15600158FCF /* HomeThirdDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
 		A9EA67B027E86BAE001B1C68 /* Secret */ = {
 			isa = PBXGroup;
 			children = (
@@ -428,6 +451,9 @@
 			isa = PBXGroup;
 			children = (
 				A9FFE49E27EB1790004F3B33 /* Category.swift */,
+				A9EA077A27EDAC5D00158FCF /* HomeFirstResponse.swift */,
+				A9EA078327EDBF2100158FCF /* HomeSecondResponse.swift */,
+				A9EA078527EDC13500158FCF /* HomeThirdResponse.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -573,9 +599,11 @@
 				A9FFE47E27EAD367004F3B33 /* StoreTabManViewController.swift in Sources */,
 				A9FFE4A527EC6E35004F3B33 /* LoginKey.swift in Sources */,
 				A9FFE49F27EB1790004F3B33 /* Category.swift in Sources */,
+				A9EA077B27EDAC5D00158FCF /* HomeFirstResponse.swift in Sources */,
 				A9BC5C4127E70F5600D91901 /* LoginViewController.swift in Sources */,
 				A90B1C1927E89F1B007A70D0 /* QnAViewController.swift in Sources */,
 				A9A6621E27E5F7C90081064C /* TabBarController.swift in Sources */,
+				A9EA077E27EDAE0F00158FCF /* HomeFirstDataManager.swift in Sources */,
 				A90B1C1527E89F12007A70D0 /* KnowHowViewController.swift in Sources */,
 				A9BC5C2427E6FDAF00D91901 /* UIColor.swift in Sources */,
 				A9FFE46027E9D88C004F3B33 /* KakaoDataManager.swift in Sources */,
@@ -586,6 +614,7 @@
 				A9FFE4BB27EDA045004F3B33 /* HomeCategoryCollectionViewCell.swift in Sources */,
 				A9A6621A27E5F7C90081064C /* AppDelegate.swift in Sources */,
 				A9FFE47027EA050B004F3B33 /* SignInDataManager.swift in Sources */,
+				A9EA078427EDBF2100158FCF /* HomeSecondResponse.swift in Sources */,
 				A9BC5C4727E716C000D91901 /* HomeViewController.swift in Sources */,
 				A9BC5C2227E6FDA800D91901 /* String.swift in Sources */,
 				A9FFE45E27E9D3CE004F3B33 /* MyPageViewController.swift in Sources */,
@@ -600,6 +629,7 @@
 				A9FFE46827E9EAA4004F3B33 /* SignUpRequest.swift in Sources */,
 				A90B1C0D27E89EFB007A70D0 /* PhotoViewController.swift in Sources */,
 				A9FFE4AB27EC8D62004F3B33 /* TabManIndex.swift in Sources */,
+				A9EA078627EDC13500158FCF /* HomeThirdResponse.swift in Sources */,
 				A9EA67B227E86BBE001B1C68 /* SecretKey.swift in Sources */,
 				A9BC5C3727E7008C00D91901 /* ProfileViewController.swift in Sources */,
 				A90B1BEE27E89947007A70D0 /* HomeTabManViewController.swift in Sources */,
@@ -614,6 +644,8 @@
 				A9FFE4AF27ECA026004F3B33 /* TodayDealViewController.swift in Sources */,
 				A90B1C2127E986DF007A70D0 /* SignUpViewController.swift in Sources */,
 				A9FFE47327EA1AD4004F3B33 /* StoreViewController.swift in Sources */,
+				A9EA078827EDC15600158FCF /* HomeThirdDataManager.swift in Sources */,
+				A9EA078227EDBF1400158FCF /* HomeSecondDataManager.swift in Sources */,
 				A9FFE46627E9E93B004F3B33 /* SignUpDataManager.swift in Sources */,
 				A9BC5C2627E6FDB700D91901 /* UINavigationController.swift in Sources */,
 				A9FFE46427E9DE14004F3B33 /* KakaoResponse.swift in Sources */,
@@ -764,6 +796,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52NJTCXWCX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Bucketplace/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -792,6 +825,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52NJTCXWCX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Bucketplace/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

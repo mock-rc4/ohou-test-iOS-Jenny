@@ -26,6 +26,7 @@ class TopViewController: UIViewController {
         setupCategoryCollectionView()
         setupPageControl()
         bannerTimer()
+        setupSections()
     }
     
     // 광고 배너 넣는 collectionView 설정
@@ -65,7 +66,62 @@ class TopViewController: UIViewController {
         collectionView.scrollToItem(at: NSIndexPath(item: nowPage, section: 0) as IndexPath, at: .right, animated: true)
     }
     
-    // MARK: 집들이로 화면 전환
+    // MARK: Sections
+    lazy var homeFirstDataManager = HomeFirstDataManager()
+    lazy var homeSecondDataManager = HomeSecondDataManager()
+    lazy var homeThirdDataManager = HomeThirdDataManager()
+    
+    @IBOutlet weak var f_img1: UIImageView!
+    @IBOutlet weak var f_img2: UIImageView!
+    @IBOutlet weak var f_img3: UIImageView!
+    @IBOutlet weak var f_img4: UIImageView!
+    
+    @IBOutlet weak var f_label1: UILabel!
+    @IBOutlet weak var f_label2: UILabel!
+    @IBOutlet weak var f_label3: UILabel!
+    @IBOutlet weak var f_label4: UILabel!
+    
+    @IBOutlet weak var s_img1: UIImageView!
+    @IBOutlet weak var s_img2: UIImageView!
+    @IBOutlet weak var s_img3: UIImageView!
+    @IBOutlet weak var s_img4: UIImageView!
+    
+    @IBOutlet weak var s_label1: UILabel!
+    @IBOutlet weak var s_label2: UILabel!
+    @IBOutlet weak var s_label3: UILabel!
+    @IBOutlet weak var s_label4: UILabel!
+    
+    @IBOutlet weak var t_img1: UIImageView!
+    @IBOutlet weak var t_img2: UIImageView!
+    @IBOutlet weak var t_img3: UIImageView!
+    @IBOutlet weak var t_img4: UIImageView!
+    
+    @IBOutlet weak var t_label1: UILabel!
+    @IBOutlet weak var t_label2: UILabel!
+    @IBOutlet weak var t_label3: UILabel!
+    @IBOutlet weak var t_label4: UILabel!
+    
+    var firstImgs: [UIImageView]!
+    var firstLabels: [UILabel]!
+    var secondImgs: [UIImageView]!
+    var secondLabels: [UILabel]!
+    var thirdImgs: [UIImageView]!
+    var thirdLabels: [UILabel]!
+    
+    private func setupSections() {
+        self.firstImgs = [f_img1, f_img2, f_img3, f_img4]
+        self.firstLabels = [f_label1, f_label2, f_label3, f_label4]
+        self.secondImgs = [s_img1, s_img2, s_img3, s_img4]
+        self.secondLabels = [s_label1, s_label2, s_label3, s_label4]
+        self.thirdImgs = [t_img1, t_img2, t_img3, t_img4]
+        self.thirdLabels = [t_label1, t_label2, t_label3, t_label4]
+        self.showIndicator()
+        self.homeFirstDataManager.getHomeFirst(self)
+        self.homeSecondDataManager.getHomeSecond(self)
+        self.homeThirdDataManager.getHomeThird(self)
+    }
+    
+    // 집들이로 화면전환
     @IBAction func moreBtnClick(_ sender: Any) {
         TabManIndex.shared.index = 3
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TabBarController")
@@ -90,6 +146,43 @@ class TopViewController: UIViewController {
         self.presentNVC(vc)
     }
     
+}
+
+extension TopViewController {
+    func didSuccessFirst(_ result: HomeFirstResponse) {
+        let firstInfo = result.result
+        for i in 0 ... 3 {
+            setupView(firstInfo[i].thumbnailUrl, self.firstImgs[i])
+            firstLabels[i].text = firstInfo[i].description + firstInfo[i].title
+        }
+    }
+    
+    func didSuccessSecond(_ result: HomeSecondResponse) {
+        let secondInfo = result.result
+        for i in 0 ... 3 {
+            setupView(secondInfo[i].thumbnailUrl, self.secondImgs[i])
+            secondLabels[i].text = secondInfo[i].description + secondInfo[i].title
+        }
+    }
+    
+    func didSuccessThird(_ result: HomeThirdResponse) {
+        let thirdInfo = result.result
+        for i in 0 ... 3 {
+            setupView(thirdInfo[i].thumbnailUrl, self.thirdImgs[i])
+            thirdLabels[i].text = thirdInfo[i].description + thirdInfo[i].title
+        }
+        self.dismissIndicator()
+    }
+    
+    func failedToFirst(_ error: String) {
+        print("❌ \(error)")
+    }
+    
+    private func setupView (_ urlImg: String, _ img: UIImageView) {
+        let url = URL(string: urlImg)
+        let data = try? Data(contentsOf: url!)
+        img.image = UIImage(data: data!)
+    }
 }
 
 // MARK: collectionView 설정
