@@ -8,6 +8,7 @@
 import UIKit
 
 import Pageboy
+import SnapKit
 import Tabman
 
 class StoreTabManViewController: TabmanViewController {

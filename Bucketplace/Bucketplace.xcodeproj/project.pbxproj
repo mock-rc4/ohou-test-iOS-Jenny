@@ -54,6 +54,10 @@
 		A9EA079327EDD5B200158FCF /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA079227EDD5B200158FCF /* Functions.swift */; };
 		A9EA079727EDDD7F00158FCF /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA079527EDDD7F00158FCF /* CategoryViewController.swift */; };
 		A9EA079827EDDD7F00158FCF /* CategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9EA079627EDDD7F00158FCF /* CategoryViewController.xib */; };
+		A9EA079D27EDEF8900158FCF /* TodayDealCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA079B27EDEF8900158FCF /* TodayDealCollectionViewCell.swift */; };
+		A9EA079E27EDEF8900158FCF /* TodayDealCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9EA079C27EDEF8900158FCF /* TodayDealCollectionViewCell.xib */; };
+		A9EA07A127EDF43100158FCF /* TodayDealHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA079F27EDF43100158FCF /* TodayDealHeaderCollectionReusableView.swift */; };
+		A9EA07A227EDF43100158FCF /* TodayDealHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9EA07A027EDF43100158FCF /* TodayDealHeaderCollectionReusableView.xib */; };
 		A9EA67AF27E863B1001B1C68 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9EA67AE27E863B1001B1C68 /* Login.storyboard */; };
 		A9EA67B227E86BBE001B1C68 /* SecretKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA67B127E86BBE001B1C68 /* SecretKey.swift */; };
 		A9EA67B727E8811F001B1C68 /* AdCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA67B527E8811F001B1C68 /* AdCollectionViewCell.swift */; };
@@ -135,6 +139,10 @@
 		A9EA079227EDD5B200158FCF /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		A9EA079527EDDD7F00158FCF /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		A9EA079627EDDD7F00158FCF /* CategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryViewController.xib; sourceTree = "<group>"; };
+		A9EA079B27EDEF8900158FCF /* TodayDealCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayDealCollectionViewCell.swift; sourceTree = "<group>"; };
+		A9EA079C27EDEF8900158FCF /* TodayDealCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayDealCollectionViewCell.xib; sourceTree = "<group>"; };
+		A9EA079F27EDF43100158FCF /* TodayDealHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayDealHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		A9EA07A027EDF43100158FCF /* TodayDealHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayDealHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
 		A9EA67AE27E863B1001B1C68 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		A9EA67B127E86BBE001B1C68 /* SecretKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretKey.swift; sourceTree = "<group>"; };
 		A9EA67B527E8811F001B1C68 /* AdCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -518,6 +526,10 @@
 			children = (
 				A9FFE4AE27ECA025004F3B33 /* TodayDealViewController.xib */,
 				A9FFE4AD27ECA025004F3B33 /* TodayDealViewController.swift */,
+				A9EA079C27EDEF8900158FCF /* TodayDealCollectionViewCell.xib */,
+				A9EA079B27EDEF8900158FCF /* TodayDealCollectionViewCell.swift */,
+				A9EA07A027EDF43100158FCF /* TodayDealHeaderCollectionReusableView.xib */,
+				A9EA079F27EDF43100158FCF /* TodayDealHeaderCollectionReusableView.swift */,
 			);
 			path = TodayDeal;
 			sourceTree = "<group>";
@@ -591,12 +603,14 @@
 				A9FFE4BC27EDA045004F3B33 /* HomeCategoryCollectionViewCell.xib in Resources */,
 				A90B1C0A27E89EEF007A70D0 /* FollowingViewController.xib in Resources */,
 				A9A6622327E5F7CA0081064C /* Assets.xcassets in Resources */,
+				A9EA079E27EDEF8900158FCF /* TodayDealCollectionViewCell.xib in Resources */,
 				A90B1C1627E89F12007A70D0 /* KnowHowViewController.xib in Resources */,
 				A9EA67AF27E863B1001B1C68 /* Login.storyboard in Resources */,
 				A9FFE49127EAE2A3004F3B33 /* StoreAdCollectionViewCell.xib in Resources */,
 				A9BC5C4927E716EB00D91901 /* Home.storyboard in Resources */,
 				A9A6622127E5F7C90081064C /* Main.storyboard in Resources */,
 				A9EA079827EDDD7F00158FCF /* CategoryViewController.xib in Resources */,
+				A9EA07A227EDF43100158FCF /* TodayDealHeaderCollectionReusableView.xib in Resources */,
 				A9EA67B827E8811F001B1C68 /* AdCollectionViewCell.xib in Resources */,
 				A9FFE47527EACB8C004F3B33 /* Store.storyboard in Resources */,
 				A9BC5C3D27E7021E00D91901 /* MyPage.storyboard in Resources */,
@@ -658,8 +672,10 @@
 				A9EA079327EDD5B200158FCF /* Functions.swift in Sources */,
 				A9EA077B27EDAC5D00158FCF /* HomeFirstResponse.swift in Sources */,
 				A9BC5C4127E70F5600D91901 /* LoginViewController.swift in Sources */,
+				A9EA07A127EDF43100158FCF /* TodayDealHeaderCollectionReusableView.swift in Sources */,
 				A90B1C1927E89F1B007A70D0 /* QnAViewController.swift in Sources */,
 				A9A6621E27E5F7C90081064C /* TabBarController.swift in Sources */,
+				A9EA079D27EDEF8900158FCF /* TodayDealCollectionViewCell.swift in Sources */,
 				A9EA077E27EDAE0F00158FCF /* HomeFirstDataManager.swift in Sources */,
 				A90B1C1527E89F12007A70D0 /* KnowHowViewController.swift in Sources */,
 				A9BC5C2427E6FDAF00D91901 /* UIColor.swift in Sources */,

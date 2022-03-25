@@ -91,7 +91,7 @@ extension LoginViewController {
             } else {
                 print("🟨 로그인 성공")
                 self.dataManager.getKakaoLogin(oauthToken?.accessToken ?? "")
-                print(oauthToken?.accessToken)
+                //print(oauthToken?.accessToken)
                 self.getUserInfo()
                 self.dismiss(animated: false)
             }
