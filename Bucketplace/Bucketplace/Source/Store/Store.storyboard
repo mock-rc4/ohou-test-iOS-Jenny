@@ -1382,6 +1382,7 @@
                     </view>
                     <size key="freeformSize" width="414" height="3200"/>
                     <connections>
+                        <outlet property="categoryView" destination="Hjs-f4-a3a" id="e7K-AM-mbs"/>
                         <outlet property="collectionView" destination="rpF-6E-O6r" id="Umr-iJ-UR9"/>
                         <outlet property="pageControl" destination="J5E-4J-Xge" id="YsN-nu-3Ez"/>
                     </connections>

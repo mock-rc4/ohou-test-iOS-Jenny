@@ -20,8 +20,11 @@ class TopViewController: UIViewController {
     
     var images:[String] = ["광고1", "광고2", "광고3","광고4"]
     
+    @IBOutlet weak var topScrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        topScrollView.delegate = self
         setupCollectionView()
         setupCategoryCollectionView()
         setupPageControl()
@@ -108,6 +111,9 @@ class TopViewController: UIViewController {
     var thirdImgs: [UIImageView]!
     var thirdLabels: [UILabel]!
     
+    var secondFlag = false
+    var thirdFlag = false
+    
     private func setupSections() {
         self.firstImgs = [f_img1, f_img2, f_img3, f_img4]
         self.firstLabels = [f_label1, f_label2, f_label3, f_label4]
@@ -117,8 +123,6 @@ class TopViewController: UIViewController {
         self.thirdLabels = [t_label1, t_label2, t_label3, t_label4]
         self.showIndicator()
         self.homeFirstDataManager.getHomeFirst(self)
-        self.homeSecondDataManager.getHomeSecond(self)
-        self.homeThirdDataManager.getHomeThird(self)
     }
     
     // 집들이로 화면전환
@@ -155,6 +159,7 @@ extension TopViewController {
             Functions.shared.urlToImg(firstInfo[i].thumbnailUrl, self.firstImgs[i])
             firstLabels[i].text = firstInfo[i].description + firstInfo[i].title
         }
+        self.dismissIndicator()
     }
     
     func didSuccessSecond(_ result: HomeSecondResponse) {
@@ -163,6 +168,7 @@ extension TopViewController {
             Functions.shared.urlToImg(secondInfo[i].thumbnailUrl, self.secondImgs[i])
             secondLabels[i].text = secondInfo[i].description + secondInfo[i].title
         }
+        self.dismissIndicator()
     }
     
     func didSuccessThird(_ result: HomeThirdResponse) {
@@ -212,13 +218,6 @@ extension TopViewController: UICollectionViewDelegate, UICollectionViewDataSourc
         }
     }
     
-    // collectionView 스크롤 끝났을 때 페이지 체크
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        nowPage = Int(scrollView.contentOffset.x) / Int(scrollView.frame.width)
-        // 가로 사이즈 = 300 일 경우,
-        // 컨텐츠의 x위치 0/300 = 0 (0번째 페이지) | 1/300 = 1 (1번째 페이지) | 2/300 = 2 (2번째 페이지)
-    }
-    
 }
 
 extension TopViewController: UICollectionViewDelegateFlowLayout {
@@ -236,15 +235,23 @@ extension TopViewController: UICollectionViewDelegateFlowLayout {
     
 }
 
-// MARK: PageControl 설정
+
 extension TopViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let width = scrollView.bounds.size.width
-        // 좌표 보정을 위해 절반의 너비 더해줌
-        let x = scrollView.contentOffset.x + (width / 2)
-        let newPage = Int(x / width)
-        if pageControl.currentPage != newPage {
-            pageControl.currentPage = newPage
+        if secondFlag == false {
+            if ((topScrollView.contentOffset.y) >= 290) {
+                self.showIndicator()
+                self.homeSecondDataManager.getHomeSecond(self)
+                secondFlag = true
+            }
+        }
+        if thirdFlag == false {
+            if (topScrollView.contentOffset.y) >= 870 {
+                self.showIndicator()
+                self.homeThirdDataManager.getHomeThird(self)
+                thirdFlag = true
+            }
         }
     }
 }
+

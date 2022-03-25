@@ -52,6 +52,8 @@
 		A9EA078C27EDD1CE00158FCF /* ProfileResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA078B27EDD1CE00158FCF /* ProfileResponse.swift */; };
 		A9EA078E27EDD2C800158FCF /* ProfileDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA078D27EDD2C800158FCF /* ProfileDataManager.swift */; };
 		A9EA079327EDD5B200158FCF /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA079227EDD5B200158FCF /* Functions.swift */; };
+		A9EA079727EDDD7F00158FCF /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA079527EDDD7F00158FCF /* CategoryViewController.swift */; };
+		A9EA079827EDDD7F00158FCF /* CategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9EA079627EDDD7F00158FCF /* CategoryViewController.xib */; };
 		A9EA67AF27E863B1001B1C68 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9EA67AE27E863B1001B1C68 /* Login.storyboard */; };
 		A9EA67B227E86BBE001B1C68 /* SecretKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA67B127E86BBE001B1C68 /* SecretKey.swift */; };
 		A9EA67B727E8811F001B1C68 /* AdCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA67B527E8811F001B1C68 /* AdCollectionViewCell.swift */; };
@@ -131,6 +133,8 @@
 		A9EA078B27EDD1CE00158FCF /* ProfileResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileResponse.swift; sourceTree = "<group>"; };
 		A9EA078D27EDD2C800158FCF /* ProfileDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataManager.swift; sourceTree = "<group>"; };
 		A9EA079227EDD5B200158FCF /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		A9EA079527EDDD7F00158FCF /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		A9EA079627EDDD7F00158FCF /* CategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryViewController.xib; sourceTree = "<group>"; };
 		A9EA67AE27E863B1001B1C68 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		A9EA67B127E86BBE001B1C68 /* SecretKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretKey.swift; sourceTree = "<group>"; };
 		A9EA67B527E8811F001B1C68 /* AdCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -259,6 +263,7 @@
 				A9FFE47227EA1AD4004F3B33 /* StoreViewController.swift */,
 				A9FFE47D27EAD367004F3B33 /* StoreTabManViewController.swift */,
 				A9FFE47F27EAD464004F3B33 /* StoreHome */,
+				A9EA079427EDDBE300158FCF /* StoreCategory */,
 				A9FFE4AC27ECA005004F3B33 /* TodayDeal */,
 			);
 			path = Store;
@@ -432,6 +437,15 @@
 			path = MyShopping;
 			sourceTree = "<group>";
 		};
+		A9EA079427EDDBE300158FCF /* StoreCategory */ = {
+			isa = PBXGroup;
+			children = (
+				A9EA079627EDDD7F00158FCF /* CategoryViewController.xib */,
+				A9EA079527EDDD7F00158FCF /* CategoryViewController.swift */,
+			);
+			path = StoreCategory;
+			sourceTree = "<group>";
+		};
 		A9EA67B027E86BAE001B1C68 /* Secret */ = {
 			isa = PBXGroup;
 			children = (
@@ -582,6 +596,7 @@
 				A9FFE49127EAE2A3004F3B33 /* StoreAdCollectionViewCell.xib in Resources */,
 				A9BC5C4927E716EB00D91901 /* Home.storyboard in Resources */,
 				A9A6622127E5F7C90081064C /* Main.storyboard in Resources */,
+				A9EA079827EDDD7F00158FCF /* CategoryViewController.xib in Resources */,
 				A9EA67B827E8811F001B1C68 /* AdCollectionViewCell.xib in Resources */,
 				A9FFE47527EACB8C004F3B33 /* Store.storyboard in Resources */,
 				A9BC5C3D27E7021E00D91901 /* MyPage.storyboard in Resources */,
@@ -659,6 +674,7 @@
 				A9FFE47027EA050B004F3B33 /* SignInDataManager.swift in Sources */,
 				A9EA078427EDBF2100158FCF /* HomeSecondResponse.swift in Sources */,
 				A9BC5C4727E716C000D91901 /* HomeViewController.swift in Sources */,
+				A9EA079727EDDD7F00158FCF /* CategoryViewController.swift in Sources */,
 				A9EA078C27EDD1CE00158FCF /* ProfileResponse.swift in Sources */,
 				A9BC5C2227E6FDA800D91901 /* String.swift in Sources */,
 				A9FFE45E27E9D3CE004F3B33 /* MyPageViewController.swift in Sources */,

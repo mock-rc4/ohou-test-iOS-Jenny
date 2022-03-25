@@ -38,6 +38,7 @@
                 <outlet property="t_label2" destination="pi4-xi-t8o" id="F5s-ZB-lOh"/>
                 <outlet property="t_label3" destination="dQK-7H-Y0J" id="Dr0-DP-MgL"/>
                 <outlet property="t_label4" destination="bsq-Da-z0R" id="khz-io-Jpj"/>
+                <outlet property="topScrollView" destination="Aa7-aj-uxR" id="fBC-at-fEv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
