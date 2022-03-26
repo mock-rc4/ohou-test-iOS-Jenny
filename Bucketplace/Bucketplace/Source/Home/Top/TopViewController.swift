@@ -121,8 +121,8 @@ class TopViewController: UIViewController {
         self.secondLabels = [s_label1, s_label2, s_label3, s_label4]
         self.thirdImgs = [t_img1, t_img2, t_img3, t_img4]
         self.thirdLabels = [t_label1, t_label2, t_label3, t_label4]
-        self.showIndicator()
-        self.homeFirstDataManager.getHomeFirst(self)
+        //self.showIndicator()
+        //self.homeFirstDataManager.getHomeFirst(self)
     }
     
     // 집들이로 화면전환
