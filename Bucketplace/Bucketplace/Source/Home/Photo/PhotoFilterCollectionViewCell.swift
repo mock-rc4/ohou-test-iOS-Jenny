@@ -9,9 +9,14 @@ import UIKit
 
 class PhotoFilterCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var filterImg: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+    }
+    
+    public func setData(_ data: String) {
+        filterImg.image = UIImage(named: data)
     }
 
 }

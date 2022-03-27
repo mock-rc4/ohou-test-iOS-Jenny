@@ -10,7 +10,7 @@ class PhotoFilterModel {
     public var PhotoFilterStorage:[String] = []
     
     init() {
-        PhotoFilterStorage = []
+        PhotoFilterStorage = ["ph-filter","f1","f2","f3","f4"]
     }
     
     public var count: Int {
