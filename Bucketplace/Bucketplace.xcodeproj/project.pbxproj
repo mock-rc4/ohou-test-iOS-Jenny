@@ -63,6 +63,11 @@
 		A9C9ADB427F05DE80051D469 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADB327F05DE80051D469 /* LeftAlignedCollectionViewFlowLayout.swift */; };
 		A9C9ADB827F063340051D469 /* FeedUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADB727F063340051D469 /* FeedUserResponse.swift */; };
 		A9C9ADBA27F0644A0051D469 /* FeedUserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADB927F0644A0051D469 /* FeedUserDataManager.swift */; };
+		A9C9ADBC27F0702A0051D469 /* FollowResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADBB27F0702A0051D469 /* FollowResponse.swift */; };
+		A9C9ADBE27F0720A0051D469 /* FollowDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADBD27F0720A0051D469 /* FollowDataManager.swift */; };
+		A9C9ADC027F072530051D469 /* FollowRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADBF27F072530051D469 /* FollowRequest.swift */; };
+		A9C9ADC227F074150051D469 /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADC127F074150051D469 /* FollowViewController.swift */; };
+		A9C9ADC427F075490051D469 /* UserId.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADC327F075490051D469 /* UserId.swift */; };
 		A9EA077B27EDAC5D00158FCF /* HomeFirstResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA077A27EDAC5D00158FCF /* HomeFirstResponse.swift */; };
 		A9EA077E27EDAE0F00158FCF /* HomeFirstDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA077D27EDAE0F00158FCF /* HomeFirstDataManager.swift */; };
 		A9EA078227EDBF1400158FCF /* HomeSecondDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA078127EDBF1400158FCF /* HomeSecondDataManager.swift */; };
@@ -168,6 +173,11 @@
 		A9C9ADB327F05DE80051D469 /* LeftAlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftAlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		A9C9ADB727F063340051D469 /* FeedUserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUserResponse.swift; sourceTree = "<group>"; };
 		A9C9ADB927F0644A0051D469 /* FeedUserDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUserDataManager.swift; sourceTree = "<group>"; };
+		A9C9ADBB27F0702A0051D469 /* FollowResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowResponse.swift; sourceTree = "<group>"; };
+		A9C9ADBD27F0720A0051D469 /* FollowDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowDataManager.swift; sourceTree = "<group>"; };
+		A9C9ADBF27F072530051D469 /* FollowRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowRequest.swift; sourceTree = "<group>"; };
+		A9C9ADC127F074150051D469 /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
+		A9C9ADC327F075490051D469 /* UserId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserId.swift; sourceTree = "<group>"; };
 		A9EA077A27EDAC5D00158FCF /* HomeFirstResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFirstResponse.swift; sourceTree = "<group>"; };
 		A9EA077D27EDAE0F00158FCF /* HomeFirstDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFirstDataManager.swift; sourceTree = "<group>"; };
 		A9EA078127EDBF1400158FCF /* HomeSecondDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSecondDataManager.swift; sourceTree = "<group>"; };
@@ -360,6 +370,7 @@
 				A9BC5C1D27E6FD8B00D91901 /* Constant.swift */,
 				A9FFE4AA27EC8D62004F3B33 /* TabManIndex.swift */,
 				A9C9ADAD27F049870051D469 /* FeedId.swift */,
+				A9C9ADC327F075490051D469 /* UserId.swift */,
 				A9EA67B027E86BAE001B1C68 /* Secret */,
 			);
 			path = Configuration;
@@ -503,6 +514,8 @@
 			isa = PBXGroup;
 			children = (
 				A9C9ADB727F063340051D469 /* FeedUserResponse.swift */,
+				A9C9ADBF27F072530051D469 /* FollowRequest.swift */,
+				A9C9ADBB27F0702A0051D469 /* FollowResponse.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -511,6 +524,7 @@
 			isa = PBXGroup;
 			children = (
 				A9C9ADB927F0644A0051D469 /* FeedUserDataManager.swift */,
+				A9C9ADBD27F0720A0051D469 /* FollowDataManager.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -604,6 +618,7 @@
 		A9FFE47627EACE2E004F3B33 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				A9C9ADC127F074150051D469 /* FollowViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -797,6 +812,7 @@
 				A9BC5C4127E70F5600D91901 /* LoginViewController.swift in Sources */,
 				A9C9ADB427F05DE80051D469 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
 				A9EA07A127EDF43100158FCF /* TodayDealHeaderCollectionReusableView.swift in Sources */,
+				A9C9ADBE27F0720A0051D469 /* FollowDataManager.swift in Sources */,
 				A90B1C1927E89F1B007A70D0 /* QnAViewController.swift in Sources */,
 				A9A6621E27E5F7C90081064C /* TabBarController.swift in Sources */,
 				A9C9ADA227F02F1A0051D469 /* PhotoListDataManager.swift in Sources */,
@@ -828,6 +844,7 @@
 				A90B1C1127E89F06007A70D0 /* HousewarmingViewController.swift in Sources */,
 				A90B1C2527E9B2FA007A70D0 /* LoginNavigationController.swift in Sources */,
 				A90B1C1F27E986BF007A70D0 /* SignInViewController.swift in Sources */,
+				A9C9ADC027F072530051D469 /* FollowRequest.swift in Sources */,
 				A9FFE48D27EAE07F004F3B33 /* StoreHomeViewController.swift in Sources */,
 				A9C9ADAE27F049870051D469 /* FeedId.swift in Sources */,
 				A9FFE49027EAE2A3004F3B33 /* StoreAdCollectionViewCell.swift in Sources */,
@@ -848,8 +865,10 @@
 				A9FFE46C27E9F335004F3B33 /* SignUpResponse.swift in Sources */,
 				A90B1C0927E89EEF007A70D0 /* FollowingViewController.swift in Sources */,
 				A9BC5C1E27E6FD8B00D91901 /* Constant.swift in Sources */,
+				A9C9ADC227F074150051D469 /* FollowViewController.swift in Sources */,
 				A9BC5C2827E6FDBF00D91901 /* UIViewController.swift in Sources */,
 				A9FFE4A127EB28B8004F3B33 /* UIView.swift in Sources */,
+				A9C9ADBC27F0702A0051D469 /* FollowResponse.swift in Sources */,
 				A9FFE46E27EA0500004F3B33 /* SignInRequest.swift in Sources */,
 				A9FFE4AF27ECA026004F3B33 /* TodayDealViewController.swift in Sources */,
 				A90B1C2127E986DF007A70D0 /* SignUpViewController.swift in Sources */,
@@ -857,6 +876,7 @@
 				A9EA078827EDC15600158FCF /* HomeThirdDataManager.swift in Sources */,
 				A9C9ADB827F063340051D469 /* FeedUserResponse.swift in Sources */,
 				A9EA078227EDBF1400158FCF /* HomeSecondDataManager.swift in Sources */,
+				A9C9ADC427F075490051D469 /* UserId.swift in Sources */,
 				A9C9ADBA27F0644A0051D469 /* FeedUserDataManager.swift in Sources */,
 				A9FFE46627E9E93B004F3B33 /* SignUpDataManager.swift in Sources */,
 				A9BC5C2627E6FDB700D91901 /* UINavigationController.swift in Sources */,

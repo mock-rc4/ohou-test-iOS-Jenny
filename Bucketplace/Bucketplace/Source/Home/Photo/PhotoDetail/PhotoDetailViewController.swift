@@ -7,11 +7,13 @@
 
 import UIKit
 
-class PhotoDetailViewController: UIViewController {
+class PhotoDetailViewController: FollowViewController {
 
     lazy var photoDetailDataManager = PhotoDetailDataManager()
     lazy var feedUserDataManager = FeedUserDataManager()
+    lazy var followDataManager = FollowDataManager()
     let feedId = FeedId.shared.feedId
+    var userId = UserId.shared.userId
     
     @IBOutlet weak var homeType: UILabel!
     @IBOutlet weak var thumailImg: UIImageView!
@@ -33,7 +35,8 @@ class PhotoDetailViewController: UIViewController {
     }
     
     @IBAction func followBtnClick(_ sender: Any) {
-        
+        let followId = userId
+        self.followDataManager.postFollow(FollowRequest(userId: followId), self)
     }
     
 }
@@ -45,6 +48,7 @@ extension PhotoDetailViewController {
         self.feedUserDataManager.getFeedUser(feedId, self)
     }
     func didSuccessFeedUser(_ result: FeedUserResponse) {
+        userId = result.result.userId
         Functions.shared.urlToImg(result.result.profileImageUrl, feedUserImg)
         let url = URL(string: result.result.profileImageUrl)
         let data = try? Data(contentsOf: url!)
