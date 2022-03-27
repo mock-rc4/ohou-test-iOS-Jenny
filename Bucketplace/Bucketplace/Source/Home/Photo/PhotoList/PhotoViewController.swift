@@ -42,7 +42,6 @@ extension PhotoViewController {
     func failedToRequest(_ message: String) {
         self.presentAlert(title: message)
     }
-    
 }
 
 // MARK: CollectionView Layout 설정
@@ -142,6 +141,16 @@ extension PhotoViewController: UICollectionViewDelegate, UICollectionViewDataSou
             return cell
         default:
             return UICollectionViewCell()
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        switch indexPath.section {
+        case 2:
+            FeedId.shared.feedId = self.photoListInfo.result[indexPath.row].baseInformation.feedId
+            self.presentNVC(PhotoDetailViewController())
+        default:
+            print("NOPE!")
         }
     }
 }

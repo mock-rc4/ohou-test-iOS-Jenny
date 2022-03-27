@@ -12,7 +12,7 @@ extension UIViewController {
     // MARK: 네비게이션 포함 화면 전환
     func presentNVC( _ vc: UIViewController) {
         vc.modalPresentationStyle = .fullScreen
-        self.navigationController?.pushViewController(vc, animated: false)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     // MARK: 그냥 화면 전환
