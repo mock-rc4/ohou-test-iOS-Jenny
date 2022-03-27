@@ -14,6 +14,7 @@ class PhotoDetailViewController: FollowViewController {
     lazy var followDataManager = FollowDataManager()
     let feedId = FeedId.shared.feedId
     var userId = UserId.shared.userId
+    var followFlag: Int = 0
     
     @IBOutlet weak var homeType: UILabel!
     @IBOutlet weak var thumailImg: UIImageView!
@@ -27,6 +28,7 @@ class PhotoDetailViewController: FollowViewController {
     @IBOutlet weak var feedUserImg: UIImageView!
     @IBOutlet weak var feedUserName: UILabel!
     @IBOutlet weak var time: UILabel!
+    @IBOutlet weak var followBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +38,17 @@ class PhotoDetailViewController: FollowViewController {
     
     @IBAction func followBtnClick(_ sender: Any) {
         let followId = userId
+        if followFlag == 0 {
         self.followDataManager.postFollow(FollowRequest(userId: followId), self)
+            followBtn.setTitle("팔로잉", for: .normal)
+            followBtn.backgroundColor = .lightGray
+            followFlag = 1
+        } else {
+            self.followDataManager.unFollow(FollowRequest(userId: followId), self)
+            followBtn.setTitle("팔로우", for: .normal)
+            followBtn.backgroundColor = .mainBlue
+            followFlag = 0
+        }
     }
     
 }
@@ -49,6 +61,12 @@ extension PhotoDetailViewController {
     }
     func didSuccessFeedUser(_ result: FeedUserResponse) {
         userId = result.result.userId
+        followFlag = result.result.isFollowed
+        print("📎\(userId)")
+        if followFlag == 1 {
+            followBtn.setTitle("팔로잉", for: .normal)
+            followBtn.backgroundColor = .lightGray
+        }
         Functions.shared.urlToImg(result.result.profileImageUrl, feedUserImg)
         let url = URL(string: result.result.profileImageUrl)
         let data = try? Data(contentsOf: url!)

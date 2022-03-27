@@ -68,6 +68,7 @@
 		A9C9ADC027F072530051D469 /* FollowRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADBF27F072530051D469 /* FollowRequest.swift */; };
 		A9C9ADC227F074150051D469 /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADC127F074150051D469 /* FollowViewController.swift */; };
 		A9C9ADC427F075490051D469 /* UserId.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADC327F075490051D469 /* UserId.swift */; };
+		A9C9ADC627F07F480051D469 /* unFollowResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADC527F07F480051D469 /* unFollowResponse.swift */; };
 		A9EA077B27EDAC5D00158FCF /* HomeFirstResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA077A27EDAC5D00158FCF /* HomeFirstResponse.swift */; };
 		A9EA077E27EDAE0F00158FCF /* HomeFirstDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA077D27EDAE0F00158FCF /* HomeFirstDataManager.swift */; };
 		A9EA078227EDBF1400158FCF /* HomeSecondDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA078127EDBF1400158FCF /* HomeSecondDataManager.swift */; };
@@ -178,6 +179,7 @@
 		A9C9ADBF27F072530051D469 /* FollowRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowRequest.swift; sourceTree = "<group>"; };
 		A9C9ADC127F074150051D469 /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
 		A9C9ADC327F075490051D469 /* UserId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserId.swift; sourceTree = "<group>"; };
+		A9C9ADC527F07F480051D469 /* unFollowResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unFollowResponse.swift; sourceTree = "<group>"; };
 		A9EA077A27EDAC5D00158FCF /* HomeFirstResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFirstResponse.swift; sourceTree = "<group>"; };
 		A9EA077D27EDAE0F00158FCF /* HomeFirstDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFirstDataManager.swift; sourceTree = "<group>"; };
 		A9EA078127EDBF1400158FCF /* HomeSecondDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSecondDataManager.swift; sourceTree = "<group>"; };
@@ -516,6 +518,7 @@
 				A9C9ADB727F063340051D469 /* FeedUserResponse.swift */,
 				A9C9ADBF27F072530051D469 /* FollowRequest.swift */,
 				A9C9ADBB27F0702A0051D469 /* FollowResponse.swift */,
+				A9C9ADC527F07F480051D469 /* unFollowResponse.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -824,6 +827,7 @@
 				A9FFE46A27E9F26E004F3B33 /* SignInResponse.swift in Sources */,
 				A9C9ADB027F04A1F0051D469 /* PhotoDetailResponse.swift in Sources */,
 				A9FFE4B227ECA30B004F3B33 /* UITabBarController.swift in Sources */,
+				A9C9ADC627F07F480051D469 /* unFollowResponse.swift in Sources */,
 				A9BC5C3927E7009D00D91901 /* MyShoppingViewController.swift in Sources */,
 				A9EA67B727E8811F001B1C68 /* AdCollectionViewCell.swift in Sources */,
 				A9C9AD9C27EF3C4E0051D469 /* PhotoFilterModel.swift in Sources */,

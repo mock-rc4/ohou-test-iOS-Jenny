@@ -17,6 +17,10 @@ class FollowViewController: UIViewController {
         self.presentAlert(title: "팔로우가 요청되었습니다.")
     }
     
+    func didSuccessUnFollow(_ result: unFollowResponse) {
+        self.presentAlert(title: "팔로우가 취소되었습니다.")
+    }
+    
     func failedToRequestFollow(_ message: String) {
         self.presentAlert(title: message)
     }
