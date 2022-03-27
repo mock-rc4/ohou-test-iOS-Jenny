@@ -51,6 +51,8 @@
 		A9C9AD9727EF3BDA0051D469 /* PhotoFilterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9C9AD9527EF3BDA0051D469 /* PhotoFilterCollectionViewCell.xib */; };
 		A9C9AD9A27EF3C460051D469 /* PhotoMainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9AD9927EF3C460051D469 /* PhotoMainModel.swift */; };
 		A9C9AD9C27EF3C4E0051D469 /* PhotoFilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9AD9B27EF3C4E0051D469 /* PhotoFilterModel.swift */; };
+		A9C9ADA027F02DF00051D469 /* PhotoListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9AD9F27F02DF00051D469 /* PhotoListResponse.swift */; };
+		A9C9ADA227F02F1A0051D469 /* PhotoListDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADA127F02F1A0051D469 /* PhotoListDataManager.swift */; };
 		A9EA077B27EDAC5D00158FCF /* HomeFirstResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA077A27EDAC5D00158FCF /* HomeFirstResponse.swift */; };
 		A9EA077E27EDAE0F00158FCF /* HomeFirstDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA077D27EDAE0F00158FCF /* HomeFirstDataManager.swift */; };
 		A9EA078227EDBF1400158FCF /* HomeSecondDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA078127EDBF1400158FCF /* HomeSecondDataManager.swift */; };
@@ -144,6 +146,8 @@
 		A9C9AD9527EF3BDA0051D469 /* PhotoFilterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoFilterCollectionViewCell.xib; sourceTree = "<group>"; };
 		A9C9AD9927EF3C460051D469 /* PhotoMainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMainModel.swift; sourceTree = "<group>"; };
 		A9C9AD9B27EF3C4E0051D469 /* PhotoFilterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFilterModel.swift; sourceTree = "<group>"; };
+		A9C9AD9F27F02DF00051D469 /* PhotoListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListResponse.swift; sourceTree = "<group>"; };
+		A9C9ADA127F02F1A0051D469 /* PhotoListDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListDataManager.swift; sourceTree = "<group>"; };
 		A9EA077A27EDAC5D00158FCF /* HomeFirstResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFirstResponse.swift; sourceTree = "<group>"; };
 		A9EA077D27EDAE0F00158FCF /* HomeFirstDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFirstDataManager.swift; sourceTree = "<group>"; };
 		A9EA078127EDBF1400158FCF /* HomeSecondDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSecondDataManager.swift; sourceTree = "<group>"; };
@@ -247,7 +251,9 @@
 		A90B1BF327E89A0C007A70D0 /* Photo */ = {
 			isa = PBXGroup;
 			children = (
-				A9C9AD9827EF3C350051D469 /* Model */,
+				A9C9AD9827EF3C350051D469 /* PhotoModel */,
+				A9C9AD9D27F02DA40051D469 /* PhotoEntity */,
+				A9C9AD9E27F02DAB0051D469 /* PhotoDanaManager */,
 				A90B1C0C27E89EFB007A70D0 /* PhotoViewController.xib */,
 				A90B1C0B27E89EFB007A70D0 /* PhotoViewController.swift */,
 				A9C9AD9127EF3BCA0051D469 /* PhotoMainCollectionViewCell.xib */,
@@ -422,13 +428,29 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		A9C9AD9827EF3C350051D469 /* Model */ = {
+		A9C9AD9827EF3C350051D469 /* PhotoModel */ = {
 			isa = PBXGroup;
 			children = (
 				A9C9AD9927EF3C460051D469 /* PhotoMainModel.swift */,
 				A9C9AD9B27EF3C4E0051D469 /* PhotoFilterModel.swift */,
 			);
-			path = Model;
+			path = PhotoModel;
+			sourceTree = "<group>";
+		};
+		A9C9AD9D27F02DA40051D469 /* PhotoEntity */ = {
+			isa = PBXGroup;
+			children = (
+				A9C9AD9F27F02DF00051D469 /* PhotoListResponse.swift */,
+			);
+			path = PhotoEntity;
+			sourceTree = "<group>";
+		};
+		A9C9AD9E27F02DAB0051D469 /* PhotoDanaManager */ = {
+			isa = PBXGroup;
+			children = (
+				A9C9ADA127F02F1A0051D469 /* PhotoListDataManager.swift */,
+			);
+			path = PhotoDanaManager;
 			sourceTree = "<group>";
 		};
 		A9EA077C27EDADF800158FCF /* TopDataManager */ = {
@@ -704,12 +726,14 @@
 				A9FFE47E27EAD367004F3B33 /* StoreTabManViewController.swift in Sources */,
 				A9FFE4A527EC6E35004F3B33 /* LoginKey.swift in Sources */,
 				A9FFE49F27EB1790004F3B33 /* Category.swift in Sources */,
+				A9C9ADA027F02DF00051D469 /* PhotoListResponse.swift in Sources */,
 				A9EA079327EDD5B200158FCF /* Functions.swift in Sources */,
 				A9EA077B27EDAC5D00158FCF /* HomeFirstResponse.swift in Sources */,
 				A9BC5C4127E70F5600D91901 /* LoginViewController.swift in Sources */,
 				A9EA07A127EDF43100158FCF /* TodayDealHeaderCollectionReusableView.swift in Sources */,
 				A90B1C1927E89F1B007A70D0 /* QnAViewController.swift in Sources */,
 				A9A6621E27E5F7C90081064C /* TabBarController.swift in Sources */,
+				A9C9ADA227F02F1A0051D469 /* PhotoListDataManager.swift in Sources */,
 				A9EA079D27EDEF8900158FCF /* TodayDealCollectionViewCell.swift in Sources */,
 				A9EA077E27EDAE0F00158FCF /* HomeFirstDataManager.swift in Sources */,
 				A90B1C1527E89F12007A70D0 /* KnowHowViewController.swift in Sources */,

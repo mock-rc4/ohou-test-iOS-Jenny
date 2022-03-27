@@ -17,13 +17,12 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mvm-VK-3rq">
-                        <rect key="frame" x="60" y="50" width="200" height="300"/>
+                        <rect key="frame" x="60" y="45" width="200" height="310"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hd" translatesAutoresizingMaskIntoConstraints="NO" id="WJ9-8W-Hlm">
-                                <rect key="frame" x="15" y="10" width="170" height="220"/>
+                                <rect key="frame" x="10" y="10" width="180" height="250"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="220" id="pm9-hR-IuX"/>
-                                    <constraint firstAttribute="width" constant="170" id="xib-Rv-px4"/>
+                                    <constraint firstAttribute="height" constant="250" id="pm9-hR-IuX"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -31,21 +30,28 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="설명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTQ-IS-gQE">
-                                <rect key="frame" x="85.5" y="240" width="29.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="설명" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTQ-IS-gQE">
+                                <rect key="frame" x="10" y="265" width="180" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3WX-YN-wOf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="300" id="4n0-MX-lSx"/>
+                            <constraint firstAttribute="height" constant="310" id="4n0-MX-lSx"/>
                             <constraint firstItem="WJ9-8W-Hlm" firstAttribute="top" secondItem="Mvm-VK-3rq" secondAttribute="top" constant="10" id="5cE-n5-Ezl"/>
                             <constraint firstAttribute="width" constant="200" id="Ovt-lO-fQq"/>
+                            <constraint firstItem="yTQ-IS-gQE" firstAttribute="leading" secondItem="Mvm-VK-3rq" secondAttribute="leading" constant="10" id="TuP-38-bGX"/>
                             <constraint firstItem="WJ9-8W-Hlm" firstAttribute="centerX" secondItem="Mvm-VK-3rq" secondAttribute="centerX" id="bZj-4k-YvY"/>
+                            <constraint firstAttribute="trailing" secondItem="WJ9-8W-Hlm" secondAttribute="trailing" constant="10" id="e56-q8-KL4"/>
                             <constraint firstItem="yTQ-IS-gQE" firstAttribute="centerX" secondItem="WJ9-8W-Hlm" secondAttribute="centerX" id="fAT-7v-Fy4"/>
-                            <constraint firstItem="yTQ-IS-gQE" firstAttribute="top" secondItem="WJ9-8W-Hlm" secondAttribute="bottom" constant="10" id="mux-b1-ItL"/>
+                            <constraint firstItem="WJ9-8W-Hlm" firstAttribute="leading" secondItem="Mvm-VK-3rq" secondAttribute="leading" constant="10" id="miq-ny-1Hw"/>
+                            <constraint firstItem="yTQ-IS-gQE" firstAttribute="top" secondItem="WJ9-8W-Hlm" secondAttribute="bottom" constant="5" id="mux-b1-ItL"/>
+                            <constraint firstAttribute="trailing" secondItem="yTQ-IS-gQE" secondAttribute="trailing" constant="10" id="vOj-lr-Gg5"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -55,6 +61,10 @@
                 <constraint firstItem="Mvm-VK-3rq" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="qIR-zL-ADh"/>
                 <constraint firstItem="Mvm-VK-3rq" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="xle-E9-8D6"/>
             </constraints>
+            <connections>
+                <outlet property="photoDescription" destination="yTQ-IS-gQE" id="8a5-rM-1NK"/>
+                <outlet property="photoImg" destination="WJ9-8W-Hlm" id="T7C-vA-QDe"/>
+            </connections>
             <point key="canvasLocation" x="131.8840579710145" y="109.82142857142857"/>
         </collectionViewCell>
     </objects>

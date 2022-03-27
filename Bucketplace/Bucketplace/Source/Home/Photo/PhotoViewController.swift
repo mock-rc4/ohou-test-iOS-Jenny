@@ -9,6 +9,9 @@ import UIKit
 
 class PhotoViewController: UIViewController {
     
+    lazy var photoListDataManager = PhotoListDataManager()
+    var photoListInfo: PhotoListResponse!
+    
     @IBOutlet weak var collectionView: UICollectionView!
     let MAIN_CELL = "PhotoMainCollectionViewCell"
     let FILTER_CELL = "PhotoFilterCollectionViewCell"
@@ -19,7 +22,25 @@ class PhotoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        getPhotoListAPI()
+    }
+    
+}
+
+// MARK: 사진 목록 API 조회
+extension PhotoViewController {
+    private func getPhotoListAPI() {
+        self.showIndicator()
+        self.photoListDataManager.getPhotoList(self)
+    }
+    func didSuccessPhotoList(_ result: PhotoListResponse) {
+        self.photoListInfo = result
         setupCollectionView()
+        self.dismissIndicator()
+    }
+    
+    func failedToRequest(_ message: String) {
+        self.presentAlert(title: message)
     }
     
 }
@@ -60,9 +81,8 @@ extension PhotoViewController {
             else {
                 let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
                                                       heightDimension: .fractionalHeight(1))
-                print(itemSize)
                 let item = NSCollectionLayoutItem(layoutSize: itemSize)
-                item.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 15)
+                item.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 5, trailing: 15)
                 let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
                                                        heightDimension: .estimated(300))
                 let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,
@@ -98,6 +118,8 @@ extension PhotoViewController: UICollectionViewDelegate, UICollectionViewDataSou
             return photoMainModel.count
         case 1:
             return photoFilterModel.count
+        case 2:
+            return 5
         default:
             return 10
         }
@@ -115,6 +137,8 @@ extension PhotoViewController: UICollectionViewDelegate, UICollectionViewDataSou
             return cell
         case 2:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PHOTO_CELL, for: indexPath) as! PhotoCollectionViewCell
+            let cellData = self.photoListInfo.result[indexPath.row].baseInformation
+            cell.setData([cellData.thumbnailUrl, cellData.description])
             return cell
         default:
             return UICollectionViewCell()
