@@ -69,6 +69,8 @@
 		A9C9ADC227F074150051D469 /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADC127F074150051D469 /* FollowViewController.swift */; };
 		A9C9ADC427F075490051D469 /* UserId.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADC327F075490051D469 /* UserId.swift */; };
 		A9C9ADC627F07F480051D469 /* unFollowResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADC527F07F480051D469 /* unFollowResponse.swift */; };
+		A9C9ADC927F081EC0051D469 /* CoffeeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADC727F081EC0051D469 /* CoffeeCollectionViewCell.swift */; };
+		A9C9ADCA27F081EC0051D469 /* CoffeeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9C9ADC827F081EC0051D469 /* CoffeeCollectionViewCell.xib */; };
 		A9EA077B27EDAC5D00158FCF /* HomeFirstResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA077A27EDAC5D00158FCF /* HomeFirstResponse.swift */; };
 		A9EA077E27EDAE0F00158FCF /* HomeFirstDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA077D27EDAE0F00158FCF /* HomeFirstDataManager.swift */; };
 		A9EA078227EDBF1400158FCF /* HomeSecondDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA078127EDBF1400158FCF /* HomeSecondDataManager.swift */; };
@@ -180,6 +182,8 @@
 		A9C9ADC127F074150051D469 /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
 		A9C9ADC327F075490051D469 /* UserId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserId.swift; sourceTree = "<group>"; };
 		A9C9ADC527F07F480051D469 /* unFollowResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unFollowResponse.swift; sourceTree = "<group>"; };
+		A9C9ADC727F081EC0051D469 /* CoffeeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeCollectionViewCell.swift; sourceTree = "<group>"; };
+		A9C9ADC827F081EC0051D469 /* CoffeeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeCollectionViewCell.xib; sourceTree = "<group>"; };
 		A9EA077A27EDAC5D00158FCF /* HomeFirstResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFirstResponse.swift; sourceTree = "<group>"; };
 		A9EA077D27EDAE0F00158FCF /* HomeFirstDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFirstDataManager.swift; sourceTree = "<group>"; };
 		A9EA078127EDBF1400158FCF /* HomeSecondDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSecondDataManager.swift; sourceTree = "<group>"; };
@@ -398,8 +402,8 @@
 			children = (
 				A9BC5C2927E6FE2000D91901 /* IndicatorView.swift */,
 				A9EA079227EDD5B200158FCF /* Functions.swift */,
-				A9BC5C2027E6FD9900D91901 /* Extension */,
 				A9C9ADB327F05DE80051D469 /* LeftAlignedCollectionViewFlowLayout.swift */,
+				A9BC5C2027E6FD9900D91901 /* Extension */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -583,6 +587,8 @@
 			children = (
 				A9EA079627EDDD7F00158FCF /* CategoryViewController.xib */,
 				A9EA079527EDDD7F00158FCF /* CategoryViewController.swift */,
+				A9C9ADC827F081EC0051D469 /* CoffeeCollectionViewCell.xib */,
+				A9C9ADC727F081EC0051D469 /* CoffeeCollectionViewCell.swift */,
 			);
 			path = StoreCategory;
 			sourceTree = "<group>";
@@ -752,6 +758,7 @@
 				A9C9AD8F27EF38070051D469 /* PhotoCollectionViewCell.xib in Resources */,
 				A9FFE47527EACB8C004F3B33 /* Store.storyboard in Resources */,
 				A9C9ADAC27F044590051D469 /* KeywordsCollectionViewCell.xib in Resources */,
+				A9C9ADCA27F081EC0051D469 /* CoffeeCollectionViewCell.xib in Resources */,
 				A9BC5C3D27E7021E00D91901 /* MyPage.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -854,6 +861,7 @@
 				A9FFE49027EAE2A3004F3B33 /* StoreAdCollectionViewCell.swift in Sources */,
 				A90B1C0527E89CC3007A70D0 /* TopViewController.swift in Sources */,
 				A9FFE46827E9EAA4004F3B33 /* SignUpRequest.swift in Sources */,
+				A9C9ADC927F081EC0051D469 /* CoffeeCollectionViewCell.swift in Sources */,
 				A90B1C0D27E89EFB007A70D0 /* PhotoViewController.swift in Sources */,
 				A9FFE4AB27EC8D62004F3B33 /* TabManIndex.swift in Sources */,
 				A9EA078627EDC13500158FCF /* HomeThirdResponse.swift in Sources */,
