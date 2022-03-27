@@ -12,8 +12,11 @@
             <connections>
                 <outlet property="collectionView" destination="SwD-kg-4RX" id="hjT-aZ-5qQ"/>
                 <outlet property="descriptionLabel" destination="GOB-9f-hyu" id="fU4-QR-NRp"/>
+                <outlet property="feedUserImg" destination="Hll-Dr-Gni" id="Deo-9J-MwT"/>
+                <outlet property="feedUserName" destination="0PJ-IV-ebA" id="GgR-QB-Su6"/>
                 <outlet property="homeType" destination="I3q-Bp-rVf" id="cUG-JN-sMc"/>
                 <outlet property="thumailImg" destination="1fm-fp-6Aq" id="4Va-iz-L10"/>
+                <outlet property="time" destination="EXL-PI-CXW" id="nQU-Hz-tff"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -68,6 +71,9 @@
                                                 <fontDescription key="titleFontDescription" type="boldSystem" pointSize="13"/>
                                                 <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </buttonConfiguration>
+                                            <connections>
+                                                <action selector="followBtnClick:" destination="-1" eventType="touchUpInside" id="L8R-pr-s0S"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>

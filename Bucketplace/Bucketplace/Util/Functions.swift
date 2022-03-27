@@ -35,4 +35,5 @@ open class Functions: UIViewController {
             return "기타"
         }
     }
+    
 }

@@ -10,6 +10,9 @@ import UIKit
 class PhotoDetailViewController: UIViewController {
 
     lazy var photoDetailDataManager = PhotoDetailDataManager()
+    lazy var feedUserDataManager = FeedUserDataManager()
+    let feedId = FeedId.shared.feedId
+    
     @IBOutlet weak var homeType: UILabel!
     @IBOutlet weak var thumailImg: UIImageView!
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -19,11 +22,41 @@ class PhotoDetailViewController: UIViewController {
     var keywordsCount: Int!
     var keywords: [Keyword]!
     
-    
+    @IBOutlet weak var feedUserImg: UIImageView!
+    @IBOutlet weak var feedUserName: UILabel!
+    @IBOutlet weak var time: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        getFeedUserAPI()
         getPhotoDetailAPI()
+    }
+    
+    @IBAction func followBtnClick(_ sender: Any) {
+        
+    }
+    
+}
+
+// MARK: 피드 유저 API 조회
+extension PhotoDetailViewController {
+    private func getFeedUserAPI() {
+        self.showIndicator()
+        self.feedUserDataManager.getFeedUser(feedId, self)
+    }
+    func didSuccessFeedUser(_ result: FeedUserResponse) {
+        Functions.shared.urlToImg(result.result.profileImageUrl, feedUserImg)
+        let url = URL(string: result.result.profileImageUrl)
+        let data = try? Data(contentsOf: url!)
+        feedUserImg.image = UIImage(data: data!)
+        feedUserName.text = result.result.nickname
+        time.text = result.result.uploadedAt
+        self.dismissIndicator()
+    }
+    
+    func failedToRequestFeedUser(_ message: String) {
+        self.dismissIndicator()
+        self.presentAlert(title: message)
     }
 }
 
@@ -31,10 +64,11 @@ class PhotoDetailViewController: UIViewController {
 extension PhotoDetailViewController {
     private func getPhotoDetailAPI() {
         self.showIndicator()
-        self.photoDetailDataManager.getPhotoDetail(FeedId.shared.feedId, self)
+        self.photoDetailDataManager.getPhotoDetail(feedId, self)
     }
     func didSuccessPhotoDetail(_ result: PhotoDetailResponse) {
         let photoDetailInfo = result.result.medias[0].media
+        print(photoDetailInfo)
         Functions.shared.urlToImg(photoDetailInfo.thumbnailUrl, thumailImg)
         let type = photoDetailInfo.mediaSpaceTypeId
         homeType.text = Functions.shared.homeType(type)
