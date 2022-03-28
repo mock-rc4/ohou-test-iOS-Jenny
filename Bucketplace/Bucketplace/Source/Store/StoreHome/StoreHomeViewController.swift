@@ -9,12 +9,19 @@ import UIKit
 
 class StoreHomeViewController: UIViewController {
     
+    lazy var recentDataManager = RecentDataManager()
+    var recentModel: [ViewProductList]!
+    @IBOutlet weak var recentCollectionView: UICollectionView!
+    
+    @IBOutlet weak var bestCollectionView: UICollectionView!
+    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
-    
     var nowPage: Int = 0
-    
     var images:[String] = ["스토어광고1", "스토어광고2", "스토어광고3","스토어광고4"]
+    
+    let AD_CELL = "StoreAdCollectionViewCell"
+    let RECENT_CELL = "RecentCollectionViewCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +29,7 @@ class StoreHomeViewController: UIViewController {
         setupPageControl()
         bannerTimer()
         setupCategory()
+        getRecentAPI()
     }
     
     @IBOutlet weak var categoryView: UIView!
@@ -56,12 +64,34 @@ extension StoreHomeViewController {
     }
 }
 
+// MARK: 최근 본 상품
+extension StoreHomeViewController {
+    private func getRecentAPI() {
+        self.showIndicator()
+        self.recentDataManager.getRecnet(self)
+    }
+    func didSuccessRecent(_ result: RecentResult){
+        recentModel = result.viewProductList
+        setupRecentCollectionView()
+        self.dismissIndicator()
+    }
+    func failedToRequest(_ message: String) {
+        self.presentAlert(title: message)
+    }
+    
+    private func setupRecentCollectionView() {
+        recentCollectionView.delegate = self
+        recentCollectionView.dataSource = self
+        recentCollectionView.register(UINib(nibName: RECENT_CELL, bundle: nil), forCellWithReuseIdentifier: RECENT_CELL)
+    }
+}
+
 // MARK: 광고 배너
 extension StoreHomeViewController {
     private func setupCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.register(UINib(nibName: "StoreAdCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "StoreAdCollectionViewCell")
+        collectionView.register(UINib(nibName: AD_CELL, bundle: nil), forCellWithReuseIdentifier: AD_CELL)
     }
     
     private func setupPageControl() {
@@ -93,12 +123,15 @@ extension StoreHomeViewController {
     
 }
 
+// MARK: collectionView들 설정
 extension StoreHomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch collectionView {
         case self.collectionView:
             return images.count
+        case self.recentCollectionView:
+            return recentModel.count
         default:
             return 0
         }
@@ -107,8 +140,12 @@ extension StoreHomeViewController: UICollectionViewDelegate, UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         switch collectionView {
         case self.collectionView:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StoreAdCollectionViewCell", for: indexPath) as! StoreAdCollectionViewCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AD_CELL, for: indexPath) as! StoreAdCollectionViewCell
             cell.setData(images[indexPath.row])
+            return cell
+        case self.recentCollectionView:
+            let cell = recentCollectionView.dequeueReusableCell(withReuseIdentifier: RECENT_CELL, for: indexPath) as! RecentCollectionViewCell
+            cell.setData(recentModel[indexPath.row])
             return cell
         default:
             let cell = UICollectionViewCell()
@@ -125,7 +162,14 @@ extension StoreHomeViewController: UICollectionViewDelegate, UICollectionViewDat
 extension StoreHomeViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.size.width, height: collectionView.frame.size.height)
+        switch collectionView {
+        case self.collectionView:
+            return CGSize(width: collectionView.frame.size.width, height: collectionView.frame.size.height)
+        case self.recentCollectionView:
+            return CGSize(width: 170, height: collectionView.frame.size.height)
+        default:
+            return CGSize(width: collectionView.frame.size.width, height: collectionView.frame.size.height)
+        }
     }
     
 }

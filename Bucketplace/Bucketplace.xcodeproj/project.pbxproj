@@ -75,6 +75,12 @@
 		A9C9ADCE27F189EC0051D469 /* CoffeeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9C9ADCC27F189EC0051D469 /* CoffeeDetailViewController.xib */; };
 		A9C9ADD527F1B38A0051D469 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADD327F1B38A0051D469 /* BuyViewController.swift */; };
 		A9C9ADD627F1B38A0051D469 /* BuyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9C9ADD427F1B38A0051D469 /* BuyViewController.xib */; };
+		A9C9ADDB27F1BFE70051D469 /* TodayDealResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADDA27F1BFE70051D469 /* TodayDealResponse.swift */; };
+		A9C9ADDD27F1C0200051D469 /* TodayDealDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADDC27F1C0200051D469 /* TodayDealDataManager.swift */; };
+		A9C9ADE027F1C5350051D469 /* RecentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADDE27F1C5350051D469 /* RecentCollectionViewCell.swift */; };
+		A9C9ADE127F1C5350051D469 /* RecentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9C9ADDF27F1C5350051D469 /* RecentCollectionViewCell.xib */; };
+		A9C9ADE327F1C6D30051D469 /* RecentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADE227F1C6D30051D469 /* RecentResponse.swift */; };
+		A9C9ADE527F1C7170051D469 /* RecentDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADE427F1C7170051D469 /* RecentDataManager.swift */; };
 		A9EA077B27EDAC5D00158FCF /* HomeFirstResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA077A27EDAC5D00158FCF /* HomeFirstResponse.swift */; };
 		A9EA077E27EDAE0F00158FCF /* HomeFirstDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA077D27EDAE0F00158FCF /* HomeFirstDataManager.swift */; };
 		A9EA078227EDBF1400158FCF /* HomeSecondDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA078127EDBF1400158FCF /* HomeSecondDataManager.swift */; };
@@ -192,6 +198,12 @@
 		A9C9ADCC27F189EC0051D469 /* CoffeeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeDetailViewController.xib; sourceTree = "<group>"; };
 		A9C9ADD327F1B38A0051D469 /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
 		A9C9ADD427F1B38A0051D469 /* BuyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyViewController.xib; sourceTree = "<group>"; };
+		A9C9ADDA27F1BFE70051D469 /* TodayDealResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayDealResponse.swift; sourceTree = "<group>"; };
+		A9C9ADDC27F1C0200051D469 /* TodayDealDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayDealDataManager.swift; sourceTree = "<group>"; };
+		A9C9ADDE27F1C5350051D469 /* RecentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCollectionViewCell.swift; sourceTree = "<group>"; };
+		A9C9ADDF27F1C5350051D469 /* RecentCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentCollectionViewCell.xib; sourceTree = "<group>"; };
+		A9C9ADE227F1C6D30051D469 /* RecentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentResponse.swift; sourceTree = "<group>"; };
+		A9C9ADE427F1C7170051D469 /* RecentDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentDataManager.swift; sourceTree = "<group>"; };
 		A9EA077A27EDAC5D00158FCF /* HomeFirstResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFirstResponse.swift; sourceTree = "<group>"; };
 		A9EA077D27EDAE0F00158FCF /* HomeFirstDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFirstDataManager.swift; sourceTree = "<group>"; };
 		A9EA078127EDBF1400158FCF /* HomeSecondDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSecondDataManager.swift; sourceTree = "<group>"; };
@@ -334,6 +346,8 @@
 		A90B1C1D27E98614007A70D0 /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				A9C9ADD827F1BFC60051D469 /* StoreEntity */,
+				A9C9ADD927F1BFCD0051D469 /* StoreDataManager */,
 				A9FFE47427EACB8C004F3B33 /* Store.storyboard */,
 				A9FFE47227EA1AD4004F3B33 /* StoreViewController.swift */,
 				A9FFE47D27EAD367004F3B33 /* StoreTabManViewController.swift */,
@@ -552,6 +566,24 @@
 			path = Cart;
 			sourceTree = "<group>";
 		};
+		A9C9ADD827F1BFC60051D469 /* StoreEntity */ = {
+			isa = PBXGroup;
+			children = (
+				A9C9ADDA27F1BFE70051D469 /* TodayDealResponse.swift */,
+				A9C9ADE227F1C6D30051D469 /* RecentResponse.swift */,
+			);
+			path = StoreEntity;
+			sourceTree = "<group>";
+		};
+		A9C9ADD927F1BFCD0051D469 /* StoreDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				A9C9ADDC27F1C0200051D469 /* TodayDealDataManager.swift */,
+				A9C9ADE427F1C7170051D469 /* RecentDataManager.swift */,
+			);
+			path = StoreDataManager;
+			sourceTree = "<group>";
+		};
 		A9EA077C27EDADF800158FCF /* TopDataManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -658,6 +690,8 @@
 				A9FFE48C27EAE07F004F3B33 /* StoreHomeViewController.swift */,
 				A9FFE48F27EAE2A3004F3B33 /* StoreAdCollectionViewCell.xib */,
 				A9FFE48E27EAE2A3004F3B33 /* StoreAdCollectionViewCell.swift */,
+				A9C9ADDF27F1C5350051D469 /* RecentCollectionViewCell.xib */,
+				A9C9ADDE27F1C5350051D469 /* RecentCollectionViewCell.swift */,
 			);
 			path = StoreHome;
 			sourceTree = "<group>";
@@ -771,6 +805,7 @@
 				A9FFE49127EAE2A3004F3B33 /* StoreAdCollectionViewCell.xib in Resources */,
 				A9BC5C4927E716EB00D91901 /* Home.storyboard in Resources */,
 				A9C9AD9727EF3BDA0051D469 /* PhotoFilterCollectionViewCell.xib in Resources */,
+				A9C9ADE127F1C5350051D469 /* RecentCollectionViewCell.xib in Resources */,
 				A9A6622127E5F7C90081064C /* Main.storyboard in Resources */,
 				A9EA079827EDDD7F00158FCF /* CategoryViewController.xib in Resources */,
 				A9C9ADA827F03D980051D469 /* PhotoDetailViewController.xib in Resources */,
@@ -838,8 +873,10 @@
 				A9FFE4A527EC6E35004F3B33 /* LoginKey.swift in Sources */,
 				A9FFE49F27EB1790004F3B33 /* Category.swift in Sources */,
 				A9C9ADA027F02DF00051D469 /* PhotoListResponse.swift in Sources */,
+				A9C9ADDB27F1BFE70051D469 /* TodayDealResponse.swift in Sources */,
 				A9C9ADAB27F044590051D469 /* KeywordsCollectionViewCell.swift in Sources */,
 				A9EA079327EDD5B200158FCF /* Functions.swift in Sources */,
+				A9C9ADE027F1C5350051D469 /* RecentCollectionViewCell.swift in Sources */,
 				A9EA077B27EDAC5D00158FCF /* HomeFirstResponse.swift in Sources */,
 				A9BC5C4127E70F5600D91901 /* LoginViewController.swift in Sources */,
 				A9C9ADB427F05DE80051D469 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
@@ -856,6 +893,7 @@
 				A9FFE46A27E9F26E004F3B33 /* SignInResponse.swift in Sources */,
 				A9C9ADB027F04A1F0051D469 /* PhotoDetailResponse.swift in Sources */,
 				A9FFE4B227ECA30B004F3B33 /* UITabBarController.swift in Sources */,
+				A9C9ADE327F1C6D30051D469 /* RecentResponse.swift in Sources */,
 				A9C9ADC627F07F480051D469 /* unFollowResponse.swift in Sources */,
 				A9BC5C3927E7009D00D91901 /* MyShoppingViewController.swift in Sources */,
 				A9EA67B727E8811F001B1C68 /* AdCollectionViewCell.swift in Sources */,
@@ -906,8 +944,10 @@
 				A9FFE4A127EB28B8004F3B33 /* UIView.swift in Sources */,
 				A9C9ADBC27F0702A0051D469 /* FollowResponse.swift in Sources */,
 				A9FFE46E27EA0500004F3B33 /* SignInRequest.swift in Sources */,
+				A9C9ADDD27F1C0200051D469 /* TodayDealDataManager.swift in Sources */,
 				A9FFE4AF27ECA026004F3B33 /* TodayDealViewController.swift in Sources */,
 				A90B1C2127E986DF007A70D0 /* SignUpViewController.swift in Sources */,
+				A9C9ADE527F1C7170051D469 /* RecentDataManager.swift in Sources */,
 				A9FFE47327EA1AD4004F3B33 /* StoreViewController.swift in Sources */,
 				A9EA078827EDC15600158FCF /* HomeThirdDataManager.swift in Sources */,
 				A9C9ADB827F063340051D469 /* FeedUserResponse.swift in Sources */,

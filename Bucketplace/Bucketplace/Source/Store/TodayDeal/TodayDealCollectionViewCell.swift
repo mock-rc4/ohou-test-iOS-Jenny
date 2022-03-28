@@ -21,5 +21,14 @@ class TodayDealCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
     }
 
+    public func setData(_ data: TodayDealList) {
+        img.image = UIImage(named: data.brand)
+        content.text = data.name
+        company.text = data.brand
+        price.text = String(data.price).insertComma
+        discount.text =  "\(data.discountRate)%"
+        star.text = "\(data.ratedAverage)"
+        review.text = "리뷰 \(data.reviewCount)"
+    }
     
 }

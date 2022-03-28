@@ -22,10 +22,10 @@
                         <rect key="frame" x="5" y="0.0" width="390" height="200"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deal3" translatesAutoresizingMaskIntoConstraints="NO" id="xkU-jd-n3J">
-                                <rect key="frame" x="10" y="10" width="180" height="180"/>
+                                <rect key="frame" x="10" y="15" width="170" height="170"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="n94-qC-GQa"/>
-                                    <constraint firstAttribute="width" constant="180" id="rSk-ek-tNp"/>
+                                    <constraint firstAttribute="height" constant="170" id="n94-qC-GQa"/>
+                                    <constraint firstAttribute="width" constant="170" id="rSk-ek-tNp"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -34,13 +34,13 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="헬로우슬립" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="me2-JJ-ef1">
-                                <rect key="frame" x="200" y="10" width="56.5" height="16"/>
+                                <rect key="frame" x="190" y="15" width="56.5" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[10% 쿠폰]부드러운 카스테라 워싱 항균 유칼립투스솜이불" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bld-gs-1dy">
-                                <rect key="frame" x="200" y="36" width="175" height="42"/>
+                                <rect key="frame" x="190" y="41" width="185" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="dH2-nS-5h7"/>
                                 </constraints>
@@ -49,25 +49,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="57%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYd-wD-eui">
-                                <rect key="frame" x="200" y="88" width="46.5" height="26.5"/>
+                                <rect key="frame" x="190" y="93" width="46.5" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <color key="textColor" red="0.3921568627" green="0.76078431369999999" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="37,900" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EiD-oC-XKs">
-                                <rect key="frame" x="256.5" y="88" width="72" height="26.5"/>
+                                <rect key="frame" x="246.5" y="93" width="72" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVh-0W-9hP">
-                                <rect key="frame" x="220" y="126" width="22" height="17"/>
+                                <rect key="frame" x="210" y="131" width="22" height="17"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dXV-Yq-aZC">
-                                <rect key="frame" x="200" y="125.5" width="20" height="16.5"/>
+                                <rect key="frame" x="190" y="130.5" width="20" height="16.5"/>
                                 <color key="tintColor" red="0.3921568627" green="0.76078431369999999" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="20" id="Tg7-dl-ukR"/>
@@ -76,13 +76,13 @@
                                 <imageReference key="image" image="star.fill" catalog="system" symbolScale="small"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="리뷰 3,286" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZu-v1-cxt">
-                                <rect key="frame" x="252" y="126" width="66" height="17"/>
+                                <rect key="frame" x="242" y="131" width="66" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deal+" translatesAutoresizingMaskIntoConstraints="NO" id="Lbz-w2-jmA">
-                                <rect key="frame" x="200" y="149.5" width="102" height="30"/>
+                                <rect key="frame" x="190" y="154.5" width="102" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="9cL-YF-Yt2"/>
                                     <constraint firstAttribute="width" secondItem="Lbz-w2-jmA" secondAttribute="height" multiplier="173:51" id="OaA-su-p1C"/>
