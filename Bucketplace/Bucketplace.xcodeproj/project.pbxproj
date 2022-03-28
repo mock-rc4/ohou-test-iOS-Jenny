@@ -28,6 +28,8 @@
 		A92308D527F1EB4600534AA4 /* PopularDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92308D427F1EB4600534AA4 /* PopularDataManager.swift */; };
 		A92308D827F1EC6700534AA4 /* PopularCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92308D627F1EC6700534AA4 /* PopularCollectionViewCell.swift */; };
 		A92308D927F1EC6700534AA4 /* PopularCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A92308D727F1EC6700534AA4 /* PopularCollectionViewCell.xib */; };
+		A92308DB27F1EFBA00534AA4 /* ProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92308DA27F1EFBA00534AA4 /* ProductResponse.swift */; };
+		A92308DD27F1F16D00534AA4 /* ProductDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92308DC27F1F16D00534AA4 /* ProductDataManager.swift */; };
 		A9A6621A27E5F7C90081064C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621927E5F7C90081064C /* AppDelegate.swift */; };
 		A9A6621C27E5F7C90081064C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621B27E5F7C90081064C /* SceneDelegate.swift */; };
 		A9A6621E27E5F7C90081064C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621D27E5F7C90081064C /* TabBarController.swift */; };
@@ -61,7 +63,7 @@
 		A9C9ADA827F03D980051D469 /* PhotoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9C9ADA627F03D980051D469 /* PhotoDetailViewController.xib */; };
 		A9C9ADAB27F044590051D469 /* KeywordsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADA927F044590051D469 /* KeywordsCollectionViewCell.swift */; };
 		A9C9ADAC27F044590051D469 /* KeywordsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9C9ADAA27F044590051D469 /* KeywordsCollectionViewCell.xib */; };
-		A9C9ADAE27F049870051D469 /* FeedId.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADAD27F049870051D469 /* FeedId.swift */; };
+		A9C9ADAE27F049870051D469 /* ID.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADAD27F049870051D469 /* ID.swift */; };
 		A9C9ADB027F04A1F0051D469 /* PhotoDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADAF27F04A1F0051D469 /* PhotoDetailResponse.swift */; };
 		A9C9ADB227F04C080051D469 /* PhotoDetailDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADB127F04C080051D469 /* PhotoDetailDataManager.swift */; };
 		A9C9ADB427F05DE80051D469 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADB327F05DE80051D469 /* LeftAlignedCollectionViewFlowLayout.swift */; };
@@ -71,10 +73,9 @@
 		A9C9ADBE27F0720A0051D469 /* FollowDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADBD27F0720A0051D469 /* FollowDataManager.swift */; };
 		A9C9ADC027F072530051D469 /* FollowRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADBF27F072530051D469 /* FollowRequest.swift */; };
 		A9C9ADC227F074150051D469 /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADC127F074150051D469 /* FollowViewController.swift */; };
-		A9C9ADC427F075490051D469 /* UserId.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADC327F075490051D469 /* UserId.swift */; };
 		A9C9ADC627F07F480051D469 /* unFollowResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADC527F07F480051D469 /* unFollowResponse.swift */; };
-		A9C9ADC927F081EC0051D469 /* CoffeeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADC727F081EC0051D469 /* CoffeeCollectionViewCell.swift */; };
-		A9C9ADCA27F081EC0051D469 /* CoffeeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9C9ADC827F081EC0051D469 /* CoffeeCollectionViewCell.xib */; };
+		A9C9ADC927F081EC0051D469 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADC727F081EC0051D469 /* ProductCollectionViewCell.swift */; };
+		A9C9ADCA27F081EC0051D469 /* ProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9C9ADC827F081EC0051D469 /* ProductCollectionViewCell.xib */; };
 		A9C9ADCD27F189EC0051D469 /* CoffeeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADCB27F189EC0051D469 /* CoffeeDetailViewController.swift */; };
 		A9C9ADCE27F189EC0051D469 /* CoffeeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9C9ADCC27F189EC0051D469 /* CoffeeDetailViewController.xib */; };
 		A9C9ADD527F1B38A0051D469 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADD327F1B38A0051D469 /* BuyViewController.swift */; };
@@ -153,6 +154,8 @@
 		A92308D427F1EB4600534AA4 /* PopularDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDataManager.swift; sourceTree = "<group>"; };
 		A92308D627F1EC6700534AA4 /* PopularCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCollectionViewCell.swift; sourceTree = "<group>"; };
 		A92308D727F1EC6700534AA4 /* PopularCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularCollectionViewCell.xib; sourceTree = "<group>"; };
+		A92308DA27F1EFBA00534AA4 /* ProductResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResponse.swift; sourceTree = "<group>"; };
+		A92308DC27F1F16D00534AA4 /* ProductDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDataManager.swift; sourceTree = "<group>"; };
 		A9A6621627E5F7C90081064C /* Bucketplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bucketplace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A6621927E5F7C90081064C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9A6621B27E5F7C90081064C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -188,7 +191,7 @@
 		A9C9ADA627F03D980051D469 /* PhotoDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoDetailViewController.xib; sourceTree = "<group>"; };
 		A9C9ADA927F044590051D469 /* KeywordsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordsCollectionViewCell.swift; sourceTree = "<group>"; };
 		A9C9ADAA27F044590051D469 /* KeywordsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeywordsCollectionViewCell.xib; sourceTree = "<group>"; };
-		A9C9ADAD27F049870051D469 /* FeedId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedId.swift; sourceTree = "<group>"; };
+		A9C9ADAD27F049870051D469 /* ID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ID.swift; sourceTree = "<group>"; };
 		A9C9ADAF27F04A1F0051D469 /* PhotoDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailResponse.swift; sourceTree = "<group>"; };
 		A9C9ADB127F04C080051D469 /* PhotoDetailDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailDataManager.swift; sourceTree = "<group>"; };
 		A9C9ADB327F05DE80051D469 /* LeftAlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftAlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
@@ -198,10 +201,9 @@
 		A9C9ADBD27F0720A0051D469 /* FollowDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowDataManager.swift; sourceTree = "<group>"; };
 		A9C9ADBF27F072530051D469 /* FollowRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowRequest.swift; sourceTree = "<group>"; };
 		A9C9ADC127F074150051D469 /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
-		A9C9ADC327F075490051D469 /* UserId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserId.swift; sourceTree = "<group>"; };
 		A9C9ADC527F07F480051D469 /* unFollowResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unFollowResponse.swift; sourceTree = "<group>"; };
-		A9C9ADC727F081EC0051D469 /* CoffeeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeCollectionViewCell.swift; sourceTree = "<group>"; };
-		A9C9ADC827F081EC0051D469 /* CoffeeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeCollectionViewCell.xib; sourceTree = "<group>"; };
+		A9C9ADC727F081EC0051D469 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		A9C9ADC827F081EC0051D469 /* ProductCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCollectionViewCell.xib; sourceTree = "<group>"; };
 		A9C9ADCB27F189EC0051D469 /* CoffeeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetailViewController.swift; sourceTree = "<group>"; };
 		A9C9ADCC27F189EC0051D469 /* CoffeeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeDetailViewController.xib; sourceTree = "<group>"; };
 		A9C9ADD327F1B38A0051D469 /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
@@ -405,8 +407,7 @@
 			children = (
 				A9BC5C1D27E6FD8B00D91901 /* Constant.swift */,
 				A9FFE4AA27EC8D62004F3B33 /* TabManIndex.swift */,
-				A9C9ADAD27F049870051D469 /* FeedId.swift */,
-				A9C9ADC327F075490051D469 /* UserId.swift */,
+				A9C9ADAD27F049870051D469 /* ID.swift */,
 				A9EA67B027E86BAE001B1C68 /* Secret */,
 			);
 			path = Configuration;
@@ -580,6 +581,7 @@
 				A9C9ADDA27F1BFE70051D469 /* TodayDealResponse.swift */,
 				A9C9ADE227F1C6D30051D469 /* RecentResponse.swift */,
 				A92308D227F1EAFF00534AA4 /* PopularResponse.swift */,
+				A92308DA27F1EFBA00534AA4 /* ProductResponse.swift */,
 			);
 			path = StoreEntity;
 			sourceTree = "<group>";
@@ -590,6 +592,7 @@
 				A9C9ADDC27F1C0200051D469 /* TodayDealDataManager.swift */,
 				A9C9ADE427F1C7170051D469 /* RecentDataManager.swift */,
 				A92308D427F1EB4600534AA4 /* PopularDataManager.swift */,
+				A92308DC27F1F16D00534AA4 /* ProductDataManager.swift */,
 			);
 			path = StoreDataManager;
 			sourceTree = "<group>";
@@ -645,8 +648,8 @@
 			children = (
 				A9EA079627EDDD7F00158FCF /* CategoryViewController.xib */,
 				A9EA079527EDDD7F00158FCF /* CategoryViewController.swift */,
-				A9C9ADC827F081EC0051D469 /* CoffeeCollectionViewCell.xib */,
-				A9C9ADC727F081EC0051D469 /* CoffeeCollectionViewCell.swift */,
+				A9C9ADC827F081EC0051D469 /* ProductCollectionViewCell.xib */,
+				A9C9ADC727F081EC0051D469 /* ProductCollectionViewCell.swift */,
 				A9C9ADCC27F189EC0051D469 /* CoffeeDetailViewController.xib */,
 				A9C9ADCB27F189EC0051D469 /* CoffeeDetailViewController.swift */,
 				A9C9ADD427F1B38A0051D469 /* BuyViewController.xib */,
@@ -828,7 +831,7 @@
 				A9C9AD8F27EF38070051D469 /* PhotoCollectionViewCell.xib in Resources */,
 				A9FFE47527EACB8C004F3B33 /* Store.storyboard in Resources */,
 				A9C9ADAC27F044590051D469 /* KeywordsCollectionViewCell.xib in Resources */,
-				A9C9ADCA27F081EC0051D469 /* CoffeeCollectionViewCell.xib in Resources */,
+				A9C9ADCA27F081EC0051D469 /* ProductCollectionViewCell.xib in Resources */,
 				A9BC5C3D27E7021E00D91901 /* MyPage.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -902,6 +905,7 @@
 				A9EA077E27EDAE0F00158FCF /* HomeFirstDataManager.swift in Sources */,
 				A92308D827F1EC6700534AA4 /* PopularCollectionViewCell.swift in Sources */,
 				A90B1C1527E89F12007A70D0 /* KnowHowViewController.swift in Sources */,
+				A92308DB27F1EFBA00534AA4 /* ProductResponse.swift in Sources */,
 				A9BC5C2427E6FDAF00D91901 /* UIColor.swift in Sources */,
 				A9FFE46027E9D88C004F3B33 /* KakaoDataManager.swift in Sources */,
 				A9FFE46A27E9F26E004F3B33 /* SignInResponse.swift in Sources */,
@@ -920,6 +924,7 @@
 				A9FFE47027EA050B004F3B33 /* SignInDataManager.swift in Sources */,
 				A9EA078427EDBF2100158FCF /* HomeSecondResponse.swift in Sources */,
 				A9BC5C4727E716C000D91901 /* HomeViewController.swift in Sources */,
+				A92308DD27F1F16D00534AA4 /* ProductDataManager.swift in Sources */,
 				A9EA079727EDDD7F00158FCF /* CategoryViewController.swift in Sources */,
 				A9EA078C27EDD1CE00158FCF /* ProfileResponse.swift in Sources */,
 				A9BC5C2227E6FDA800D91901 /* String.swift in Sources */,
@@ -931,12 +936,12 @@
 				A90B1C1F27E986BF007A70D0 /* SignInViewController.swift in Sources */,
 				A9C9ADC027F072530051D469 /* FollowRequest.swift in Sources */,
 				A9FFE48D27EAE07F004F3B33 /* StoreHomeViewController.swift in Sources */,
-				A9C9ADAE27F049870051D469 /* FeedId.swift in Sources */,
+				A9C9ADAE27F049870051D469 /* ID.swift in Sources */,
 				A9C9ADCD27F189EC0051D469 /* CoffeeDetailViewController.swift in Sources */,
 				A9FFE49027EAE2A3004F3B33 /* StoreAdCollectionViewCell.swift in Sources */,
 				A90B1C0527E89CC3007A70D0 /* TopViewController.swift in Sources */,
 				A9FFE46827E9EAA4004F3B33 /* SignUpRequest.swift in Sources */,
-				A9C9ADC927F081EC0051D469 /* CoffeeCollectionViewCell.swift in Sources */,
+				A9C9ADC927F081EC0051D469 /* ProductCollectionViewCell.swift in Sources */,
 				A90B1C0D27E89EFB007A70D0 /* PhotoViewController.swift in Sources */,
 				A9FFE4AB27EC8D62004F3B33 /* TabManIndex.swift in Sources */,
 				A9EA078627EDC13500158FCF /* HomeThirdResponse.swift in Sources */,
@@ -968,7 +973,6 @@
 				A9EA078827EDC15600158FCF /* HomeThirdDataManager.swift in Sources */,
 				A9C9ADB827F063340051D469 /* FeedUserResponse.swift in Sources */,
 				A9EA078227EDBF1400158FCF /* HomeSecondDataManager.swift in Sources */,
-				A9C9ADC427F075490051D469 /* UserId.swift in Sources */,
 				A9C9ADBA27F0644A0051D469 /* FeedUserDataManager.swift in Sources */,
 				A9FFE46627E9E93B004F3B33 /* SignUpDataManager.swift in Sources */,
 				A9BC5C2627E6FDB700D91901 /* UINavigationController.swift in Sources */,

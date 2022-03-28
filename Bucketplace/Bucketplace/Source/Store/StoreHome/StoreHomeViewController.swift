@@ -185,6 +185,19 @@ extension StoreHomeViewController: UICollectionViewDelegate, UICollectionViewDat
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        switch collectionView {
+        case self.recentCollectionView:
+            ProductId.shared.productId = recentModel[indexPath.row].productId
+            self.presentNVC(CoffeeDetailViewController())
+        case self.popularCollectionView:
+            ProductId.shared.productId = popularModel[indexPath.row].productId
+            self.presentNVC(CoffeeDetailViewController())
+        default:
+            print("광고입니다.")
+        }
+    }
+    
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         nowPage = Int(scrollView.contentOffset.x) / Int(scrollView.frame.width)
     }

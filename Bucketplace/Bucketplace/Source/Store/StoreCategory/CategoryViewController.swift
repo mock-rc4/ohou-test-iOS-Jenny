@@ -10,7 +10,7 @@ import UIKit
 class CategoryViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    let CELL = "CoffeeCollectionViewCell"
+    let CELL = "ProductCollectionViewCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CELL, for: indexPath) as! CoffeeCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CELL, for: indexPath) as! ProductCollectionViewCell
         return cell
     }
     
