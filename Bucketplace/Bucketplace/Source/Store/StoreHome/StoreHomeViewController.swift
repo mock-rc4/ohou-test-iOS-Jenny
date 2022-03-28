@@ -189,10 +189,10 @@ extension StoreHomeViewController: UICollectionViewDelegate, UICollectionViewDat
         switch collectionView {
         case self.recentCollectionView:
             ProductId.shared.productId = recentModel[indexPath.row].productId
-            self.presentNVC(CoffeeDetailViewController())
+            self.presentNVC(ProductDetailViewController())
         case self.popularCollectionView:
             ProductId.shared.productId = popularModel[indexPath.row].productId
-            self.presentNVC(CoffeeDetailViewController())
+            self.presentNVC(ProductDetailViewController())
         default:
             print("광고입니다.")
         }

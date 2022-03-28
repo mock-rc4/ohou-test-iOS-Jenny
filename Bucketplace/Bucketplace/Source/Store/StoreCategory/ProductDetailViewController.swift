@@ -1,5 +1,5 @@
 //
-//  CoffeeDetailViewController.swift
+//  ProductDetailViewController.swift
 //  Bucketplace
 //
 //  Created by 김영인 on 2022/03/28.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CoffeeDetailViewController: UIViewController {
+class ProductDetailViewController: UIViewController {
     
     lazy var productDataManager = ProductDataManager()
     
@@ -37,7 +37,7 @@ class CoffeeDetailViewController: UIViewController {
     
 }
 
-extension CoffeeDetailViewController {
+extension ProductDetailViewController {
     private func getProductAPI() {
         self.showIndicator()
         self.productDataManager.getProduct(ProductId.shared.productId, self)

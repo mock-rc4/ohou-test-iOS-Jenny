@@ -38,7 +38,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.presentNVC(CoffeeDetailViewController())
+        self.presentNVC(ProductDetailViewController())
     }
 }
 

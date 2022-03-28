@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CoffeeDetailViewController" customModule="Bucketplace" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductDetailViewController" customModule="Bucketplace" customModuleProvider="target">
             <connections>
                 <outlet property="beforePrice" destination="dS5-Qi-mij" id="cCA-kH-bgK"/>
                 <outlet property="brand" destination="Ghg-vg-LFA" id="9qv-Hf-24h"/>
@@ -43,13 +43,13 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TDe-ff-l9l">
-                                    <rect key="frame" x="20" y="54.5" width="375" height="300"/>
+                                    <rect key="frame" x="20" y="54.5" width="375" height="400"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="300" id="XGq-0d-4Y4"/>
+                                        <constraint firstAttribute="height" constant="400" id="XGq-0d-4Y4"/>
                                     </constraints>
                                 </imageView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZeG-b6-TSg">
-                                    <rect key="frame" x="0.0" y="374.5" width="415" height="1000"/>
+                                    <rect key="frame" x="0.0" y="474.5" width="415" height="1000"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스타벅스" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ghg-vg-LFA">
                                             <rect key="frame" x="20" y="15" width="52" height="18"/>

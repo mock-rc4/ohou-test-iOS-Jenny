@@ -9,7 +9,7 @@ import Alamofire
 
 class ProductDataManager {
     
-    func getProduct(_ productId: Int, _ delegate: CoffeeDetailViewController) {
+    func getProduct(_ productId: Int, _ delegate: ProductDetailViewController) {
         
         let url = "\(Constant.BASE_URL)/app/stores/products/\(productId)"
         

@@ -12,6 +12,7 @@ class PhotoDetailViewController: FollowViewController {
     lazy var photoDetailDataManager = PhotoDetailDataManager()
     lazy var feedUserDataManager = FeedUserDataManager()
     lazy var followDataManager = FollowDataManager()
+    lazy var metaDataManager = MetaDataManager()
     let feedId = FeedId.shared.feedId
     var userId = UserId.shared.userId
     var followFlag: Int = 0
@@ -34,6 +35,7 @@ class PhotoDetailViewController: FollowViewController {
         super.viewDidLoad()
         getFeedUserAPI()
         getPhotoDetailAPI()
+        getMetaAPI()
     }
     
     @IBAction func followBtnClick(_ sender: Any) {
@@ -82,6 +84,23 @@ extension PhotoDetailViewController {
     }
 }
 
+// MARK: 사진 상세 페이지 상단 메타 데이터 조회 API
+extension PhotoDetailViewController {
+    private func getMetaAPI() {
+        self.showIndicator()
+        self.metaDataManager.getMeta(feedId, self)
+    }
+    func didSuccessMeta(_ result: MetaResult) {
+        homeType.text = (result.acreage ?? "20평대") + "  |  " + (result.style ?? "모던 스타일") + "  |  " + (result.home ?? "아파트")
+        self.dismissIndicator()
+    }
+    
+    func failedToRequestMeta(_ message: String) {
+        self.dismissIndicator()
+        self.presentAlert(title: message)
+    }
+}
+
 // MARK: 사진 상세 페이지 API 조회
 extension PhotoDetailViewController {
     private func getPhotoDetailAPI() {
@@ -92,8 +111,6 @@ extension PhotoDetailViewController {
         let photoDetailInfo = result.result.medias[0].media
         print(photoDetailInfo)
         Functions.shared.urlToImg(photoDetailInfo.thumbnailUrl, thumailImg)
-        let type = photoDetailInfo.mediaSpaceTypeId
-        homeType.text = Functions.shared.homeType(type)
         descriptionLabel.text = photoDetailInfo.description
         
         self.keywordsCount = result.result.medias[0].keywords.count
