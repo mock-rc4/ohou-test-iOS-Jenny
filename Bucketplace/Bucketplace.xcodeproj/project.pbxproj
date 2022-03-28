@@ -71,6 +71,10 @@
 		A9C9ADC627F07F480051D469 /* unFollowResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADC527F07F480051D469 /* unFollowResponse.swift */; };
 		A9C9ADC927F081EC0051D469 /* CoffeeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADC727F081EC0051D469 /* CoffeeCollectionViewCell.swift */; };
 		A9C9ADCA27F081EC0051D469 /* CoffeeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9C9ADC827F081EC0051D469 /* CoffeeCollectionViewCell.xib */; };
+		A9C9ADCD27F189EC0051D469 /* CoffeeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADCB27F189EC0051D469 /* CoffeeDetailViewController.swift */; };
+		A9C9ADCE27F189EC0051D469 /* CoffeeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9C9ADCC27F189EC0051D469 /* CoffeeDetailViewController.xib */; };
+		A9C9ADD527F1B38A0051D469 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADD327F1B38A0051D469 /* BuyViewController.swift */; };
+		A9C9ADD627F1B38A0051D469 /* BuyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9C9ADD427F1B38A0051D469 /* BuyViewController.xib */; };
 		A9EA077B27EDAC5D00158FCF /* HomeFirstResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA077A27EDAC5D00158FCF /* HomeFirstResponse.swift */; };
 		A9EA077E27EDAE0F00158FCF /* HomeFirstDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA077D27EDAE0F00158FCF /* HomeFirstDataManager.swift */; };
 		A9EA078227EDBF1400158FCF /* HomeSecondDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA078127EDBF1400158FCF /* HomeSecondDataManager.swift */; };
@@ -184,6 +188,10 @@
 		A9C9ADC527F07F480051D469 /* unFollowResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unFollowResponse.swift; sourceTree = "<group>"; };
 		A9C9ADC727F081EC0051D469 /* CoffeeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeCollectionViewCell.swift; sourceTree = "<group>"; };
 		A9C9ADC827F081EC0051D469 /* CoffeeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeCollectionViewCell.xib; sourceTree = "<group>"; };
+		A9C9ADCB27F189EC0051D469 /* CoffeeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetailViewController.swift; sourceTree = "<group>"; };
+		A9C9ADCC27F189EC0051D469 /* CoffeeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeDetailViewController.xib; sourceTree = "<group>"; };
+		A9C9ADD327F1B38A0051D469 /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
+		A9C9ADD427F1B38A0051D469 /* BuyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyViewController.xib; sourceTree = "<group>"; };
 		A9EA077A27EDAC5D00158FCF /* HomeFirstResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFirstResponse.swift; sourceTree = "<group>"; };
 		A9EA077D27EDAE0F00158FCF /* HomeFirstDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFirstDataManager.swift; sourceTree = "<group>"; };
 		A9EA078127EDBF1400158FCF /* HomeSecondDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSecondDataManager.swift; sourceTree = "<group>"; };
@@ -393,6 +401,7 @@
 				A9BC5C4527E716A800D91901 /* Home */,
 				A90B1C1D27E98614007A70D0 /* Store */,
 				A9BC5C2B27E6FE6500D91901 /* MyPage */,
+				A9C9ADD727F1B6140051D469 /* Cart */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -536,6 +545,13 @@
 			path = DataManager;
 			sourceTree = "<group>";
 		};
+		A9C9ADD727F1B6140051D469 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
 		A9EA077C27EDADF800158FCF /* TopDataManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -589,6 +605,10 @@
 				A9EA079527EDDD7F00158FCF /* CategoryViewController.swift */,
 				A9C9ADC827F081EC0051D469 /* CoffeeCollectionViewCell.xib */,
 				A9C9ADC727F081EC0051D469 /* CoffeeCollectionViewCell.swift */,
+				A9C9ADCC27F189EC0051D469 /* CoffeeDetailViewController.xib */,
+				A9C9ADCB27F189EC0051D469 /* CoffeeDetailViewController.swift */,
+				A9C9ADD427F1B38A0051D469 /* BuyViewController.xib */,
+				A9C9ADD327F1B38A0051D469 /* BuyViewController.swift */,
 			);
 			path = StoreCategory;
 			sourceTree = "<group>";
@@ -747,6 +767,7 @@
 				A9EA079E27EDEF8900158FCF /* TodayDealCollectionViewCell.xib in Resources */,
 				A90B1C1627E89F12007A70D0 /* KnowHowViewController.xib in Resources */,
 				A9EA67AF27E863B1001B1C68 /* Login.storyboard in Resources */,
+				A9C9ADD627F1B38A0051D469 /* BuyViewController.xib in Resources */,
 				A9FFE49127EAE2A3004F3B33 /* StoreAdCollectionViewCell.xib in Resources */,
 				A9BC5C4927E716EB00D91901 /* Home.storyboard in Resources */,
 				A9C9AD9727EF3BDA0051D469 /* PhotoFilterCollectionViewCell.xib in Resources */,
@@ -754,6 +775,7 @@
 				A9EA079827EDDD7F00158FCF /* CategoryViewController.xib in Resources */,
 				A9C9ADA827F03D980051D469 /* PhotoDetailViewController.xib in Resources */,
 				A9EA07A227EDF43100158FCF /* TodayDealHeaderCollectionReusableView.xib in Resources */,
+				A9C9ADCE27F189EC0051D469 /* CoffeeDetailViewController.xib in Resources */,
 				A9EA67B827E8811F001B1C68 /* AdCollectionViewCell.xib in Resources */,
 				A9C9AD8F27EF38070051D469 /* PhotoCollectionViewCell.xib in Resources */,
 				A9FFE47527EACB8C004F3B33 /* Store.storyboard in Resources */,
@@ -858,6 +880,7 @@
 				A9C9ADC027F072530051D469 /* FollowRequest.swift in Sources */,
 				A9FFE48D27EAE07F004F3B33 /* StoreHomeViewController.swift in Sources */,
 				A9C9ADAE27F049870051D469 /* FeedId.swift in Sources */,
+				A9C9ADCD27F189EC0051D469 /* CoffeeDetailViewController.swift in Sources */,
 				A9FFE49027EAE2A3004F3B33 /* StoreAdCollectionViewCell.swift in Sources */,
 				A90B1C0527E89CC3007A70D0 /* TopViewController.swift in Sources */,
 				A9FFE46827E9EAA4004F3B33 /* SignUpRequest.swift in Sources */,
@@ -868,6 +891,7 @@
 				A9EA67B227E86BBE001B1C68 /* SecretKey.swift in Sources */,
 				A9C9AD8E27EF38070051D469 /* PhotoCollectionViewCell.swift in Sources */,
 				A9C9AD9627EF3BDA0051D469 /* PhotoFilterCollectionViewCell.swift in Sources */,
+				A9C9ADD527F1B38A0051D469 /* BuyViewController.swift in Sources */,
 				A9C9ADA727F03D980051D469 /* PhotoDetailViewController.swift in Sources */,
 				A9C9AD9A27EF3C460051D469 /* PhotoMainModel.swift in Sources */,
 				A9BC5C3727E7008C00D91901 /* ProfileViewController.swift in Sources */,

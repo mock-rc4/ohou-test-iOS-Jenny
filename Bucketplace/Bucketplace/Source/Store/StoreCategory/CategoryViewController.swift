@@ -36,6 +36,10 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CELL, for: indexPath) as! CoffeeCollectionViewCell
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.presentNVC(CoffeeDetailViewController())
+    }
 }
 
 
