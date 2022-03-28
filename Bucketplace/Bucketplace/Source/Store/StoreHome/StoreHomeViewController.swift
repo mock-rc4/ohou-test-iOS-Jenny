@@ -13,7 +13,9 @@ class StoreHomeViewController: UIViewController {
     var recentModel: [ViewProductList]!
     @IBOutlet weak var recentCollectionView: UICollectionView!
     
-    @IBOutlet weak var bestCollectionView: UICollectionView!
+    lazy var popularDataManager = PopularDataManager()
+    var popularModel: [PopularProductList]!
+    @IBOutlet weak var popularCollectionView: UICollectionView!
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
@@ -22,6 +24,7 @@ class StoreHomeViewController: UIViewController {
     
     let AD_CELL = "StoreAdCollectionViewCell"
     let RECENT_CELL = "RecentCollectionViewCell"
+    let POPULAR_CELL = "PopularCollectionViewCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +33,7 @@ class StoreHomeViewController: UIViewController {
         bannerTimer()
         setupCategory()
         getRecentAPI()
+        getPopularAPI()
     }
     
     @IBOutlet weak var categoryView: UIView!
@@ -68,7 +72,7 @@ extension StoreHomeViewController {
 extension StoreHomeViewController {
     private func getRecentAPI() {
         self.showIndicator()
-        self.recentDataManager.getRecnet(self)
+        self.recentDataManager.getRecent(self)
     }
     func didSuccessRecent(_ result: RecentResult){
         recentModel = result.viewProductList
@@ -83,6 +87,28 @@ extension StoreHomeViewController {
         recentCollectionView.delegate = self
         recentCollectionView.dataSource = self
         recentCollectionView.register(UINib(nibName: RECENT_CELL, bundle: nil), forCellWithReuseIdentifier: RECENT_CELL)
+    }
+}
+
+// MARK: 인기 상품
+extension StoreHomeViewController {
+    private func getPopularAPI() {
+        self.showIndicator()
+        self.popularDataManager.getPopular(self)
+    }
+    func didSuccessPopular(_ result: PopularResult){
+        popularModel = result.popularProductList
+        setupPopularCollectionView()
+        self.dismissIndicator()
+    }
+    func failedToRequestPopular(_ message: String) {
+        self.presentAlert(title: message)
+    }
+    
+    private func setupPopularCollectionView() {
+        popularCollectionView.delegate = self
+        popularCollectionView.dataSource = self
+        popularCollectionView.register(UINib(nibName: POPULAR_CELL, bundle: nil), forCellWithReuseIdentifier: POPULAR_CELL)
     }
 }
 
@@ -132,6 +158,8 @@ extension StoreHomeViewController: UICollectionViewDelegate, UICollectionViewDat
             return images.count
         case self.recentCollectionView:
             return recentModel.count
+        case self.popularCollectionView:
+            return popularModel.count
         default:
             return 0
         }
@@ -146,6 +174,10 @@ extension StoreHomeViewController: UICollectionViewDelegate, UICollectionViewDat
         case self.recentCollectionView:
             let cell = recentCollectionView.dequeueReusableCell(withReuseIdentifier: RECENT_CELL, for: indexPath) as! RecentCollectionViewCell
             cell.setData(recentModel[indexPath.row])
+            return cell
+        case self.popularCollectionView:
+            let cell = popularCollectionView.dequeueReusableCell(withReuseIdentifier: POPULAR_CELL, for: indexPath) as! PopularCollectionViewCell
+            cell.setData(popularModel[indexPath.row])
             return cell
         default:
             let cell = UICollectionViewCell()
@@ -163,10 +195,10 @@ extension StoreHomeViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         switch collectionView {
-        case self.collectionView:
-            return CGSize(width: collectionView.frame.size.width, height: collectionView.frame.size.height)
         case self.recentCollectionView:
             return CGSize(width: 170, height: collectionView.frame.size.height)
+        case self.popularCollectionView:
+            return CGSize(width: 200, height: 370)
         default:
             return CGSize(width: collectionView.frame.size.width, height: collectionView.frame.size.height)
         }

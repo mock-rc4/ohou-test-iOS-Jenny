@@ -24,6 +24,10 @@
 		A90B1C1F27E986BF007A70D0 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90B1C1E27E986BF007A70D0 /* SignInViewController.swift */; };
 		A90B1C2127E986DF007A70D0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90B1C2027E986DF007A70D0 /* SignUpViewController.swift */; };
 		A90B1C2527E9B2FA007A70D0 /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90B1C2427E9B2FA007A70D0 /* LoginNavigationController.swift */; };
+		A92308D327F1EAFF00534AA4 /* PopularResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92308D227F1EAFF00534AA4 /* PopularResponse.swift */; };
+		A92308D527F1EB4600534AA4 /* PopularDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92308D427F1EB4600534AA4 /* PopularDataManager.swift */; };
+		A92308D827F1EC6700534AA4 /* PopularCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92308D627F1EC6700534AA4 /* PopularCollectionViewCell.swift */; };
+		A92308D927F1EC6700534AA4 /* PopularCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A92308D727F1EC6700534AA4 /* PopularCollectionViewCell.xib */; };
 		A9A6621A27E5F7C90081064C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621927E5F7C90081064C /* AppDelegate.swift */; };
 		A9A6621C27E5F7C90081064C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621B27E5F7C90081064C /* SceneDelegate.swift */; };
 		A9A6621E27E5F7C90081064C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621D27E5F7C90081064C /* TabBarController.swift */; };
@@ -145,6 +149,10 @@
 		A90B1C1E27E986BF007A70D0 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		A90B1C2027E986DF007A70D0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A90B1C2427E9B2FA007A70D0 /* LoginNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavigationController.swift; sourceTree = "<group>"; };
+		A92308D227F1EAFF00534AA4 /* PopularResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularResponse.swift; sourceTree = "<group>"; };
+		A92308D427F1EB4600534AA4 /* PopularDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDataManager.swift; sourceTree = "<group>"; };
+		A92308D627F1EC6700534AA4 /* PopularCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCollectionViewCell.swift; sourceTree = "<group>"; };
+		A92308D727F1EC6700534AA4 /* PopularCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularCollectionViewCell.xib; sourceTree = "<group>"; };
 		A9A6621627E5F7C90081064C /* Bucketplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bucketplace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A6621927E5F7C90081064C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9A6621B27E5F7C90081064C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -571,6 +579,7 @@
 			children = (
 				A9C9ADDA27F1BFE70051D469 /* TodayDealResponse.swift */,
 				A9C9ADE227F1C6D30051D469 /* RecentResponse.swift */,
+				A92308D227F1EAFF00534AA4 /* PopularResponse.swift */,
 			);
 			path = StoreEntity;
 			sourceTree = "<group>";
@@ -580,6 +589,7 @@
 			children = (
 				A9C9ADDC27F1C0200051D469 /* TodayDealDataManager.swift */,
 				A9C9ADE427F1C7170051D469 /* RecentDataManager.swift */,
+				A92308D427F1EB4600534AA4 /* PopularDataManager.swift */,
 			);
 			path = StoreDataManager;
 			sourceTree = "<group>";
@@ -692,6 +702,8 @@
 				A9FFE48E27EAE2A3004F3B33 /* StoreAdCollectionViewCell.swift */,
 				A9C9ADDF27F1C5350051D469 /* RecentCollectionViewCell.xib */,
 				A9C9ADDE27F1C5350051D469 /* RecentCollectionViewCell.swift */,
+				A92308D727F1EC6700534AA4 /* PopularCollectionViewCell.xib */,
+				A92308D627F1EC6700534AA4 /* PopularCollectionViewCell.swift */,
 			);
 			path = StoreHome;
 			sourceTree = "<group>";
@@ -792,6 +804,7 @@
 				A90B1C0627E89CC3007A70D0 /* TopViewController.xib in Resources */,
 				A90B1C0E27E89EFB007A70D0 /* PhotoViewController.xib in Resources */,
 				A90B1C1227E89F06007A70D0 /* HousewarmingViewController.xib in Resources */,
+				A92308D927F1EC6700534AA4 /* PopularCollectionViewCell.xib in Resources */,
 				A9A6622627E5F7CA0081064C /* LaunchScreen.storyboard in Resources */,
 				A9FFE4B027ECA026004F3B33 /* TodayDealViewController.xib in Resources */,
 				A9C9AD9327EF3BCA0051D469 /* PhotoMainCollectionViewCell.xib in Resources */,
@@ -887,6 +900,7 @@
 				A9C9ADA227F02F1A0051D469 /* PhotoListDataManager.swift in Sources */,
 				A9EA079D27EDEF8900158FCF /* TodayDealCollectionViewCell.swift in Sources */,
 				A9EA077E27EDAE0F00158FCF /* HomeFirstDataManager.swift in Sources */,
+				A92308D827F1EC6700534AA4 /* PopularCollectionViewCell.swift in Sources */,
 				A90B1C1527E89F12007A70D0 /* KnowHowViewController.swift in Sources */,
 				A9BC5C2427E6FDAF00D91901 /* UIColor.swift in Sources */,
 				A9FFE46027E9D88C004F3B33 /* KakaoDataManager.swift in Sources */,
@@ -934,6 +948,7 @@
 				A9C9AD9A27EF3C460051D469 /* PhotoMainModel.swift in Sources */,
 				A9BC5C3727E7008C00D91901 /* ProfileViewController.swift in Sources */,
 				A90B1BEE27E89947007A70D0 /* HomeTabManViewController.swift in Sources */,
+				A92308D327F1EAFF00534AA4 /* PopularResponse.swift in Sources */,
 				A9A6621C27E5F7C90081064C /* SceneDelegate.swift in Sources */,
 				A9BC5C3B27E700CC00D91901 /* MyPageTabManViewController.swift in Sources */,
 				A9FFE46C27E9F335004F3B33 /* SignUpResponse.swift in Sources */,
@@ -945,6 +960,7 @@
 				A9C9ADBC27F0702A0051D469 /* FollowResponse.swift in Sources */,
 				A9FFE46E27EA0500004F3B33 /* SignInRequest.swift in Sources */,
 				A9C9ADDD27F1C0200051D469 /* TodayDealDataManager.swift in Sources */,
+				A92308D527F1EB4600534AA4 /* PopularDataManager.swift in Sources */,
 				A9FFE4AF27ECA026004F3B33 /* TodayDealViewController.swift in Sources */,
 				A90B1C2127E986DF007A70D0 /* SignUpViewController.swift in Sources */,
 				A9C9ADE527F1C7170051D469 /* RecentDataManager.swift in Sources */,

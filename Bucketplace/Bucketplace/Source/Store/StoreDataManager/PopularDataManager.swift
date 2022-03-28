@@ -1,5 +1,5 @@
 //
-//  RecentDataManager.swift
+//  PopularDataManager.swift
 //  Bucketplace
 //
 //  Created by 김영인 on 2022/03/28.
@@ -7,11 +7,11 @@
 
 import Alamofire
 
-class RecentDataManager {
+class PopularDataManager {
     
-    func getRecent(_ delegate: StoreHomeViewController) {
+    func getPopular(_ delegate: StoreHomeViewController) {
         
-        let url = "\(Constant.BASE_URL)/app/stores/view-products"
+        let url = "\(Constant.BASE_URL)/app/stores/popular-products"
         
         let header: HTTPHeaders = [
             "Content-Type": "application/json",
@@ -24,18 +24,13 @@ class RecentDataManager {
                    encoding: JSONEncoding.default,
                    headers: header)
         .validate()
-        .responseDecodable(of: RecentResponse.self) { (response) in
+        .responseDecodable(of: PopularResponse.self) { (response) in
             switch response.result {
             case .success(let response):
                 if response.isSuccess {
-                    delegate.didSuccessRecent(response.result)
+                    delegate.didSuccessPopular(response.result)
                 } else {
-                    switch response.code {
-                    case 2001:
-                        delegate.failedToRequest("로그인이 필요합니다.")
-                    default:
-                        delegate.failedToRequest("최근 본 상품을 불러오는데 실패하였습니다.")
-                    }
+                    delegate.failedToRequestPopular("인기 상품을 불러오는데 실패하였습니다.")
                 }
                 print("🔥\(response)")
             case .failure(let error):
