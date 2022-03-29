@@ -73,12 +73,6 @@
 		A9BC5C4927E716EB00D91901 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9BC5C4827E716EB00D91901 /* Home.storyboard */; };
 		A9C9AD8E27EF38070051D469 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9AD8C27EF38070051D469 /* PhotoCollectionViewCell.swift */; };
 		A9C9AD8F27EF38070051D469 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9C9AD8D27EF38070051D469 /* PhotoCollectionViewCell.xib */; };
-		A9C9AD9227EF3BCA0051D469 /* PhotoMainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9AD9027EF3BCA0051D469 /* PhotoMainCollectionViewCell.swift */; };
-		A9C9AD9327EF3BCA0051D469 /* PhotoMainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9C9AD9127EF3BCA0051D469 /* PhotoMainCollectionViewCell.xib */; };
-		A9C9AD9627EF3BDA0051D469 /* PhotoFilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9AD9427EF3BDA0051D469 /* PhotoFilterCollectionViewCell.swift */; };
-		A9C9AD9727EF3BDA0051D469 /* PhotoFilterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9C9AD9527EF3BDA0051D469 /* PhotoFilterCollectionViewCell.xib */; };
-		A9C9AD9A27EF3C460051D469 /* PhotoMainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9AD9927EF3C460051D469 /* PhotoMainModel.swift */; };
-		A9C9AD9C27EF3C4E0051D469 /* PhotoFilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9AD9B27EF3C4E0051D469 /* PhotoFilterModel.swift */; };
 		A9C9ADA027F02DF00051D469 /* PhotoListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9AD9F27F02DF00051D469 /* PhotoListResponse.swift */; };
 		A9C9ADA227F02F1A0051D469 /* PhotoListDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADA127F02F1A0051D469 /* PhotoListDataManager.swift */; };
 		A9C9ADA727F03D980051D469 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADA527F03D980051D469 /* PhotoDetailViewController.swift */; };
@@ -223,12 +217,6 @@
 		A9BC5C4827E716EB00D91901 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		A9C9AD8C27EF38070051D469 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		A9C9AD8D27EF38070051D469 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
-		A9C9AD9027EF3BCA0051D469 /* PhotoMainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMainCollectionViewCell.swift; sourceTree = "<group>"; };
-		A9C9AD9127EF3BCA0051D469 /* PhotoMainCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoMainCollectionViewCell.xib; sourceTree = "<group>"; };
-		A9C9AD9427EF3BDA0051D469 /* PhotoFilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFilterCollectionViewCell.swift; sourceTree = "<group>"; };
-		A9C9AD9527EF3BDA0051D469 /* PhotoFilterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoFilterCollectionViewCell.xib; sourceTree = "<group>"; };
-		A9C9AD9927EF3C460051D469 /* PhotoMainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMainModel.swift; sourceTree = "<group>"; };
-		A9C9AD9B27EF3C4E0051D469 /* PhotoFilterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFilterModel.swift; sourceTree = "<group>"; };
 		A9C9AD9F27F02DF00051D469 /* PhotoListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListResponse.swift; sourceTree = "<group>"; };
 		A9C9ADA127F02F1A0051D469 /* PhotoListDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListDataManager.swift; sourceTree = "<group>"; };
 		A9C9ADA527F03D980051D469 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
@@ -365,7 +353,6 @@
 		A90B1BF327E89A0C007A70D0 /* Photo */ = {
 			isa = PBXGroup;
 			children = (
-				A9C9AD9827EF3C350051D469 /* PhotoModel */,
 				A9C9AD9D27F02DA40051D469 /* PhotoEntity */,
 				A9C9AD9E27F02DAB0051D469 /* PhotoDanaManager */,
 				A9C9ADA327F03D6B0051D469 /* PhotoList */,
@@ -613,15 +600,6 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		A9C9AD9827EF3C350051D469 /* PhotoModel */ = {
-			isa = PBXGroup;
-			children = (
-				A9C9AD9927EF3C460051D469 /* PhotoMainModel.swift */,
-				A9C9AD9B27EF3C4E0051D469 /* PhotoFilterModel.swift */,
-			);
-			path = PhotoModel;
-			sourceTree = "<group>";
-		};
 		A9C9AD9D27F02DA40051D469 /* PhotoEntity */ = {
 			isa = PBXGroup;
 			children = (
@@ -647,10 +625,6 @@
 			children = (
 				A90B1C0C27E89EFB007A70D0 /* PhotoViewController.xib */,
 				A90B1C0B27E89EFB007A70D0 /* PhotoViewController.swift */,
-				A9C9AD9127EF3BCA0051D469 /* PhotoMainCollectionViewCell.xib */,
-				A9C9AD9027EF3BCA0051D469 /* PhotoMainCollectionViewCell.swift */,
-				A9C9AD9527EF3BDA0051D469 /* PhotoFilterCollectionViewCell.xib */,
-				A9C9AD9427EF3BDA0051D469 /* PhotoFilterCollectionViewCell.swift */,
 				A9C9AD8D27EF38070051D469 /* PhotoCollectionViewCell.xib */,
 				A9C9AD8C27EF38070051D469 /* PhotoCollectionViewCell.swift */,
 			);
@@ -933,7 +907,6 @@
 				A92308D927F1EC6700534AA4 /* PopularCollectionViewCell.xib in Resources */,
 				A9A6622627E5F7CA0081064C /* LaunchScreen.storyboard in Resources */,
 				A9FFE4B027ECA026004F3B33 /* TodayDealViewController.xib in Resources */,
-				A9C9AD9327EF3BCA0051D469 /* PhotoMainCollectionViewCell.xib in Resources */,
 				A9FFE4BC27EDA045004F3B33 /* HomeCategoryCollectionViewCell.xib in Resources */,
 				A90B1C0A27E89EEF007A70D0 /* FollowingViewController.xib in Resources */,
 				A9A6622327E5F7CA0081064C /* Assets.xcassets in Resources */,
@@ -943,7 +916,6 @@
 				A9C9ADD627F1B38A0051D469 /* BuyViewController.xib in Resources */,
 				A9FFE49127EAE2A3004F3B33 /* StoreAdCollectionViewCell.xib in Resources */,
 				A9BC5C4927E716EB00D91901 /* Home.storyboard in Resources */,
-				A9C9AD9727EF3BDA0051D469 /* PhotoFilterCollectionViewCell.xib in Resources */,
 				A92FBDD227F32F6900BE3A19 /* TopPhotoCollectionViewCell.xib in Resources */,
 				A9C9ADE127F1C5350051D469 /* RecentCollectionViewCell.xib in Resources */,
 				A9A6622127E5F7C90081064C /* Main.storyboard in Resources */,
@@ -1048,11 +1020,9 @@
 				A9BC5C3927E7009D00D91901 /* MyShoppingViewController.swift in Sources */,
 				A9EA67B727E8811F001B1C68 /* AdCollectionViewCell.swift in Sources */,
 				A92FBDD127F32F6900BE3A19 /* TopPhotoCollectionViewCell.swift in Sources */,
-				A9C9AD9C27EF3C4E0051D469 /* PhotoFilterModel.swift in Sources */,
 				A9FFE4BB27EDA045004F3B33 /* HomeCategoryCollectionViewCell.swift in Sources */,
 				A9C9ADB227F04C080051D469 /* PhotoDetailDataManager.swift in Sources */,
 				A9A6621A27E5F7C90081064C /* AppDelegate.swift in Sources */,
-				A9C9AD9227EF3BCA0051D469 /* PhotoMainCollectionViewCell.swift in Sources */,
 				A9EA078E27EDD2C800158FCF /* ProfileDataManager.swift in Sources */,
 				A9FFE47027EA050B004F3B33 /* SignInDataManager.swift in Sources */,
 				A9EA078427EDBF2100158FCF /* HomeSecondResponse.swift in Sources */,
@@ -1085,10 +1055,8 @@
 				A9EA67B227E86BBE001B1C68 /* SecretKey.swift in Sources */,
 				A9C9AD8E27EF38070051D469 /* PhotoCollectionViewCell.swift in Sources */,
 				A92308E427F2CBC400534AA4 /* HousewarmingCollectionViewCell.swift in Sources */,
-				A9C9AD9627EF3BDA0051D469 /* PhotoFilterCollectionViewCell.swift in Sources */,
 				A9C9ADD527F1B38A0051D469 /* BuyViewController.swift in Sources */,
 				A9C9ADA727F03D980051D469 /* PhotoDetailViewController.swift in Sources */,
-				A9C9AD9A27EF3C460051D469 /* PhotoMainModel.swift in Sources */,
 				A9BC5C3727E7008C00D91901 /* ProfileViewController.swift in Sources */,
 				A90B1BEE27E89947007A70D0 /* HomeTabManViewController.swift in Sources */,
 				A92308D327F1EAFF00534AA4 /* PopularResponse.swift in Sources */,

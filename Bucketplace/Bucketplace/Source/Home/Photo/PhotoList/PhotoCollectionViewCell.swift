@@ -16,9 +16,9 @@ class PhotoCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
     }
     
-    public func setData(_ info: [String]) {
-        Functions.shared.urlToImg(info[0], photoImg)
-        photoDescription.text = info[1]
+    public func setData(_ data: BaseInformation) {
+        Functions.shared.urlToImg(data.thumbnailUrl, photoImg)
+        photoDescription.text = data.description
     }
 
 }

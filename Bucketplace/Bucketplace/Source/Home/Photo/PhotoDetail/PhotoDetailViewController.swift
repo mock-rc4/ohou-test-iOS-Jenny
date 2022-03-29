@@ -105,6 +105,7 @@ extension PhotoDetailViewController {
 extension PhotoDetailViewController {
     private func getPhotoDetailAPI() {
         self.showIndicator()
+        print("🌳\(feedId)")
         self.photoDetailDataManager.getPhotoDetail(feedId, self)
     }
     func didSuccessPhotoDetail(_ result: PhotoDetailResponse) {

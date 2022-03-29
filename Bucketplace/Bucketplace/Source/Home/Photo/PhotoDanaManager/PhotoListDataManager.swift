@@ -28,7 +28,7 @@ class PhotoListDataManager {
             switch response.result {
             case .success(let response):
                 if response.isSuccess {
-                    delegate.didSuccessPhotoList(response)
+                    delegate.didSuccessPhotoList(response.result)
                 } else {
                     switch response.code {
                     case 2001, 2002:

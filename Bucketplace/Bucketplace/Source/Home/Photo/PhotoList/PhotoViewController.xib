@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -10,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoViewController" customModule="Bucketplace" customModuleProvider="target">
             <connections>
-                <outlet property="collectionView" destination="YQf-AD-PVb" id="A03-au-6Mj"/>
+                <outlet property="collectionView" destination="F6X-f8-c55" id="30l-8p-P9S"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,31 +20,388 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="YQf-AD-PVb">
-                    <rect key="frame" x="0.0" y="84" width="414" height="778"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oTz-Li-LAG">
-                        <size key="itemSize" width="128" height="128"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    </collectionViewFlowLayout>
-                </collectionView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2l-B6-mpR">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wi1-O8-zTc">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1300"/>
+                            <subviews>
+                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfK-Pc-zr9">
+                                    <rect key="frame" x="0.0" y="50" width="414" height="100"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aR3-7w-mSB">
+                                            <rect key="frame" x="0.0" y="0.0" width="750" height="100"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="w79-6F-XNW">
+                                                    <rect key="frame" x="20" y="10" width="740" height="80"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ph-1" translatesAutoresizingMaskIntoConstraints="NO" id="zFq-Ra-HPy">
+                                                            <rect key="frame" x="0.0" y="0.0" width="115" height="80"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="115" id="YvB-ep-Lo2"/>
+                                                                <constraint firstAttribute="width" secondItem="zFq-Ra-HPy" secondAttribute="height" multiplier="13:9" id="tWL-Dn-Mjm"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ph-2" translatesAutoresizingMaskIntoConstraints="NO" id="0R5-dC-0a1">
+                                                            <rect key="frame" x="125" y="0.0" width="115" height="80"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="115" id="K5g-8d-dTz"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ph-3" translatesAutoresizingMaskIntoConstraints="NO" id="htL-oS-njx">
+                                                            <rect key="frame" x="250" y="0.0" width="115" height="80"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="115" id="5bS-K6-1w2"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ph-4" translatesAutoresizingMaskIntoConstraints="NO" id="77K-fe-laG">
+                                                            <rect key="frame" x="375" y="0.0" width="115" height="80"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="115" id="ouA-WN-CJA"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ph-5" translatesAutoresizingMaskIntoConstraints="NO" id="Vfd-xZ-I0S">
+                                                            <rect key="frame" x="500" y="0.0" width="115" height="80"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="115" id="y3l-Tw-a5K"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ph-6" translatesAutoresizingMaskIntoConstraints="NO" id="1PE-aU-ePr">
+                                                            <rect key="frame" x="625" y="0.0" width="115" height="80"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="115" id="uzl-mj-Hz7"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="htL-oS-njx" firstAttribute="width" secondItem="htL-oS-njx" secondAttribute="height" multiplier="13:9" id="Hfs-KL-Hcx"/>
+                                                        <constraint firstItem="77K-fe-laG" firstAttribute="width" secondItem="77K-fe-laG" secondAttribute="height" multiplier="13:9" id="I2C-Vz-E1k"/>
+                                                        <constraint firstItem="1PE-aU-ePr" firstAttribute="width" secondItem="1PE-aU-ePr" secondAttribute="height" multiplier="13:9" id="RuS-Kr-xes"/>
+                                                        <constraint firstItem="0R5-dC-0a1" firstAttribute="width" secondItem="0R5-dC-0a1" secondAttribute="height" multiplier="13:9" id="g8i-md-TPm"/>
+                                                        <constraint firstItem="Vfd-xZ-I0S" firstAttribute="width" secondItem="Vfd-xZ-I0S" secondAttribute="height" multiplier="13:9" id="y9R-5h-WaU"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="w79-6F-XNW" firstAttribute="leading" secondItem="aR3-7w-mSB" secondAttribute="leading" constant="20" id="ft7-uq-QAC"/>
+                                                <constraint firstAttribute="width" constant="750" id="odQ-Fg-eLa"/>
+                                                <constraint firstItem="w79-6F-XNW" firstAttribute="centerY" secondItem="aR3-7w-mSB" secondAttribute="centerY" id="uVm-xN-wIJ"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="aR3-7w-mSB" firstAttribute="trailing" secondItem="FTf-bv-ZoA" secondAttribute="trailing" id="1JJ-fo-7FP"/>
+                                        <constraint firstItem="aR3-7w-mSB" firstAttribute="top" secondItem="FTf-bv-ZoA" secondAttribute="top" id="NAP-dN-yT2"/>
+                                        <constraint firstItem="aR3-7w-mSB" firstAttribute="leading" secondItem="FTf-bv-ZoA" secondAttribute="leading" id="RHe-A3-HoK"/>
+                                        <constraint firstItem="aR3-7w-mSB" firstAttribute="height" secondItem="1bp-oU-kGa" secondAttribute="height" id="UJd-DU-SmL"/>
+                                        <constraint firstAttribute="height" constant="100" id="kbF-xc-UPi"/>
+                                        <constraint firstItem="aR3-7w-mSB" firstAttribute="bottom" secondItem="FTf-bv-ZoA" secondAttribute="bottom" id="y9b-xO-g5g"/>
+                                    </constraints>
+                                    <viewLayoutGuide key="contentLayoutGuide" id="FTf-bv-ZoA"/>
+                                    <viewLayoutGuide key="frameLayoutGuide" id="1bp-oU-kGa"/>
+                                </scrollView>
+                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ory-qa-zcp">
+                                    <rect key="frame" x="0.0" y="150" width="414" height="50"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIw-8q-VSp">
+                                            <rect key="frame" x="0.0" y="0.0" width="950" height="50"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ygI-hj-exq">
+                                                    <rect key="frame" x="20" y="10" width="929" height="30"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homesquare2" translatesAutoresizingMaskIntoConstraints="NO" id="RzR-vR-Qo5">
+                                                            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="RzR-vR-Qo5" secondAttribute="height" multiplier="1:1" id="LDE-63-JmZ"/>
+                                                                <constraint firstAttribute="width" constant="30" id="XLh-df-DnJ"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homefilter" translatesAutoresizingMaskIntoConstraints="NO" id="NSz-B4-3dm">
+                                                            <rect key="frame" x="35" y="0.0" width="30" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="30" id="FYV-3l-JZm"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i89-g0-ycY">
+                                                            <rect key="frame" x="70" y="0.0" width="65" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="65" id="k0f-dk-pix"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="정렬 ">
+                                                                <imageReference key="image" image="chevron.down" catalog="system" symbolScale="small"/>
+                                                                <backgroundConfiguration key="background" cornerRadius="5">
+                                                                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                                </backgroundConfiguration>
+                                                                <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small" weight="semibold"/>
+                                                                <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
+                                                                <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pc-Tk-5Bf">
+                                                            <rect key="frame" x="140" y="0.0" width="77" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="77" id="MIm-hs-xvQ"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="동영상 ">
+                                                                <imageReference key="image" image="chevron.down" catalog="system" symbolScale="small"/>
+                                                                <backgroundConfiguration key="background" cornerRadius="5">
+                                                                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                                </backgroundConfiguration>
+                                                                <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small" weight="semibold"/>
+                                                                <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
+                                                                <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dva-kg-wwd">
+                                                            <rect key="frame" x="222" y="0.0" width="90" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="90" id="fxT-qA-gVO"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="주거형태 ">
+                                                                <imageReference key="image" image="chevron.down" catalog="system" symbolScale="small"/>
+                                                                <backgroundConfiguration key="background" cornerRadius="5">
+                                                                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                                </backgroundConfiguration>
+                                                                <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small" weight="semibold"/>
+                                                                <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
+                                                                <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iyy-mJ-jyW">
+                                                            <rect key="frame" x="317" y="0.0" width="65" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="65" id="d3j-px-u5p"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="공간 ">
+                                                                <imageReference key="image" image="chevron.down" catalog="system" symbolScale="small"/>
+                                                                <backgroundConfiguration key="background" cornerRadius="5">
+                                                                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                                </backgroundConfiguration>
+                                                                <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small" weight="semibold"/>
+                                                                <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
+                                                                <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVK-kJ-Ego">
+                                                            <rect key="frame" x="387" y="0.0" width="77" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="77" id="WJP-iP-DOH"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="스타일 ">
+                                                                <imageReference key="image" image="chevron.down" catalog="system" symbolScale="small"/>
+                                                                <backgroundConfiguration key="background" cornerRadius="5">
+                                                                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                                </backgroundConfiguration>
+                                                                <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small" weight="semibold"/>
+                                                                <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
+                                                                <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mwi-zR-akd">
+                                                            <rect key="frame" x="469" y="0.0" width="65" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="65" id="Rz1-7d-JaI"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="평수 ">
+                                                                <imageReference key="image" image="chevron.down" catalog="system" symbolScale="small"/>
+                                                                <backgroundConfiguration key="background" cornerRadius="5">
+                                                                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                                </backgroundConfiguration>
+                                                                <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small" weight="semibold"/>
+                                                                <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
+                                                                <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WqP-aI-gbS">
+                                                            <rect key="frame" x="539" y="0.0" width="65" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="65" id="hEu-Nm-OdW"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="컬러 ">
+                                                                <imageReference key="image" image="chevron.down" catalog="system" symbolScale="small"/>
+                                                                <backgroundConfiguration key="background" cornerRadius="5">
+                                                                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                                </backgroundConfiguration>
+                                                                <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small" weight="semibold"/>
+                                                                <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
+                                                                <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPy-5S-PLl">
+                                                            <rect key="frame" x="609" y="0.0" width="100" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="100" id="5bA-ZZ-R0e"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="셀프/전문">
+                                                                <imageReference key="image" image="chevron.down" catalog="system" symbolScale="small"/>
+                                                                <backgroundConfiguration key="background" cornerRadius="5">
+                                                                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                                </backgroundConfiguration>
+                                                                <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small" weight="semibold"/>
+                                                                <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
+                                                                <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Orq-nu-2Mb">
+                                                            <rect key="frame" x="714" y="0.0" width="120" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="120" id="OGt-ZT-oHh"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="인테리어 자재 ">
+                                                                <imageReference key="image" image="chevron.down" catalog="system" symbolScale="small"/>
+                                                                <backgroundConfiguration key="background" cornerRadius="5">
+                                                                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                                </backgroundConfiguration>
+                                                                <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small" weight="semibold"/>
+                                                                <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
+                                                                <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxZ-ge-f7M">
+                                                            <rect key="frame" x="839" y="0.0" width="90" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="90" id="U9g-dN-y3z"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="상품정보 ">
+                                                                <imageReference key="image" image="chevron.down" catalog="system" symbolScale="small"/>
+                                                                <backgroundConfiguration key="background" cornerRadius="5">
+                                                                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                                </backgroundConfiguration>
+                                                                <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small" weight="semibold"/>
+                                                                <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
+                                                                <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="NSz-B4-3dm" firstAttribute="width" secondItem="NSz-B4-3dm" secondAttribute="height" multiplier="1:1" id="Dbg-cC-1Qw"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="ygI-hj-exq" firstAttribute="centerY" secondItem="LIw-8q-VSp" secondAttribute="centerY" id="dzc-93-NTc"/>
+                                                <constraint firstAttribute="width" constant="950" id="y6w-GM-hPx"/>
+                                                <constraint firstItem="ygI-hj-exq" firstAttribute="leading" secondItem="LIw-8q-VSp" secondAttribute="leading" constant="20" id="zWC-PT-YgK"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="Lpd-9u-mfW"/>
+                                        <constraint firstItem="LIw-8q-VSp" firstAttribute="trailing" secondItem="cmh-iC-41C" secondAttribute="trailing" id="Typ-Wd-V2c"/>
+                                        <constraint firstItem="LIw-8q-VSp" firstAttribute="top" secondItem="cmh-iC-41C" secondAttribute="top" id="Wlq-vO-x7F"/>
+                                        <constraint firstItem="LIw-8q-VSp" firstAttribute="height" secondItem="Mt7-LA-BBR" secondAttribute="height" id="ZdF-F5-XJm"/>
+                                        <constraint firstItem="LIw-8q-VSp" firstAttribute="bottom" secondItem="cmh-iC-41C" secondAttribute="bottom" id="ZhD-BI-Di1"/>
+                                        <constraint firstItem="LIw-8q-VSp" firstAttribute="leading" secondItem="cmh-iC-41C" secondAttribute="leading" id="dWb-oG-VPu"/>
+                                    </constraints>
+                                    <viewLayoutGuide key="contentLayoutGuide" id="cmh-iC-41C"/>
+                                    <viewLayoutGuide key="frameLayoutGuide" id="Mt7-LA-BBR"/>
+                                </scrollView>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="F6X-f8-c55">
+                                    <rect key="frame" x="0.0" y="200" width="414" height="1100"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="ybU-qU-eHT">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="F6X-f8-c55" secondAttribute="trailing" id="CEy-gF-JL7"/>
+                                <constraint firstAttribute="height" constant="1300" id="Iws-hF-tNv"/>
+                                <constraint firstItem="Ory-qa-zcp" firstAttribute="top" secondItem="RfK-Pc-zr9" secondAttribute="bottom" id="JXk-U2-jpc"/>
+                                <constraint firstAttribute="trailing" secondItem="Ory-qa-zcp" secondAttribute="trailing" id="NQd-sO-lXW"/>
+                                <constraint firstAttribute="trailing" secondItem="RfK-Pc-zr9" secondAttribute="trailing" id="SH8-jh-CbI"/>
+                                <constraint firstItem="F6X-f8-c55" firstAttribute="top" secondItem="Ory-qa-zcp" secondAttribute="bottom" id="WGT-SZ-bcY"/>
+                                <constraint firstItem="RfK-Pc-zr9" firstAttribute="top" secondItem="Wi1-O8-zTc" secondAttribute="top" constant="50" id="XJ9-ky-b3Y"/>
+                                <constraint firstAttribute="bottom" secondItem="F6X-f8-c55" secondAttribute="bottom" id="doT-Y5-s9q"/>
+                                <constraint firstItem="RfK-Pc-zr9" firstAttribute="leading" secondItem="Wi1-O8-zTc" secondAttribute="leading" id="nT1-dn-ehB"/>
+                                <constraint firstItem="F6X-f8-c55" firstAttribute="leading" secondItem="Wi1-O8-zTc" secondAttribute="leading" id="tsE-4F-IxD"/>
+                                <constraint firstItem="Ory-qa-zcp" firstAttribute="leading" secondItem="Wi1-O8-zTc" secondAttribute="leading" id="xbU-9Q-pty"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Wi1-O8-zTc" firstAttribute="leading" secondItem="rLs-kw-WJy" secondAttribute="leading" id="Cel-hR-I8a"/>
+                        <constraint firstItem="Wi1-O8-zTc" firstAttribute="top" secondItem="rLs-kw-WJy" secondAttribute="top" id="IU9-w5-Obq"/>
+                        <constraint firstItem="Wi1-O8-zTc" firstAttribute="bottom" secondItem="rLs-kw-WJy" secondAttribute="bottom" id="s5K-Zq-LbO"/>
+                        <constraint firstItem="Wi1-O8-zTc" firstAttribute="width" secondItem="Fb8-tJ-Ue3" secondAttribute="width" id="vV8-lw-22U"/>
+                        <constraint firstItem="Wi1-O8-zTc" firstAttribute="trailing" secondItem="rLs-kw-WJy" secondAttribute="trailing" id="vto-5w-weL"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="rLs-kw-WJy"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="Fb8-tJ-Ue3"/>
+                </scrollView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="YQf-AD-PVb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="16j-RB-IS8"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YQf-AD-PVb" secondAttribute="trailing" id="4T2-Qw-fSh"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="YQf-AD-PVb" secondAttribute="bottom" id="WlJ-iG-sE5"/>
-                <constraint firstItem="YQf-AD-PVb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="m2q-Nc-zIB"/>
+                <constraint firstItem="i2l-B6-mpR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="EVo-SR-B9Q"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="i2l-B6-mpR" secondAttribute="bottom" id="eIW-6K-a77"/>
+                <constraint firstItem="i2l-B6-mpR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fUB-y8-d07"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="i2l-B6-mpR" secondAttribute="trailing" id="fyS-mr-IVP"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="86.383928571428569"/>
         </view>
     </objects>
     <resources>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
+        <image name="homefilter" width="50" height="50"/>
+        <image name="homesquare2" width="50" height="50"/>
+        <image name="ph-1" width="210" height="150"/>
+        <image name="ph-2" width="210" height="150"/>
+        <image name="ph-3" width="210" height="150"/>
+        <image name="ph-4" width="215" height="150"/>
+        <image name="ph-5" width="215" height="150"/>
+        <image name="ph-6" width="215" height="150"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

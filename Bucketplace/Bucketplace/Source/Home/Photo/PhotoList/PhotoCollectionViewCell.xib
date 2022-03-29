@@ -10,19 +10,19 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCollectionViewCell" id="gTV-IL-0wX" customClass="PhotoCollectionViewCell" customModule="Bucketplace" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
+            <rect key="frame" x="0.0" y="0.0" width="200" height="350"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
+                <rect key="frame" x="0.0" y="0.0" width="200" height="350"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mvm-VK-3rq">
-                        <rect key="frame" x="60" y="45" width="200" height="310"/>
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="350"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hd" translatesAutoresizingMaskIntoConstraints="NO" id="WJ9-8W-Hlm">
-                                <rect key="frame" x="10" y="10" width="180" height="250"/>
+                                <rect key="frame" x="0.0" y="10" width="200" height="300"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="pm9-hR-IuX"/>
+                                    <constraint firstAttribute="height" constant="300" id="pm9-hR-IuX"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -31,10 +31,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="설명" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTQ-IS-gQE">
-                                <rect key="frame" x="10" y="265" width="180" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="3WX-YN-wOf"/>
-                                </constraints>
+                                <rect key="frame" x="10" y="315" width="180" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -42,14 +39,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="310" id="4n0-MX-lSx"/>
                             <constraint firstItem="WJ9-8W-Hlm" firstAttribute="top" secondItem="Mvm-VK-3rq" secondAttribute="top" constant="10" id="5cE-n5-Ezl"/>
-                            <constraint firstAttribute="width" constant="200" id="Ovt-lO-fQq"/>
+                            <constraint firstAttribute="bottom" secondItem="yTQ-IS-gQE" secondAttribute="bottom" constant="10" id="SqR-Pw-zY6"/>
                             <constraint firstItem="yTQ-IS-gQE" firstAttribute="leading" secondItem="Mvm-VK-3rq" secondAttribute="leading" constant="10" id="TuP-38-bGX"/>
                             <constraint firstItem="WJ9-8W-Hlm" firstAttribute="centerX" secondItem="Mvm-VK-3rq" secondAttribute="centerX" id="bZj-4k-YvY"/>
-                            <constraint firstAttribute="trailing" secondItem="WJ9-8W-Hlm" secondAttribute="trailing" constant="10" id="e56-q8-KL4"/>
+                            <constraint firstAttribute="trailing" secondItem="WJ9-8W-Hlm" secondAttribute="trailing" id="e56-q8-KL4"/>
                             <constraint firstItem="yTQ-IS-gQE" firstAttribute="centerX" secondItem="WJ9-8W-Hlm" secondAttribute="centerX" id="fAT-7v-Fy4"/>
-                            <constraint firstItem="WJ9-8W-Hlm" firstAttribute="leading" secondItem="Mvm-VK-3rq" secondAttribute="leading" constant="10" id="miq-ny-1Hw"/>
+                            <constraint firstItem="WJ9-8W-Hlm" firstAttribute="leading" secondItem="Mvm-VK-3rq" secondAttribute="leading" id="miq-ny-1Hw"/>
                             <constraint firstItem="yTQ-IS-gQE" firstAttribute="top" secondItem="WJ9-8W-Hlm" secondAttribute="bottom" constant="5" id="mux-b1-ItL"/>
                             <constraint firstAttribute="trailing" secondItem="yTQ-IS-gQE" secondAttribute="trailing" constant="10" id="vOj-lr-Gg5"/>
                         </constraints>
@@ -58,6 +54,10 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="Mvm-VK-3rq" secondAttribute="bottom" id="LaQ-TB-X0K"/>
+                <constraint firstItem="Mvm-VK-3rq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Mny-Or-YuA"/>
+                <constraint firstAttribute="trailing" secondItem="Mvm-VK-3rq" secondAttribute="trailing" id="RwD-Oa-Q5O"/>
+                <constraint firstItem="Mvm-VK-3rq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ebD-Y3-faN"/>
                 <constraint firstItem="Mvm-VK-3rq" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="qIR-zL-ADh"/>
                 <constraint firstItem="Mvm-VK-3rq" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="xle-E9-8D6"/>
             </constraints>
