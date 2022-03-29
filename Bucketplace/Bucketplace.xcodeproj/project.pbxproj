@@ -36,6 +36,8 @@
 		A92308E527F2CBC400534AA4 /* HousewarmingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A92308E327F2CBC400534AA4 /* HousewarmingCollectionViewCell.xib */; };
 		A92308E927F2D03A00534AA4 /* HousewarmingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92308E827F2D03A00534AA4 /* HousewarmingResponse.swift */; };
 		A92308EB27F2D04700534AA4 /* HousewarmingDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92308EA27F2D04700534AA4 /* HousewarmingDataManager.swift */; };
+		A92308EE27F2D75600534AA4 /* KnowHowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92308EC27F2D75600534AA4 /* KnowHowCollectionViewCell.swift */; };
+		A92308EF27F2D75600534AA4 /* KnowHowCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A92308ED27F2D75600534AA4 /* KnowHowCollectionViewCell.xib */; };
 		A9A6621A27E5F7C90081064C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621927E5F7C90081064C /* AppDelegate.swift */; };
 		A9A6621C27E5F7C90081064C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621B27E5F7C90081064C /* SceneDelegate.swift */; };
 		A9A6621E27E5F7C90081064C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621D27E5F7C90081064C /* TabBarController.swift */; };
@@ -168,6 +170,8 @@
 		A92308E327F2CBC400534AA4 /* HousewarmingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HousewarmingCollectionViewCell.xib; sourceTree = "<group>"; };
 		A92308E827F2D03A00534AA4 /* HousewarmingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousewarmingResponse.swift; sourceTree = "<group>"; };
 		A92308EA27F2D04700534AA4 /* HousewarmingDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousewarmingDataManager.swift; sourceTree = "<group>"; };
+		A92308EC27F2D75600534AA4 /* KnowHowCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowHowCollectionViewCell.swift; sourceTree = "<group>"; };
+		A92308ED27F2D75600534AA4 /* KnowHowCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KnowHowCollectionViewCell.xib; sourceTree = "<group>"; };
 		A9A6621627E5F7C90081064C /* Bucketplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bucketplace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A6621927E5F7C90081064C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9A6621B27E5F7C90081064C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -354,8 +358,10 @@
 		A90B1BF527E89A83007A70D0 /* KnowHow */ = {
 			isa = PBXGroup;
 			children = (
-				A90B1C1327E89F12007A70D0 /* KnowHowViewController.swift */,
 				A90B1C1427E89F12007A70D0 /* KnowHowViewController.xib */,
+				A90B1C1327E89F12007A70D0 /* KnowHowViewController.swift */,
+				A92308ED27F2D75600534AA4 /* KnowHowCollectionViewCell.xib */,
+				A92308EC27F2D75600534AA4 /* KnowHowCollectionViewCell.swift */,
 			);
 			path = KnowHow;
 			sourceTree = "<group>";
@@ -839,6 +845,7 @@
 			files = (
 				A90B1C1A27E89F1B007A70D0 /* QnAViewController.xib in Resources */,
 				A90B1C0627E89CC3007A70D0 /* TopViewController.xib in Resources */,
+				A92308EF27F2D75600534AA4 /* KnowHowCollectionViewCell.xib in Resources */,
 				A90B1C0E27E89EFB007A70D0 /* PhotoViewController.xib in Resources */,
 				A90B1C1227E89F06007A70D0 /* HousewarmingViewController.xib in Resources */,
 				A92308D927F1EC6700534AA4 /* PopularCollectionViewCell.xib in Resources */,
@@ -968,6 +975,7 @@
 				A9BC5C2A27E6FE2000D91901 /* IndicatorView.swift in Sources */,
 				A9FFE49D27EB1785004F3B33 /* CategoryModel.swift in Sources */,
 				A90B1C1127E89F06007A70D0 /* HousewarmingViewController.swift in Sources */,
+				A92308EE27F2D75600534AA4 /* KnowHowCollectionViewCell.swift in Sources */,
 				A90B1C2527E9B2FA007A70D0 /* LoginNavigationController.swift in Sources */,
 				A90B1C1F27E986BF007A70D0 /* SignInViewController.swift in Sources */,
 				A9C9ADC027F072530051D469 /* FollowRequest.swift in Sources */,
