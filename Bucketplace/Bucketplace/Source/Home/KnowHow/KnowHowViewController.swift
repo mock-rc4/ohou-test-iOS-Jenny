@@ -9,12 +9,14 @@ import UIKit
 
 class KnowHowViewController: UIViewController {
     
+    lazy var knowhowDataManager = KnowHowDataManager()
+    var knowhowModel: [KnowhowFeed]!
     @IBOutlet weak var collectionView: UICollectionView!
     let CELL = "KnowHowCollectionViewCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupCollectionView()
+        getKnowHowAPI()
     }
     
     @IBAction func btn1Click(_ btn: UIButton) {
@@ -38,6 +40,23 @@ class KnowHowViewController: UIViewController {
     }
 }
 
+// MARK: API 호출
+extension KnowHowViewController {
+    private func getKnowHowAPI() {
+        self.showIndicator()
+        self.knowhowDataManager.getKnowHow(self)
+    }
+    func didSuccessKnowHow(_ result: KnowHowResult){
+        knowhowModel = result.knowhowFeeds
+        setupCollectionView()
+        self.dismissIndicator()
+    }
+    func failedToRequest(_ message: String) {
+        self.dismissIndicator()
+        self.presentAlert(title: message)
+    }
+}
+
 extension KnowHowViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     private func setupCollectionView() {
         collectionView.delegate = self
@@ -46,12 +65,13 @@ extension KnowHowViewController: UICollectionViewDelegate, UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return knowhowModel.count
     }
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CELL, for: indexPath) as! KnowHowCollectionViewCell
+        cell.setData(knowhowModel[indexPath.row])
         return cell
     }
     

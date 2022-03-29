@@ -22,4 +22,11 @@ class KnowHowCollectionViewCell: UICollectionViewCell {
     @IBAction func bookmarkBtnClick(_ sender: Any) {
         print("📎 bookmark")
     }
+    
+    func setData(_ data: KnowhowFeed) {
+        Functions.shared.urlToImg(data.thumbnailUrl, img)
+        title.text = data.description
+        name.text = data.nickname
+        info.text = "조회수 \(data.viewCount) · 스크랩 \(data.scrappedCount)"
+    }
 }
