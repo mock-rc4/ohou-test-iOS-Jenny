@@ -38,6 +38,10 @@
 		A92308EB27F2D04700534AA4 /* HousewarmingDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92308EA27F2D04700534AA4 /* HousewarmingDataManager.swift */; };
 		A92308EE27F2D75600534AA4 /* KnowHowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92308EC27F2D75600534AA4 /* KnowHowCollectionViewCell.swift */; };
 		A92308EF27F2D75600534AA4 /* KnowHowCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A92308ED27F2D75600534AA4 /* KnowHowCollectionViewCell.xib */; };
+		A92308F327F2E52D00534AA4 /* ProHousewarmingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92308F127F2E52D00534AA4 /* ProHousewarmingViewController.swift */; };
+		A92308F427F2E52D00534AA4 /* ProHousewarmingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A92308F227F2E52D00534AA4 /* ProHousewarmingViewController.xib */; };
+		A92308F727F2E5FC00534AA4 /* ProHousewarmingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92308F527F2E5FC00534AA4 /* ProHousewarmingCollectionViewCell.swift */; };
+		A92308F827F2E5FC00534AA4 /* ProHousewarmingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A92308F627F2E5FC00534AA4 /* ProHousewarmingCollectionViewCell.xib */; };
 		A9A6621A27E5F7C90081064C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621927E5F7C90081064C /* AppDelegate.swift */; };
 		A9A6621C27E5F7C90081064C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621B27E5F7C90081064C /* SceneDelegate.swift */; };
 		A9A6621E27E5F7C90081064C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621D27E5F7C90081064C /* TabBarController.swift */; };
@@ -172,6 +176,10 @@
 		A92308EA27F2D04700534AA4 /* HousewarmingDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousewarmingDataManager.swift; sourceTree = "<group>"; };
 		A92308EC27F2D75600534AA4 /* KnowHowCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowHowCollectionViewCell.swift; sourceTree = "<group>"; };
 		A92308ED27F2D75600534AA4 /* KnowHowCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KnowHowCollectionViewCell.xib; sourceTree = "<group>"; };
+		A92308F127F2E52D00534AA4 /* ProHousewarmingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProHousewarmingViewController.swift; sourceTree = "<group>"; };
+		A92308F227F2E52D00534AA4 /* ProHousewarmingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProHousewarmingViewController.xib; sourceTree = "<group>"; };
+		A92308F527F2E5FC00534AA4 /* ProHousewarmingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProHousewarmingCollectionViewCell.swift; sourceTree = "<group>"; };
+		A92308F627F2E5FC00534AA4 /* ProHousewarmingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProHousewarmingCollectionViewCell.xib; sourceTree = "<group>"; };
 		A9A6621627E5F7C90081064C /* Bucketplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bucketplace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A6621927E5F7C90081064C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9A6621B27E5F7C90081064C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -406,6 +414,17 @@
 			path = HousewarmingDataManager;
 			sourceTree = "<group>";
 		};
+		A92308F027F2E4FA00534AA4 /* ProHousewarming */ = {
+			isa = PBXGroup;
+			children = (
+				A92308F227F2E52D00534AA4 /* ProHousewarmingViewController.xib */,
+				A92308F127F2E52D00534AA4 /* ProHousewarmingViewController.swift */,
+				A92308F627F2E5FC00534AA4 /* ProHousewarmingCollectionViewCell.xib */,
+				A92308F527F2E5FC00534AA4 /* ProHousewarmingCollectionViewCell.swift */,
+			);
+			path = ProHousewarming;
+			sourceTree = "<group>";
+		};
 		A9A6620D27E5F7C90081064C = {
 			isa = PBXGroup;
 			children = (
@@ -528,6 +547,7 @@
 				A90B1BF327E89A0C007A70D0 /* Photo */,
 				A90B1BF427E89A23007A70D0 /* Housewarming */,
 				A90B1BF527E89A83007A70D0 /* KnowHow */,
+				A92308F027F2E4FA00534AA4 /* ProHousewarming */,
 				A90B1BF627E89A98007A70D0 /* QnA */,
 			);
 			path = Home;
@@ -873,6 +893,8 @@
 				A9FFE47527EACB8C004F3B33 /* Store.storyboard in Resources */,
 				A9C9ADAC27F044590051D469 /* KeywordsCollectionViewCell.xib in Resources */,
 				A92308E527F2CBC400534AA4 /* HousewarmingCollectionViewCell.xib in Resources */,
+				A92308F427F2E52D00534AA4 /* ProHousewarmingViewController.xib in Resources */,
+				A92308F827F2E5FC00534AA4 /* ProHousewarmingCollectionViewCell.xib in Resources */,
 				A9C9ADCA27F081EC0051D469 /* ProductCollectionViewCell.xib in Resources */,
 				A9BC5C3D27E7021E00D91901 /* MyPage.storyboard in Resources */,
 			);
@@ -934,6 +956,7 @@
 				A9C9ADDB27F1BFE70051D469 /* TodayDealResponse.swift in Sources */,
 				A9C9ADAB27F044590051D469 /* KeywordsCollectionViewCell.swift in Sources */,
 				A92308DF27F1FC6900534AA4 /* MetaResponse.swift in Sources */,
+				A92308F727F2E5FC00534AA4 /* ProHousewarmingCollectionViewCell.swift in Sources */,
 				A9EA079327EDD5B200158FCF /* Functions.swift in Sources */,
 				A9C9ADE027F1C5350051D469 /* RecentCollectionViewCell.swift in Sources */,
 				A9EA077B27EDAC5D00158FCF /* HomeFirstResponse.swift in Sources */,
@@ -978,6 +1001,7 @@
 				A92308EE27F2D75600534AA4 /* KnowHowCollectionViewCell.swift in Sources */,
 				A90B1C2527E9B2FA007A70D0 /* LoginNavigationController.swift in Sources */,
 				A90B1C1F27E986BF007A70D0 /* SignInViewController.swift in Sources */,
+				A92308F327F2E52D00534AA4 /* ProHousewarmingViewController.swift in Sources */,
 				A9C9ADC027F072530051D469 /* FollowRequest.swift in Sources */,
 				A9FFE48D27EAE07F004F3B33 /* StoreHomeViewController.swift in Sources */,
 				A9C9ADAE27F049870051D469 /* ID.swift in Sources */,

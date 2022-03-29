@@ -26,7 +26,7 @@ class HomeTabManViewController: TabmanViewController {
     
     // MARK: 상단바
     private func setupVCs() {
-        viewControllers = [TopViewController(), FollowingViewController(), PhotoViewController(), HousewarmingViewController(), KnowHowViewController(), UIViewController(), QnAViewController()]
+        viewControllers = [TopViewController(), FollowingViewController(), PhotoViewController(), HousewarmingViewController(), KnowHowViewController(), ProHousewarmingViewController(), QnAViewController()]
     }
     
     
