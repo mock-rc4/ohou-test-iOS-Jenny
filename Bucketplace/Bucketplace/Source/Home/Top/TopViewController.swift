@@ -12,6 +12,15 @@ import Tabman
 
 class TopViewController: UIViewController {
     
+    lazy var topListDataManager = TopListDataManager()
+    var topVideoModel: [TopVideoResult]!
+    var topPhotoModel: [TopPhotoResult]!
+    let VIDEO_CELL = "TopVideoCollectionViewCell"
+    let PHOTO_CELL = "TopPhotoCollectionViewCell"
+    
+    @IBOutlet weak var videoCollectionView: UICollectionView!
+    @IBOutlet weak var photoCollectionView: UICollectionView!
+    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
     
@@ -30,6 +39,7 @@ class TopViewController: UIViewController {
         setupPageControl()
         bannerTimer()
         setupSections()
+        getAPI()
     }
     
     // 광고 배너 넣는 collectionView 설정
@@ -113,6 +123,8 @@ class TopViewController: UIViewController {
     
     var secondFlag = false
     var thirdFlag = false
+    var videoFlag = false
+    var photoFlag = false
     
     private func setupSections() {
         self.firstImgs = [f_img1, f_img2, f_img3, f_img4]
@@ -121,6 +133,9 @@ class TopViewController: UIViewController {
         self.secondLabels = [s_label1, s_label2, s_label3, s_label4]
         self.thirdImgs = [t_img1, t_img2, t_img3, t_img4]
         self.thirdLabels = [t_label1, t_label2, t_label3, t_label4]
+    }
+    
+    private func getAPI() {
         //self.showIndicator()
         //self.homeFirstDataManager.getHomeFirst(self)
     }
@@ -180,6 +195,18 @@ extension TopViewController {
         self.dismissIndicator()
     }
     
+    func didSuccessTopVideo(_ result: [TopVideoResult]) {
+        topVideoModel = result
+        setupVideoCollectionView()
+        self.dismissIndicator()
+    }
+    
+    func didSuccessTopPhoto(_ result: [TopPhotoResult]) {
+        topPhotoModel = result
+        setupPhotoCollectionView()
+        self.dismissIndicator()
+    }
+    
     func failedToRequest(_ message: String) {
         self.presentAlert(title: message)
     }
@@ -188,6 +215,18 @@ extension TopViewController {
 
 // MARK: collectionView 설정
 extension TopViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    // MARK: 인기 동영상
+    private func setupVideoCollectionView() {
+        videoCollectionView.delegate = self
+        videoCollectionView.dataSource = self
+        videoCollectionView.register(UINib(nibName: VIDEO_CELL, bundle: nil), forCellWithReuseIdentifier: VIDEO_CELL)
+    }
+    
+    private func setupPhotoCollectionView() {
+        photoCollectionView.delegate = self
+        photoCollectionView.dataSource = self
+        photoCollectionView.register(UINib(nibName: PHOTO_CELL, bundle: nil), forCellWithReuseIdentifier: PHOTO_CELL)
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch collectionView {
@@ -196,7 +235,7 @@ extension TopViewController: UICollectionViewDelegate, UICollectionViewDataSourc
         case self.categoryCollectionView:
             return categoryModel.count
         default:
-            return 0
+            return 10
         }
     }
     
@@ -211,6 +250,14 @@ extension TopViewController: UICollectionViewDelegate, UICollectionViewDataSourc
             let cell = categoryCollectionView.dequeueReusableCell(withReuseIdentifier: "HomeCategoryCollectionViewCell", for: indexPath) as! HomeCategoryCollectionViewCell
             let cellData = categoryModel.itemAt(indexPath.row)
             cell.setData(cellData)
+            return cell
+        case self.videoCollectionView:
+            let cell = videoCollectionView.dequeueReusableCell(withReuseIdentifier: VIDEO_CELL, for: indexPath) as! TopVideoCollectionViewCell
+            cell.setData(topVideoModel[indexPath.row])
+            return cell
+        case self.photoCollectionView:
+            let cell = photoCollectionView.dequeueReusableCell(withReuseIdentifier: PHOTO_CELL, for: indexPath) as! TopPhotoCollectionViewCell
+            cell.setData(topPhotoModel[indexPath.row])
             return cell
         default:
             let cell = UICollectionViewCell()
@@ -229,7 +276,7 @@ extension TopViewController: UICollectionViewDelegateFlowLayout {
         case self.categoryCollectionView:
             return CGSize(width: 80, height: collectionView.frame.size.height)
         default:
-            return CGSize(width: collectionView.frame.size.width, height: collectionView.frame.size.height)
+            return CGSize(width: 190, height: collectionView.frame.size.height)
         }
     }
     
@@ -240,16 +287,30 @@ extension TopViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if secondFlag == false {
             if ((topScrollView.contentOffset.y) >= 290) {
-                self.showIndicator()
-                self.homeSecondDataManager.getHomeSecond(self)
+                //self.showIndicator()
+                //self.homeSecondDataManager.getHomeSecond(self)
                 secondFlag = true
             }
         }
         if thirdFlag == false {
             if (topScrollView.contentOffset.y) >= 870 {
-                self.showIndicator()
-                self.homeThirdDataManager.getHomeThird(self)
+                //self.showIndicator()
+                //self.homeThirdDataManager.getHomeThird(self)
                 thirdFlag = true
+            }
+        }
+        if videoFlag == false {
+            if (topScrollView.contentOffset.y) >= 2090 {
+                self.showIndicator()
+                self.topListDataManager.getVideo(self)
+                videoFlag = true
+            }
+        }
+        if photoFlag == false {
+            if (topScrollView.contentOffset.y) >= 2630 {
+                self.showIndicator()
+                self.topListDataManager.getPhoto(self)
+                photoFlag = true
             }
         }
     }

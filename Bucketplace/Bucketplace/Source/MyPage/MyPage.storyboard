@@ -84,6 +84,11 @@
                                                             <constraint firstAttribute="width" constant="100" id="1f3-Ue-Jek"/>
                                                             <constraint firstAttribute="height" constant="100" id="5vl-Ox-pbY"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="50"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그인 &amp; 가입하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbM-2o-KBB">
                                                         <rect key="frame" x="140" y="25" width="144.5" height="24"/>
