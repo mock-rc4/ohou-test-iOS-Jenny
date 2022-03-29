@@ -19,7 +19,11 @@ class HousewarmingCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
     }
 
-    public func setData(_ data: String) {
-        
+    public func setData(_ data: HomewarmingFeed) {
+        Functions.shared.urlToImg(data.thumbnailUrl, img)
+        title.text = data.description
+        Functions.shared.urlToImg(data.profileImageUrl, profileImg)
+        name.text = data.nickname
+        Info.text = "\(data.scrappedCount)명 스크랩 | \(data.viewCount)명 조회"
     }
 }

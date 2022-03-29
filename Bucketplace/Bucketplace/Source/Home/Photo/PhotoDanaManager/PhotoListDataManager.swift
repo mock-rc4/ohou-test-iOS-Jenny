@@ -11,7 +11,7 @@ class PhotoListDataManager {
     
     func getPhotoList(_ delegate: PhotoViewController) {
         
-        let url = "\(Constant.BASE_URL)/app/feeds/media-feeds/list/?sort=&video=&home-type=&style=&:lastValue"
+        let url = "\(Constant.BASE_URL)/app/feeds/media-feeds"
         
         let header: HTTPHeaders = [
             "Content-Type": "application/json",

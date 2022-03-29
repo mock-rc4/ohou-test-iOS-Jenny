@@ -42,6 +42,10 @@
 		A92308F427F2E52D00534AA4 /* ProHousewarmingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A92308F227F2E52D00534AA4 /* ProHousewarmingViewController.xib */; };
 		A92308F727F2E5FC00534AA4 /* ProHousewarmingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92308F527F2E5FC00534AA4 /* ProHousewarmingCollectionViewCell.swift */; };
 		A92308F827F2E5FC00534AA4 /* ProHousewarmingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A92308F627F2E5FC00534AA4 /* ProHousewarmingCollectionViewCell.xib */; };
+		A92FBDC027F2EB3600BE3A19 /* KnowHowResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92FBDBF27F2EB3600BE3A19 /* KnowHowResponse.swift */; };
+		A92FBDC227F2EB4100BE3A19 /* KnowHowDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92FBDC127F2EB4100BE3A19 /* KnowHowDataManager.swift */; };
+		A92FBDC427F2EB4F00BE3A19 /* ProHousewarmingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92FBDC327F2EB4F00BE3A19 /* ProHousewarmingResponse.swift */; };
+		A92FBDC627F2EBB300BE3A19 /* ProHousewarmingDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92FBDC527F2EBB300BE3A19 /* ProHousewarmingDataManager.swift */; };
 		A9A6621A27E5F7C90081064C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621927E5F7C90081064C /* AppDelegate.swift */; };
 		A9A6621C27E5F7C90081064C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621B27E5F7C90081064C /* SceneDelegate.swift */; };
 		A9A6621E27E5F7C90081064C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621D27E5F7C90081064C /* TabBarController.swift */; };
@@ -180,6 +184,10 @@
 		A92308F227F2E52D00534AA4 /* ProHousewarmingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProHousewarmingViewController.xib; sourceTree = "<group>"; };
 		A92308F527F2E5FC00534AA4 /* ProHousewarmingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProHousewarmingCollectionViewCell.swift; sourceTree = "<group>"; };
 		A92308F627F2E5FC00534AA4 /* ProHousewarmingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProHousewarmingCollectionViewCell.xib; sourceTree = "<group>"; };
+		A92FBDBF27F2EB3600BE3A19 /* KnowHowResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowHowResponse.swift; sourceTree = "<group>"; };
+		A92FBDC127F2EB4100BE3A19 /* KnowHowDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowHowDataManager.swift; sourceTree = "<group>"; };
+		A92FBDC327F2EB4F00BE3A19 /* ProHousewarmingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProHousewarmingResponse.swift; sourceTree = "<group>"; };
+		A92FBDC527F2EBB300BE3A19 /* ProHousewarmingDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProHousewarmingDataManager.swift; sourceTree = "<group>"; };
 		A9A6621627E5F7C90081064C /* Bucketplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bucketplace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A6621927E5F7C90081064C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9A6621B27E5F7C90081064C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -366,6 +374,8 @@
 		A90B1BF527E89A83007A70D0 /* KnowHow */ = {
 			isa = PBXGroup;
 			children = (
+				A92FBDBC27F2EB1900BE3A19 /* KnowHowEntity */,
+				A92FBDBB27F2EB0C00BE3A19 /* KnowHowDataManager */,
 				A90B1C1427E89F12007A70D0 /* KnowHowViewController.xib */,
 				A90B1C1327E89F12007A70D0 /* KnowHowViewController.swift */,
 				A92308ED27F2D75600534AA4 /* KnowHowCollectionViewCell.xib */,
@@ -417,12 +427,46 @@
 		A92308F027F2E4FA00534AA4 /* ProHousewarming */ = {
 			isa = PBXGroup;
 			children = (
+				A92FBDBE27F2EB2700BE3A19 /* ProHousewarmingEntity */,
+				A92FBDBD27F2EB2000BE3A19 /* ProHouseDataManager */,
 				A92308F227F2E52D00534AA4 /* ProHousewarmingViewController.xib */,
 				A92308F127F2E52D00534AA4 /* ProHousewarmingViewController.swift */,
 				A92308F627F2E5FC00534AA4 /* ProHousewarmingCollectionViewCell.xib */,
 				A92308F527F2E5FC00534AA4 /* ProHousewarmingCollectionViewCell.swift */,
 			);
 			path = ProHousewarming;
+			sourceTree = "<group>";
+		};
+		A92FBDBB27F2EB0C00BE3A19 /* KnowHowDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				A92FBDC127F2EB4100BE3A19 /* KnowHowDataManager.swift */,
+			);
+			path = KnowHowDataManager;
+			sourceTree = "<group>";
+		};
+		A92FBDBC27F2EB1900BE3A19 /* KnowHowEntity */ = {
+			isa = PBXGroup;
+			children = (
+				A92FBDBF27F2EB3600BE3A19 /* KnowHowResponse.swift */,
+			);
+			path = KnowHowEntity;
+			sourceTree = "<group>";
+		};
+		A92FBDBD27F2EB2000BE3A19 /* ProHouseDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				A92FBDC527F2EBB300BE3A19 /* ProHousewarmingDataManager.swift */,
+			);
+			path = ProHouseDataManager;
+			sourceTree = "<group>";
+		};
+		A92FBDBE27F2EB2700BE3A19 /* ProHousewarmingEntity */ = {
+			isa = PBXGroup;
+			children = (
+				A92FBDC327F2EB4F00BE3A19 /* ProHousewarmingResponse.swift */,
+			);
+			path = ProHousewarmingEntity;
 			sourceTree = "<group>";
 		};
 		A9A6620D27E5F7C90081064C = {
@@ -949,6 +993,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A92FBDC427F2EB4F00BE3A19 /* ProHousewarmingResponse.swift in Sources */,
 				A9FFE47E27EAD367004F3B33 /* StoreTabManViewController.swift in Sources */,
 				A9FFE4A527EC6E35004F3B33 /* LoginKey.swift in Sources */,
 				A9FFE49F27EB1790004F3B33 /* Category.swift in Sources */,
@@ -1008,6 +1053,7 @@
 				A9C9ADCD27F189EC0051D469 /* ProductDetailViewController.swift in Sources */,
 				A9FFE49027EAE2A3004F3B33 /* StoreAdCollectionViewCell.swift in Sources */,
 				A90B1C0527E89CC3007A70D0 /* TopViewController.swift in Sources */,
+				A92FBDC627F2EBB300BE3A19 /* ProHousewarmingDataManager.swift in Sources */,
 				A9FFE46827E9EAA4004F3B33 /* SignUpRequest.swift in Sources */,
 				A9C9ADC927F081EC0051D469 /* ProductCollectionViewCell.swift in Sources */,
 				A90B1C0D27E89EFB007A70D0 /* PhotoViewController.swift in Sources */,
@@ -1029,6 +1075,7 @@
 				A9FFE46C27E9F335004F3B33 /* SignUpResponse.swift in Sources */,
 				A90B1C0927E89EEF007A70D0 /* FollowingViewController.swift in Sources */,
 				A9BC5C1E27E6FD8B00D91901 /* Constant.swift in Sources */,
+				A92FBDC027F2EB3600BE3A19 /* KnowHowResponse.swift in Sources */,
 				A9C9ADC227F074150051D469 /* FollowViewController.swift in Sources */,
 				A9BC5C2827E6FDBF00D91901 /* UIViewController.swift in Sources */,
 				A9FFE4A127EB28B8004F3B33 /* UIView.swift in Sources */,
@@ -1041,6 +1088,7 @@
 				A9C9ADE527F1C7170051D469 /* RecentDataManager.swift in Sources */,
 				A92308EB27F2D04700534AA4 /* HousewarmingDataManager.swift in Sources */,
 				A9FFE47327EA1AD4004F3B33 /* StoreViewController.swift in Sources */,
+				A92FBDC227F2EB4100BE3A19 /* KnowHowDataManager.swift in Sources */,
 				A9EA078827EDC15600158FCF /* HomeThirdDataManager.swift in Sources */,
 				A9C9ADB827F063340051D469 /* FeedUserResponse.swift in Sources */,
 				A9EA078227EDBF1400158FCF /* HomeSecondDataManager.swift in Sources */,

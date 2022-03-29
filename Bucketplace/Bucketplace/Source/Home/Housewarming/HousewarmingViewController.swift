@@ -9,14 +9,34 @@ import UIKit
 
 class HousewarmingViewController: UIViewController {
 
+    lazy var housewarmingDataManager = HousewarmingDataManager()
     @IBOutlet weak var collectionView: UICollectionView!
     let CELL = "HousewarmingCollectionViewCell"
+    var housewarmingModel: [HomewarmingFeed]!
+    @IBOutlet weak var totalCnt: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupCollectionView()
+        getHousewarmingAPI()
     }
 
+}
+
+extension HousewarmingViewController {
+    private func getHousewarmingAPI() {
+        self.showIndicator()
+        self.housewarmingDataManager.getHousewarming(self)
+    }
+    func didSuccessHousewarming(_ result: HousewarmingResult){
+        housewarmingModel = result.homewarmingFeeds
+        totalCnt.text = "전체 \(result.feedCount)"
+        setupCollectionView()
+        self.dismissIndicator()
+    }
+    func failedToRequest(_ message: String) {
+        self.dismissIndicator()
+        self.presentAlert(title: message)
+    }
 }
 
 
@@ -28,12 +48,13 @@ extension HousewarmingViewController: UICollectionViewDelegate, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return housewarmingModel.count
     }
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CELL, for: indexPath) as! HousewarmingCollectionViewCell
+        cell.setData(housewarmingModel[indexPath.row])
         return cell
     }
     
