@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProHousewarmingViewController" customModule="Bucketplace" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="0sK-mA-Hd7" id="VT3-1W-nmE"/>
+                <outlet property="totalCnt" destination="VHz-Tj-JYf" id="kdV-CI-vtv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -24,7 +25,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mha-JK-x4I">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1100"/>
                             <subviews>
                                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFP-Eu-mZ5">
                                     <rect key="frame" x="0.0" y="50" width="414" height="50"/>
@@ -233,14 +234,14 @@
                                     <viewLayoutGuide key="contentLayoutGuide" id="MEV-xX-RUn"/>
                                     <viewLayoutGuide key="frameLayoutGuide" id="Okc-iA-dFg"/>
                                 </scrollView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전체 2,381" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHz-Tj-JYf">
-                                    <rect key="frame" x="20" y="110" width="59.5" height="16"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHz-Tj-JYf">
+                                    <rect key="frame" x="20" y="110" width="0.0" height="0.0"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="0sK-mA-Hd7">
-                                    <rect key="frame" x="0.0" y="136" width="414" height="1864"/>
+                                    <rect key="frame" x="0.0" y="120" width="414" height="980"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="bjp-0t-d61">
                                         <size key="itemSize" width="128" height="128"/>
@@ -260,7 +261,7 @@
                                 <constraint firstItem="0sK-mA-Hd7" firstAttribute="top" secondItem="VHz-Tj-JYf" secondAttribute="bottom" constant="10" id="IhD-8k-Gfd"/>
                                 <constraint firstItem="KFP-Eu-mZ5" firstAttribute="leading" secondItem="mha-JK-x4I" secondAttribute="leading" id="PdO-pP-Jgg"/>
                                 <constraint firstAttribute="trailing" secondItem="0sK-mA-Hd7" secondAttribute="trailing" id="TqJ-La-5X7"/>
-                                <constraint firstAttribute="height" constant="2000" id="iuX-HI-l8p"/>
+                                <constraint firstAttribute="height" constant="1100" id="iuX-HI-l8p"/>
                                 <constraint firstAttribute="bottom" secondItem="0sK-mA-Hd7" secondAttribute="bottom" id="nOQ-Ja-6xl"/>
                             </constraints>
                         </view>

@@ -24,7 +24,7 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="1522"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bL7-mf-il0">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="1300"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1250"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가이드북" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oO-Vg-F88">
                                     <rect key="frame" x="15" y="60" width="69.5" height="24"/>
@@ -325,7 +325,7 @@
                                     </buttonConfiguration>
                                 </button>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ubH-rb-6dv">
-                                    <rect key="frame" x="0.0" y="489" width="414" height="811"/>
+                                    <rect key="frame" x="0.0" y="489" width="414" height="761"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ImR-kW-Ppv">
                                         <size key="itemSize" width="128" height="128"/>
@@ -343,7 +343,7 @@
                                 <constraint firstItem="4oO-Vg-F88" firstAttribute="top" secondItem="bL7-mf-il0" secondAttribute="top" constant="60" id="DHR-ss-EQp"/>
                                 <constraint firstItem="u7p-hJ-2jS" firstAttribute="top" secondItem="ud2-UR-YDR" secondAttribute="bottom" constant="20" id="Dvk-lu-4wh"/>
                                 <constraint firstItem="ud2-UR-YDR" firstAttribute="top" secondItem="Rfq-Zh-Og9" secondAttribute="bottom" constant="20" id="E7e-N9-oyp"/>
-                                <constraint firstAttribute="height" constant="1300" id="Fpk-Ls-Upw"/>
+                                <constraint firstAttribute="height" constant="1250" id="Fpk-Ls-Upw"/>
                                 <constraint firstItem="DoI-4x-Y8d" firstAttribute="top" secondItem="TCb-sR-Dmw" secondAttribute="bottom" constant="5" id="K9e-Vh-So6"/>
                                 <constraint firstAttribute="trailing" secondItem="ubH-rb-6dv" secondAttribute="trailing" id="Wy3-si-75d"/>
                                 <constraint firstItem="TCb-sR-Dmw" firstAttribute="leading" secondItem="u7p-hJ-2jS" secondAttribute="leading" id="aIC-m6-AU7"/>

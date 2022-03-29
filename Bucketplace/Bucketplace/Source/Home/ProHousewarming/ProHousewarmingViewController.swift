@@ -9,14 +9,35 @@ import UIKit
 
 class ProHousewarmingViewController: UIViewController {
 
+    lazy var proDataManager = ProDataManager()
+    var proModel: [ProHomewarmingFeed]!
     @IBOutlet weak var collectionView: UICollectionView!
     let CELL = "ProHousewarmingCollectionViewCell"
+    @IBOutlet weak var totalCnt: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupCollectionView()
+        getProAPI()
     }
 
+}
+
+// MARK: API 호출
+extension ProHousewarmingViewController {
+    private func getProAPI() {
+        self.showIndicator()
+        self.proDataManager.getPro(self)
+    }
+    func didSuccessPro(_ result: ProResult){
+        totalCnt.text = "전체 \(result.feedCount)"
+        proModel = result.homewarmingFeeds
+        setupCollectionView()
+        self.dismissIndicator()
+    }
+    func failedToRequest(_ message: String) {
+        self.dismissIndicator()
+        self.presentAlert(title: message)
+    }
 }
 
 
@@ -28,12 +49,13 @@ extension ProHousewarmingViewController: UICollectionViewDelegate, UICollectionV
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return proModel.count
     }
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CELL, for: indexPath) as! ProHousewarmingCollectionViewCell
+        cell.setData(proModel[indexPath.row])
         return cell
     }
     

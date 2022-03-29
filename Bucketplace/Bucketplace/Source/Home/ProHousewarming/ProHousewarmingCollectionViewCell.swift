@@ -19,5 +19,13 @@ class ProHousewarmingCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
+    
+    func setData(_ data: ProHomewarmingFeed) {
+        Functions.shared.urlToImg(data.thumbnailUrl, img)
+        title.text = data.description
+        Functions.shared.urlToImg(data.profileImageUrl, profileImg)
+        name.text = data.nickname
+        info.text = "스크랩 \(data.scrappedCount) · 조회수 \(data.viewCount)"
+    }
 
 }
