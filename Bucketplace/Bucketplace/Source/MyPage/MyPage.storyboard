@@ -820,11 +820,18 @@
                                                             </stackView>
                                                         </subviews>
                                                     </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EwJ-Xv-N5s">
+                                                        <rect key="frame" x="51.5" y="20.5" width="11" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                        <color key="textColor" red="0.3921568627" green="0.76078431369999999" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="1vn-Xw-dlI" secondAttribute="trailing" constant="15" id="1gz-T8-nFm"/>
                                                     <constraint firstItem="G8D-jg-B0h" firstAttribute="leading" secondItem="JDB-Dj-7Ai" secondAttribute="leading" id="5EC-XQ-BJm"/>
+                                                    <constraint firstItem="EwJ-Xv-N5s" firstAttribute="centerY" secondItem="JDB-Dj-7Ai" secondAttribute="centerY" id="9x9-jV-WXC"/>
                                                     <constraint firstItem="Dcf-NH-CEG" firstAttribute="centerX" secondItem="Ldn-n3-yMY" secondAttribute="centerX" id="C8i-2O-6z7"/>
                                                     <constraint firstItem="1vn-Xw-dlI" firstAttribute="top" secondItem="kVt-kj-uIo" secondAttribute="bottom" constant="20" id="GHG-Ph-Ynb"/>
                                                     <constraint firstItem="Dcf-NH-CEG" firstAttribute="top" secondItem="ail-om-czs" secondAttribute="bottom" constant="5" id="Gdb-cF-iOt"/>
@@ -838,6 +845,7 @@
                                                     <constraint firstItem="kVt-kj-uIo" firstAttribute="top" secondItem="G8D-jg-B0h" secondAttribute="bottom" constant="15" id="isD-YL-4xw"/>
                                                     <constraint firstItem="ail-om-czs" firstAttribute="top" secondItem="1vn-Xw-dlI" secondAttribute="bottom" constant="20" id="jEA-gH-Nv7"/>
                                                     <constraint firstAttribute="height" constant="690" id="n4c-mN-wV2"/>
+                                                    <constraint firstItem="EwJ-Xv-N5s" firstAttribute="leading" secondItem="JDB-Dj-7Ai" secondAttribute="trailing" constant="5" id="rgB-xt-CIg"/>
                                                     <constraint firstItem="ail-om-czs" firstAttribute="centerX" secondItem="Ldn-n3-yMY" secondAttribute="centerX" id="saq-Xn-qYR"/>
                                                     <constraint firstItem="G8D-jg-B0h" firstAttribute="top" secondItem="JDB-Dj-7Ai" secondAttribute="bottom" constant="15" id="yXw-uc-HOR"/>
                                                 </constraints>
@@ -1177,6 +1185,7 @@
                         <outlet property="like" destination="nz8-iD-vsU" id="W5x-Vw-itD"/>
                         <outlet property="nickname" destination="nbM-2o-KBB" id="Gvs-Oz-cY7"/>
                         <outlet property="pageControl" destination="Dcf-NH-CEG" id="ZWY-uA-QQc"/>
+                        <outlet property="photoNum" destination="EwJ-Xv-N5s" id="Auw-sC-PjM"/>
                         <outlet property="profileImg" destination="Tex-Zd-8Jt" id="e9F-FR-b91"/>
                         <outlet property="scrapBook" destination="P5U-gf-A8B" id="qGk-ca-GTb"/>
                     </connections>

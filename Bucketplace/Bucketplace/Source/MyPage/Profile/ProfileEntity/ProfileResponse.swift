@@ -19,3 +19,10 @@ struct ProfileResult: Decodable {
     let description: String?
     let follower, followee, likeFeed, scrapBookFeeds: Int
 }
+
+struct PhotoNumResponse: Codable {
+    let isSuccess: Bool
+    let code: Int
+    let message: String
+    let result: Int
+}

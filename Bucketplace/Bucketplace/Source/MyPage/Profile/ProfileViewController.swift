@@ -21,7 +21,8 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var following: UILabel!
     @IBOutlet weak var scrapBook: UILabel!
     @IBOutlet weak var like: UILabel!
-
+    @IBOutlet weak var photoNum: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupProfile()
@@ -36,6 +37,7 @@ extension ProfileViewController {
     private func setupProfile() {
         self.showIndicator()
         self.profileDataManager.getProfile(self)
+        self.profileDataManager.getPhotoNum(UserId.shared.userId, self)
     }
     
     func didSuccessProfile(_ result: ProfileResponse) {
@@ -46,6 +48,11 @@ extension ProfileViewController {
         following.text = "\(info.followee)"
         scrapBook.text = "\(info.scrapBookFeeds)"
         like.text = "\(info.likeFeed)"
+        self.dismissIndicator()
+    }
+    
+    func didSuccessPhotoNum(_ result: PhotoNumResponse) {
+        photoNum.text = "\(result.result)"
         self.dismissIndicator()
     }
     
