@@ -10,6 +10,7 @@ target 'Bucketplace' do
   pod 'KakaoSDKUser'
   
   pod 'Tabman'
+  pod 'DropDown'
 
   pod 'SnapKit'
   pod 'Then'
