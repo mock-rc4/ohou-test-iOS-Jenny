@@ -17,22 +17,16 @@ open class Functions: UIViewController {
         img.image = UIImage(data: data!)
     }
     
-    open func homeType(_ num: Int) -> String {
-        switch num {
-        case 1:
-            return "원룸&오피스텔"
-        case 2:
-            return "아파트"
-        case 3:
-            return "빌라&연립"
-        case 4:
-            return "단독주택"
-        case 5:
-            return "사무공간"
-        case 6:
-            return "상업공간"
-        default:
-            return "기타"
+    open func homeType(_ photo: Int, _ media: Int,_ home: Int,
+                       _ knowhow: Int) -> String {
+        if (photo == 1 || media == 1) {
+            return "   사진   "
+        } else if home == 1 {
+            return "   집들이   "
+        } else if knowhow == 1 {
+            return "   노하우   "
+        } else {
+            return "   기타   "
         }
     }
     

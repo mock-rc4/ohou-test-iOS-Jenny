@@ -1193,6 +1193,7 @@
                         <outlet property="photoNum" destination="EwJ-Xv-N5s" id="Auw-sC-PjM"/>
                         <outlet property="profileImg" destination="Tex-Zd-8Jt" id="e9F-FR-b91"/>
                         <outlet property="scrapBook" destination="P5U-gf-A8B" id="qGk-ca-GTb"/>
+                        <outlet property="scrapBookView" destination="Jxq-1K-zIh" id="8qj-Rt-3LO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eac-XO-FNE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

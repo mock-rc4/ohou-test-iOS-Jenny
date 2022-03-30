@@ -34,3 +34,13 @@ class ProductId {
         productId = 0
     }
 }
+
+class ScrapBookId {
+    static let shared = ScrapBookId()
+    
+    var scrapbookId: Int
+    
+    private init() {
+        scrapbookId = 0
+    }
+}

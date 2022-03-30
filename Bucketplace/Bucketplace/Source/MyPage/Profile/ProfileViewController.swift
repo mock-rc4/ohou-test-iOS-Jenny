@@ -8,12 +8,14 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
     var nowPage: Int = 0
     var images:[String] = ["광고1", "광고2", "광고3","광고4"]
-
+    
+    lazy var scrapbookDataManager = ScrapBookDataManager()
+    
     lazy var profileDataManager = ProfileDataManager()
     @IBOutlet weak var profileImg: UIImageView!
     @IBOutlet weak var nickname: UILabel!
@@ -23,13 +25,29 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var like: UILabel!
     @IBOutlet weak var photoNum: UILabel!
     
+    @IBOutlet weak var scrapBookView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupProfile()
         setupCollectionView()
         setupPageControl()
+        setupScrapBook()
         bannerTimer()
     }
+    
+    // MARK: 스크랩북으로 이동
+    private func setupScrapBook() {
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(goScrapBook(_:)))
+        scrapBookView.addGestureRecognizer(gesture)
+    }
+    
+    @objc func goScrapBook(_ sender: Any) {
+        let vc = UIStoryboard(name: "ScrapBook", bundle: nil).instantiateViewController(withIdentifier: "ScrapBookViewController") as! ScrapBookViewController
+        vc.hidesBottomBarWhenPushed = true
+        self.presentNVC(vc)
+    }
+    
 }
 
 // MARK: 내 정보 불러오기
@@ -48,7 +66,9 @@ extension ProfileViewController {
         following.text = "\(info.followee)"
         scrapBook.text = "\(info.scrapBookFeeds)"
         like.text = "\(info.likeFeed)"
+        UserId.shared.userId = info.id
         self.dismissIndicator()
+        getScrapBookAPI()
     }
     
     func didSuccessPhotoNum(_ result: PhotoNumResponse) {
@@ -71,7 +91,7 @@ extension ProfileViewController {
         collectionView.layer.cornerRadius = 10
         collectionView.register(UINib(nibName: "AdCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "AdCollectionViewCell")
     }
-
+    
     // pageControl 설정
     private func setupPageControl() {
         pageControl.numberOfPages = images.count
@@ -79,14 +99,14 @@ extension ProfileViewController {
         pageControl.pageIndicatorTintColor = .systemGray3
         pageControl.currentPageIndicatorTintColor = .black  // 현재 페이지
     }
-
+    
     // MARK: 자동 스크롤 설정 (Timer)
     private func bannerTimer(){
         let _: Timer = Timer.scheduledTimer(withTimeInterval: 3, repeats: true) { (Timer) in
             self.bannerMove()
         }
     }
-
+    
     // 배너 움직이는 메서드
     private func bannerMove() {
         // 마지막 페이지인 경우
@@ -104,33 +124,33 @@ extension ProfileViewController {
 
 // 광고 collectionView 설정
 extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return images.count
     }
-
-
+    
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AdCollectionViewCell", for: indexPath) as! AdCollectionViewCell
         cell.setData(images[indexPath.row])
         return cell
     }
-
+    
     // collectionView 스크롤 끝났을 때 페이지 체크
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         nowPage = Int(scrollView.contentOffset.x) / Int(scrollView.frame.width)
         // 가로 사이즈 = 300 일 경우,
         // 컨텐츠의 x위치 0/300 = 0 (0번째 페이지) | 1/300 = 1 (1번째 페이지) | 2/300 = 2 (2번째 페이지)
     }
-
+    
 }
 
 extension ProfileViewController: UICollectionViewDelegateFlowLayout {
-
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.size.width, height: collectionView.frame.size.height)
     }
-
+    
 }
 
 // PageControl 설정
@@ -143,5 +163,23 @@ extension ProfileViewController: UIScrollViewDelegate {
         if pageControl.currentPage != newPage {
             pageControl.currentPage = newPage
         }
+    }
+}
+
+extension ProfileViewController {
+    private func getScrapBookAPI() {
+        self.showIndicator()
+        print("✨ \(UserId.shared.userId)")
+        self.scrapbookDataManager.getScrapBook(UserId.shared.userId, self)
+    }
+    func didSuccessScrapBook(_ result: ScrapBookResult) {
+        ScrapBookId.shared.scrapbookId = result.scrapbookId
+        ScrapIndex.shared.index = [result.allCount, result.mediaCount, result.homewarmingCount, result.knowhowCount]
+        ScrapBook.shared.info = result
+        self.dismissIndicator()
+    }
+    func failedToRequest(_ message: String) {
+        self.presentAlert(title: message)
+        self.dismissIndicator()
     }
 }
