@@ -61,11 +61,13 @@
 		A92FBDE427F42BFF00BE3A19 /* ScrapBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92FBDE327F42BFF00BE3A19 /* ScrapBook.storyboard */; };
 		A92FBDE627F42C6A00BE3A19 /* ScrapBookTabManViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92FBDE527F42C6A00BE3A19 /* ScrapBookTabManViewController.swift */; };
 		A92FBDEA27F42FB600BE3A19 /* ScrapBookResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92FBDE927F42FB600BE3A19 /* ScrapBookResponse.swift */; };
-		A92FBDEC27F42FC700BE3A19 /* ScrapBookDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92FBDEB27F42FC700BE3A19 /* ScrapBookDataManager.swift */; };
 		A92FBDF327F441A400BE3A19 /* AllScrapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92FBDF127F441A400BE3A19 /* AllScrapViewController.swift */; };
 		A92FBDF427F441A400BE3A19 /* AllScrapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A92FBDF227F441A400BE3A19 /* AllScrapViewController.xib */; };
 		A92FBDF727F4455000BE3A19 /* AllScrapCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92FBDF527F4455000BE3A19 /* AllScrapCollectionViewCell.swift */; };
 		A92FBDF827F4455000BE3A19 /* AllScrapCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A92FBDF627F4455000BE3A19 /* AllScrapCollectionViewCell.xib */; };
+		A92FBDFB27F4521700BE3A19 /* PhotoScrapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92FBDF927F4521700BE3A19 /* PhotoScrapViewController.swift */; };
+		A92FBDFC27F4521700BE3A19 /* PhotoScrapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A92FBDFA27F4521700BE3A19 /* PhotoScrapViewController.xib */; };
+		A92FBE0927F4550500BE3A19 /* ScrapBookDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92FBE0827F4550500BE3A19 /* ScrapBookDataManager.swift */; };
 		A9A6621A27E5F7C90081064C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621927E5F7C90081064C /* AppDelegate.swift */; };
 		A9A6621C27E5F7C90081064C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621B27E5F7C90081064C /* SceneDelegate.swift */; };
 		A9A6621E27E5F7C90081064C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621D27E5F7C90081064C /* TabBarController.swift */; };
@@ -116,6 +118,16 @@
 		A9C9ADE127F1C5350051D469 /* RecentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9C9ADDF27F1C5350051D469 /* RecentCollectionViewCell.xib */; };
 		A9C9ADE327F1C6D30051D469 /* RecentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADE227F1C6D30051D469 /* RecentResponse.swift */; };
 		A9C9ADE527F1C7170051D469 /* RecentDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9ADE427F1C7170051D469 /* RecentDataManager.swift */; };
+		A9D9B77127F456C800C65FF5 /* PhotoScrapCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D9B76F27F456C800C65FF5 /* PhotoScrapCollectionViewCell.swift */; };
+		A9D9B77227F456C800C65FF5 /* PhotoScrapCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9D9B77027F456C800C65FF5 /* PhotoScrapCollectionViewCell.xib */; };
+		A9D9B77727F4571C00C65FF5 /* HousewarmingScrapCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D9B77527F4571C00C65FF5 /* HousewarmingScrapCollectionViewCell.swift */; };
+		A9D9B77827F4571C00C65FF5 /* HousewarmingScrapCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9D9B77627F4571C00C65FF5 /* HousewarmingScrapCollectionViewCell.xib */; };
+		A9D9B77B27F4572700C65FF5 /* KnowhowScrapCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D9B77927F4572700C65FF5 /* KnowhowScrapCollectionViewCell.swift */; };
+		A9D9B77C27F4572700C65FF5 /* KnowhowScrapCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9D9B77A27F4572700C65FF5 /* KnowhowScrapCollectionViewCell.xib */; };
+		A9D9B77F27F4573D00C65FF5 /* HousewarmingScrapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D9B77D27F4573D00C65FF5 /* HousewarmingScrapViewController.swift */; };
+		A9D9B78027F4573D00C65FF5 /* HousewarmingScrapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9D9B77E27F4573D00C65FF5 /* HousewarmingScrapViewController.xib */; };
+		A9D9B78327F457BC00C65FF5 /* KnowhowScrapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D9B78127F457BC00C65FF5 /* KnowhowScrapViewController.swift */; };
+		A9D9B78427F457BC00C65FF5 /* KnowhowScrapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9D9B78227F457BC00C65FF5 /* KnowhowScrapViewController.xib */; };
 		A9EA077B27EDAC5D00158FCF /* HomeFirstResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA077A27EDAC5D00158FCF /* HomeFirstResponse.swift */; };
 		A9EA077E27EDAE0F00158FCF /* HomeFirstDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA077D27EDAE0F00158FCF /* HomeFirstDataManager.swift */; };
 		A9EA078227EDBF1400158FCF /* HomeSecondDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EA078127EDBF1400158FCF /* HomeSecondDataManager.swift */; };
@@ -217,11 +229,13 @@
 		A92FBDE327F42BFF00BE3A19 /* ScrapBook.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScrapBook.storyboard; sourceTree = "<group>"; };
 		A92FBDE527F42C6A00BE3A19 /* ScrapBookTabManViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrapBookTabManViewController.swift; sourceTree = "<group>"; };
 		A92FBDE927F42FB600BE3A19 /* ScrapBookResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrapBookResponse.swift; sourceTree = "<group>"; };
-		A92FBDEB27F42FC700BE3A19 /* ScrapBookDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrapBookDataManager.swift; sourceTree = "<group>"; };
 		A92FBDF127F441A400BE3A19 /* AllScrapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllScrapViewController.swift; sourceTree = "<group>"; };
 		A92FBDF227F441A400BE3A19 /* AllScrapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllScrapViewController.xib; sourceTree = "<group>"; };
 		A92FBDF527F4455000BE3A19 /* AllScrapCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllScrapCollectionViewCell.swift; sourceTree = "<group>"; };
 		A92FBDF627F4455000BE3A19 /* AllScrapCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllScrapCollectionViewCell.xib; sourceTree = "<group>"; };
+		A92FBDF927F4521700BE3A19 /* PhotoScrapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoScrapViewController.swift; sourceTree = "<group>"; };
+		A92FBDFA27F4521700BE3A19 /* PhotoScrapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoScrapViewController.xib; sourceTree = "<group>"; };
+		A92FBE0827F4550500BE3A19 /* ScrapBookDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrapBookDataManager.swift; sourceTree = "<group>"; };
 		A9A6621627E5F7C90081064C /* Bucketplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bucketplace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A6621927E5F7C90081064C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9A6621B27E5F7C90081064C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -274,6 +288,16 @@
 		A9C9ADDF27F1C5350051D469 /* RecentCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentCollectionViewCell.xib; sourceTree = "<group>"; };
 		A9C9ADE227F1C6D30051D469 /* RecentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentResponse.swift; sourceTree = "<group>"; };
 		A9C9ADE427F1C7170051D469 /* RecentDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentDataManager.swift; sourceTree = "<group>"; };
+		A9D9B76F27F456C800C65FF5 /* PhotoScrapCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoScrapCollectionViewCell.swift; sourceTree = "<group>"; };
+		A9D9B77027F456C800C65FF5 /* PhotoScrapCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoScrapCollectionViewCell.xib; sourceTree = "<group>"; };
+		A9D9B77527F4571C00C65FF5 /* HousewarmingScrapCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousewarmingScrapCollectionViewCell.swift; sourceTree = "<group>"; };
+		A9D9B77627F4571C00C65FF5 /* HousewarmingScrapCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HousewarmingScrapCollectionViewCell.xib; sourceTree = "<group>"; };
+		A9D9B77927F4572700C65FF5 /* KnowhowScrapCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowhowScrapCollectionViewCell.swift; sourceTree = "<group>"; };
+		A9D9B77A27F4572700C65FF5 /* KnowhowScrapCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KnowhowScrapCollectionViewCell.xib; sourceTree = "<group>"; };
+		A9D9B77D27F4573D00C65FF5 /* HousewarmingScrapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousewarmingScrapViewController.swift; sourceTree = "<group>"; };
+		A9D9B77E27F4573D00C65FF5 /* HousewarmingScrapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HousewarmingScrapViewController.xib; sourceTree = "<group>"; };
+		A9D9B78127F457BC00C65FF5 /* KnowhowScrapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowhowScrapViewController.swift; sourceTree = "<group>"; };
+		A9D9B78227F457BC00C65FF5 /* KnowhowScrapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KnowhowScrapViewController.xib; sourceTree = "<group>"; };
 		A9EA077A27EDAC5D00158FCF /* HomeFirstResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFirstResponse.swift; sourceTree = "<group>"; };
 		A9EA077D27EDAE0F00158FCF /* HomeFirstDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFirstDataManager.swift; sourceTree = "<group>"; };
 		A9EA078127EDBF1400158FCF /* HomeSecondDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSecondDataManager.swift; sourceTree = "<group>"; };
@@ -509,7 +533,7 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		A92FBDDE27F429F000BE3A19 /* ScarpBook */ = {
+		A92FBDDE27F429F000BE3A19 /* ScrapBook */ = {
 			isa = PBXGroup;
 			children = (
 				A92FBDE727F42F7F00BE3A19 /* ScarpBookEntity */,
@@ -521,8 +545,11 @@
 				A92FBDF127F441A400BE3A19 /* AllScrapViewController.swift */,
 				A92FBDF627F4455000BE3A19 /* AllScrapCollectionViewCell.xib */,
 				A92FBDF527F4455000BE3A19 /* AllScrapCollectionViewCell.swift */,
+				A92FBE0127F452CD00BE3A19 /* Photo */,
+				A9D9B77327F456D000C65FF5 /* Housewarming */,
+				A9D9B77427F456DC00C65FF5 /* Knowhow */,
 			);
-			path = ScarpBook;
+			path = ScrapBook;
 			sourceTree = "<group>";
 		};
 		A92FBDE727F42F7F00BE3A19 /* ScarpBookEntity */ = {
@@ -536,9 +563,20 @@
 		A92FBDE827F42F8F00BE3A19 /* ScrapBookDataManager */ = {
 			isa = PBXGroup;
 			children = (
-				A92FBDEB27F42FC700BE3A19 /* ScrapBookDataManager.swift */,
+				A92FBE0827F4550500BE3A19 /* ScrapBookDataManager.swift */,
 			);
 			path = ScrapBookDataManager;
+			sourceTree = "<group>";
+		};
+		A92FBE0127F452CD00BE3A19 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				A92FBDFA27F4521700BE3A19 /* PhotoScrapViewController.xib */,
+				A92FBDF927F4521700BE3A19 /* PhotoScrapViewController.swift */,
+				A9D9B77027F456C800C65FF5 /* PhotoScrapCollectionViewCell.xib */,
+				A9D9B76F27F456C800C65FF5 /* PhotoScrapCollectionViewCell.swift */,
+			);
+			path = Photo;
 			sourceTree = "<group>";
 		};
 		A9A6620D27E5F7C90081064C = {
@@ -633,7 +671,7 @@
 				A9BC5C3C27E7021E00D91901 /* MyPage.storyboard */,
 				A9FFE45D27E9D3CE004F3B33 /* MyPageViewController.swift */,
 				A9BC5C3A27E700CC00D91901 /* MyPageTabManViewController.swift */,
-				A92FBDDE27F429F000BE3A19 /* ScarpBook */,
+				A92FBDDE27F429F000BE3A19 /* ScrapBook */,
 				A9EA078F27EDD38200158FCF /* Profile */,
 				A9EA079127EDD38D00158FCF /* MyShopping */,
 			);
@@ -762,6 +800,28 @@
 				A92308DC27F1F16D00534AA4 /* ProductDataManager.swift */,
 			);
 			path = StoreDataManager;
+			sourceTree = "<group>";
+		};
+		A9D9B77327F456D000C65FF5 /* Housewarming */ = {
+			isa = PBXGroup;
+			children = (
+				A9D9B77E27F4573D00C65FF5 /* HousewarmingScrapViewController.xib */,
+				A9D9B77D27F4573D00C65FF5 /* HousewarmingScrapViewController.swift */,
+				A9D9B77627F4571C00C65FF5 /* HousewarmingScrapCollectionViewCell.xib */,
+				A9D9B77527F4571C00C65FF5 /* HousewarmingScrapCollectionViewCell.swift */,
+			);
+			path = Housewarming;
+			sourceTree = "<group>";
+		};
+		A9D9B77427F456DC00C65FF5 /* Knowhow */ = {
+			isa = PBXGroup;
+			children = (
+				A9D9B78227F457BC00C65FF5 /* KnowhowScrapViewController.xib */,
+				A9D9B78127F457BC00C65FF5 /* KnowhowScrapViewController.swift */,
+				A9D9B77A27F4572700C65FF5 /* KnowhowScrapCollectionViewCell.xib */,
+				A9D9B77927F4572700C65FF5 /* KnowhowScrapCollectionViewCell.swift */,
+			);
+			path = Knowhow;
 			sourceTree = "<group>";
 		};
 		A9EA077C27EDADF800158FCF /* TopDataManager */ = {
@@ -974,6 +1034,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A90B1C1A27E89F1B007A70D0 /* QnAViewController.xib in Resources */,
+				A9D9B77827F4571C00C65FF5 /* HousewarmingScrapCollectionViewCell.xib in Resources */,
 				A90B1C0627E89CC3007A70D0 /* TopViewController.xib in Resources */,
 				A92308EF27F2D75600534AA4 /* KnowHowCollectionViewCell.xib in Resources */,
 				A90B1C0E27E89EFB007A70D0 /* PhotoViewController.xib in Resources */,
@@ -987,6 +1048,7 @@
 				A90B1C0A27E89EEF007A70D0 /* FollowingViewController.xib in Resources */,
 				A9A6622327E5F7CA0081064C /* Assets.xcassets in Resources */,
 				A9EA079E27EDEF8900158FCF /* TodayDealCollectionViewCell.xib in Resources */,
+				A9D9B77227F456C800C65FF5 /* PhotoScrapCollectionViewCell.xib in Resources */,
 				A90B1C1627E89F12007A70D0 /* KnowHowViewController.xib in Resources */,
 				A92FBDDD27F3FEF300BE3A19 /* BookMarkViewController.xib in Resources */,
 				A92FBDF827F4455000BE3A19 /* AllScrapCollectionViewCell.xib in Resources */,
@@ -995,11 +1057,15 @@
 				A9FFE49127EAE2A3004F3B33 /* StoreAdCollectionViewCell.xib in Resources */,
 				A9BC5C4927E716EB00D91901 /* Home.storyboard in Resources */,
 				A92FBDD227F32F6900BE3A19 /* TopPhotoCollectionViewCell.xib in Resources */,
+				A9D9B78427F457BC00C65FF5 /* KnowhowScrapViewController.xib in Resources */,
 				A9C9ADE127F1C5350051D469 /* RecentCollectionViewCell.xib in Resources */,
 				A9A6622127E5F7C90081064C /* Main.storyboard in Resources */,
 				A9EA079827EDDD7F00158FCF /* CategoryViewController.xib in Resources */,
+				A9D9B78027F4573D00C65FF5 /* HousewarmingScrapViewController.xib in Resources */,
 				A9C9ADA827F03D980051D469 /* PhotoDetailViewController.xib in Resources */,
+				A92FBDFC27F4521700BE3A19 /* PhotoScrapViewController.xib in Resources */,
 				A9EA07A227EDF43100158FCF /* TodayDealHeaderCollectionReusableView.xib in Resources */,
+				A9D9B77C27F4572700C65FF5 /* KnowhowScrapCollectionViewCell.xib in Resources */,
 				A9C9ADCE27F189EC0051D469 /* ProductDetailViewController.xib in Resources */,
 				A9EA67B827E8811F001B1C68 /* AdCollectionViewCell.xib in Resources */,
 				A9C9AD8F27EF38070051D469 /* PhotoCollectionViewCell.xib in Resources */,
@@ -1072,6 +1138,7 @@
 				A9C9ADAB27F044590051D469 /* KeywordsCollectionViewCell.swift in Sources */,
 				A92308DF27F1FC6900534AA4 /* MetaResponse.swift in Sources */,
 				A92308F727F2E5FC00534AA4 /* ProHousewarmingCollectionViewCell.swift in Sources */,
+				A9D9B77727F4571C00C65FF5 /* HousewarmingScrapCollectionViewCell.swift in Sources */,
 				A92FBDCA27F31DE300BE3A19 /* TopListDataManager.swift in Sources */,
 				A92FBDF327F441A400BE3A19 /* AllScrapViewController.swift in Sources */,
 				A9EA079327EDD5B200158FCF /* Functions.swift in Sources */,
@@ -1093,6 +1160,7 @@
 				A9BC5C2427E6FDAF00D91901 /* UIColor.swift in Sources */,
 				A9FFE46027E9D88C004F3B33 /* KakaoDataManager.swift in Sources */,
 				A9FFE46A27E9F26E004F3B33 /* SignInResponse.swift in Sources */,
+				A92FBE0927F4550500BE3A19 /* ScrapBookDataManager.swift in Sources */,
 				A9C9ADB027F04A1F0051D469 /* PhotoDetailResponse.swift in Sources */,
 				A9FFE4B227ECA30B004F3B33 /* UITabBarController.swift in Sources */,
 				A9C9ADE327F1C6D30051D469 /* RecentResponse.swift in Sources */,
@@ -1113,6 +1181,7 @@
 				A9EA078C27EDD1CE00158FCF /* ProfileResponse.swift in Sources */,
 				A9BC5C2227E6FDA800D91901 /* String.swift in Sources */,
 				A9FFE45E27E9D3CE004F3B33 /* MyPageViewController.swift in Sources */,
+				A9D9B77127F456C800C65FF5 /* PhotoScrapCollectionViewCell.swift in Sources */,
 				A9BC5C2A27E6FE2000D91901 /* IndicatorView.swift in Sources */,
 				A9FFE49D27EB1785004F3B33 /* CategoryModel.swift in Sources */,
 				A92FBDE127F42A7C00BE3A19 /* ScrapBookViewController.swift in Sources */,
@@ -1158,24 +1227,27 @@
 				A9C9ADDD27F1C0200051D469 /* TodayDealDataManager.swift in Sources */,
 				A92308D527F1EB4600534AA4 /* PopularDataManager.swift in Sources */,
 				A9FFE4AF27ECA026004F3B33 /* TodayDealViewController.swift in Sources */,
-				A92FBDEC27F42FC700BE3A19 /* ScrapBookDataManager.swift in Sources */,
 				A92FBDF727F4455000BE3A19 /* AllScrapCollectionViewCell.swift in Sources */,
 				A90B1C2127E986DF007A70D0 /* SignUpViewController.swift in Sources */,
 				A92FBDEA27F42FB600BE3A19 /* ScrapBookResponse.swift in Sources */,
 				A92FBDCD27F31F8400BE3A19 /* TopVideoCollectionViewCell.swift in Sources */,
+				A9D9B77B27F4572700C65FF5 /* KnowhowScrapCollectionViewCell.swift in Sources */,
 				A9C9ADE527F1C7170051D469 /* RecentDataManager.swift in Sources */,
 				A92308EB27F2D04700534AA4 /* HousewarmingDataManager.swift in Sources */,
 				A9FFE47327EA1AD4004F3B33 /* StoreViewController.swift in Sources */,
 				A92FBDC827F31DBE00BE3A19 /* TopListResponse.swift in Sources */,
 				A92FBDC227F2EB4100BE3A19 /* KnowHowDataManager.swift in Sources */,
 				A9EA078827EDC15600158FCF /* HomeThirdDataManager.swift in Sources */,
+				A9D9B77F27F4573D00C65FF5 /* HousewarmingScrapViewController.swift in Sources */,
 				A9C9ADB827F063340051D469 /* FeedUserResponse.swift in Sources */,
 				A9EA078227EDBF1400158FCF /* HomeSecondDataManager.swift in Sources */,
+				A9D9B78327F457BC00C65FF5 /* KnowhowScrapViewController.swift in Sources */,
 				A92FBDE627F42C6A00BE3A19 /* ScrapBookTabManViewController.swift in Sources */,
 				A9C9ADBA27F0644A0051D469 /* FeedUserDataManager.swift in Sources */,
 				A9FFE46627E9E93B004F3B33 /* SignUpDataManager.swift in Sources */,
 				A9BC5C2627E6FDB700D91901 /* UINavigationController.swift in Sources */,
 				A92308E127F1FF4C00534AA4 /* MetaDataManager.swift in Sources */,
+				A92FBDFB27F4521700BE3A19 /* PhotoScrapViewController.swift in Sources */,
 				A9FFE46427E9DE14004F3B33 /* KakaoResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

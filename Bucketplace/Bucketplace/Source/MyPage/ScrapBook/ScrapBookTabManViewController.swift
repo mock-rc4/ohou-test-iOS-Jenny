@@ -31,7 +31,7 @@ class ScrapBookTabManViewController: TabmanViewController {
 
     private func setupVCs() {
         nums = ScrapIndex.shared.index
-        viewControllers = [AllScrapViewController(), UIViewController(), UIViewController(), UIViewController(), UIViewController()]
+        viewControllers = [AllScrapViewController(), UIViewController(), PhotoScrapViewController(), HousewarmingScrapViewController(), KnowhowScrapViewController()]
     }
     
     private func setupTabMan() {
