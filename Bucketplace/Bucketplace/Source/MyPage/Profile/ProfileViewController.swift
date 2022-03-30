@@ -9,6 +9,8 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
     var nowPage: Int = 0
@@ -29,6 +31,7 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        scrollView.delegate = self
         setupProfile()
         setupCollectionView()
         setupPageControl()
@@ -47,7 +50,6 @@ class ProfileViewController: UIViewController {
         vc.hidesBottomBarWhenPushed = true
         self.presentNVC(vc)
     }
-    
 }
 
 // MARK: 내 정보 불러오기
@@ -162,6 +164,13 @@ extension ProfileViewController: UIScrollViewDelegate {
         let newPage = Int(x / width)
         if pageControl.currentPage != newPage {
             pageControl.currentPage = newPage
+        }
+    }
+    // 아래로 당겨서 새로고침
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if (scrollView.contentOffset.y < -200) {
+            setupProfile()
+            print("🌳 새로고침")
         }
     }
 }
