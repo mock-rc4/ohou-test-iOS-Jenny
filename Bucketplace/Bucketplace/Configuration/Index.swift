@@ -37,3 +37,19 @@ class ScrapBook {
     }
     
 }
+
+class Buy {
+    static var shared = Buy()
+    
+    var option: String
+    var price: Int
+    var count: Int
+    var optionId: Int
+    
+    private init() {
+        option = ""
+        price = 0
+        count = 1
+        optionId = 0
+    }
+}
