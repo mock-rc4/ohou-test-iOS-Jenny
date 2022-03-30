@@ -57,10 +57,8 @@
                                     <constraint firstAttribute="width" constant="30" id="Hog-oD-dXP"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <backgroundConfiguration key="background" image="bookmark"/>
-                                </buttonConfiguration>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="bookmark"/>
                                 <connections>
                                     <action selector="bookmarkBtnClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Rxb-sT-fPp"/>
                                 </connections>
@@ -95,12 +93,13 @@
                 <constraint firstAttribute="trailing" secondItem="L4o-3w-KLb" secondAttribute="trailing" constant="15" id="msG-D2-2QJ"/>
             </constraints>
             <connections>
+                <outlet property="bookmarkBtn" destination="p1W-Ok-pvS" id="UhB-8n-m0s"/>
                 <outlet property="img" destination="o06-Mr-xhn" id="hia-xT-UWB"/>
                 <outlet property="info" destination="QvP-9v-czO" id="NnO-WZ-5Wl"/>
                 <outlet property="name" destination="pBL-5H-61m" id="iJf-AP-ese"/>
                 <outlet property="title" destination="Nyf-v4-Upu" id="LA2-86-5Ih"/>
             </connections>
-            <point key="canvasLocation" x="139" y="110"/>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
         </collectionViewCell>
     </objects>
     <resources>

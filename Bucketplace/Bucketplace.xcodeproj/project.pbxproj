@@ -52,6 +52,9 @@
 		A92FBDCE27F31F8400BE3A19 /* TopVideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A92FBDCC27F31F8400BE3A19 /* TopVideoCollectionViewCell.xib */; };
 		A92FBDD127F32F6900BE3A19 /* TopPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92FBDCF27F32F6900BE3A19 /* TopPhotoCollectionViewCell.swift */; };
 		A92FBDD227F32F6900BE3A19 /* TopPhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A92FBDD027F32F6900BE3A19 /* TopPhotoCollectionViewCell.xib */; };
+		A92FBDD427F3EB8300BE3A19 /* BookMarkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92FBDD327F3EB8300BE3A19 /* BookMarkResponse.swift */; };
+		A92FBDD627F3EBB500BE3A19 /* BookMarkDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92FBDD527F3EBB500BE3A19 /* BookMarkDataManager.swift */; };
+		A92FBDD827F3EC5D00BE3A19 /* BookMarkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92FBDD727F3EC5D00BE3A19 /* BookMarkCollectionViewCell.swift */; };
 		A9A6621A27E5F7C90081064C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621927E5F7C90081064C /* AppDelegate.swift */; };
 		A9A6621C27E5F7C90081064C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621B27E5F7C90081064C /* SceneDelegate.swift */; };
 		A9A6621E27E5F7C90081064C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621D27E5F7C90081064C /* TabBarController.swift */; };
@@ -194,6 +197,9 @@
 		A92FBDCC27F31F8400BE3A19 /* TopVideoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopVideoCollectionViewCell.xib; sourceTree = "<group>"; };
 		A92FBDCF27F32F6900BE3A19 /* TopPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		A92FBDD027F32F6900BE3A19 /* TopPhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopPhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		A92FBDD327F3EB8300BE3A19 /* BookMarkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkResponse.swift; sourceTree = "<group>"; };
+		A92FBDD527F3EBB500BE3A19 /* BookMarkDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkDataManager.swift; sourceTree = "<group>"; };
+		A92FBDD727F3EC5D00BE3A19 /* BookMarkCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkCollectionViewCell.swift; sourceTree = "<group>"; };
 		A9A6621627E5F7C90081064C /* Bucketplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bucketplace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A6621927E5F7C90081064C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9A6621B27E5F7C90081064C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -649,6 +655,7 @@
 				A9C9ADBF27F072530051D469 /* FollowRequest.swift */,
 				A9C9ADBB27F0702A0051D469 /* FollowResponse.swift */,
 				A9C9ADC527F07F480051D469 /* unFollowResponse.swift */,
+				A92FBDD327F3EB8300BE3A19 /* BookMarkResponse.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -658,6 +665,7 @@
 			children = (
 				A9C9ADB927F0644A0051D469 /* FeedUserDataManager.swift */,
 				A9C9ADBD27F0720A0051D469 /* FollowDataManager.swift */,
+				A92FBDD527F3EBB500BE3A19 /* BookMarkDataManager.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -788,6 +796,7 @@
 			isa = PBXGroup;
 			children = (
 				A9C9ADC127F074150051D469 /* FollowViewController.swift */,
+				A92FBDD727F3EC5D00BE3A19 /* BookMarkCollectionViewCell.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -1020,6 +1029,7 @@
 				A9BC5C3927E7009D00D91901 /* MyShoppingViewController.swift in Sources */,
 				A9EA67B727E8811F001B1C68 /* AdCollectionViewCell.swift in Sources */,
 				A92FBDD127F32F6900BE3A19 /* TopPhotoCollectionViewCell.swift in Sources */,
+				A92FBDD627F3EBB500BE3A19 /* BookMarkDataManager.swift in Sources */,
 				A9FFE4BB27EDA045004F3B33 /* HomeCategoryCollectionViewCell.swift in Sources */,
 				A9C9ADB227F04C080051D469 /* PhotoDetailDataManager.swift in Sources */,
 				A9A6621A27E5F7C90081064C /* AppDelegate.swift in Sources */,
@@ -1044,6 +1054,7 @@
 				A9C9ADAE27F049870051D469 /* ID.swift in Sources */,
 				A9C9ADCD27F189EC0051D469 /* ProductDetailViewController.swift in Sources */,
 				A9FFE49027EAE2A3004F3B33 /* StoreAdCollectionViewCell.swift in Sources */,
+				A92FBDD427F3EB8300BE3A19 /* BookMarkResponse.swift in Sources */,
 				A90B1C0527E89CC3007A70D0 /* TopViewController.swift in Sources */,
 				A92FBDC627F2EBB300BE3A19 /* ProHousewarmingDataManager.swift in Sources */,
 				A9FFE46827E9EAA4004F3B33 /* SignUpRequest.swift in Sources */,
@@ -1064,6 +1075,7 @@
 				A9BC5C3B27E700CC00D91901 /* MyPageTabManViewController.swift in Sources */,
 				A9FFE46C27E9F335004F3B33 /* SignUpResponse.swift in Sources */,
 				A90B1C0927E89EEF007A70D0 /* FollowingViewController.swift in Sources */,
+				A92FBDD827F3EC5D00BE3A19 /* BookMarkCollectionViewCell.swift in Sources */,
 				A9BC5C1E27E6FD8B00D91901 /* Constant.swift in Sources */,
 				A92FBDC027F2EB3600BE3A19 /* KnowHowResponse.swift in Sources */,
 				A9C9ADC227F074150051D469 /* FollowViewController.swift in Sources */,

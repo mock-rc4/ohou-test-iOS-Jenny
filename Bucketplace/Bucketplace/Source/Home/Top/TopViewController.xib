@@ -53,7 +53,7 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="4022"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dpX-oe-XLD">
-                            <rect key="frame" x="0.0" y="50" width="414" height="3720"/>
+                            <rect key="frame" x="0.0" y="50" width="414" height="3700"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DFw-h6-w4B">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="330"/>
@@ -1343,10 +1343,10 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="MEa-nD-HNe">
-                                    <rect key="frame" x="0.0" y="3380.5" width="414" height="250"/>
+                                    <rect key="frame" x="0.0" y="3380.5" width="414" height="230"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="250" id="aMR-Bl-KrE"/>
+                                        <constraint firstAttribute="height" constant="230" id="aMR-Bl-KrE"/>
                                     </constraints>
                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="15" id="3tx-ui-LRX">
                                         <size key="itemSize" width="128" height="128"/>
@@ -1356,7 +1356,7 @@
                                     </collectionViewFlowLayout>
                                 </collectionView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGh-so-HYO">
-                                    <rect key="frame" x="15" y="3650.5" width="384" height="45"/>
+                                    <rect key="frame" x="15" y="3630.5" width="384" height="45"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="45" id="nGI-ey-HRZ"/>
                                     </constraints>
@@ -1441,7 +1441,7 @@
                                 <constraint firstItem="pdx-Fw-RXK" firstAttribute="leading" secondItem="Rd8-hb-GZ2" secondAttribute="leading" id="Zkd-0Q-iXq"/>
                                 <constraint firstItem="Zzl-BX-fby" firstAttribute="centerX" secondItem="dpX-oe-XLD" secondAttribute="centerX" id="aTS-3s-kBd"/>
                                 <constraint firstItem="7Sb-Cg-9my" firstAttribute="leading" secondItem="QhW-oc-OLQ" secondAttribute="trailing" id="bLo-hL-D8e"/>
-                                <constraint firstAttribute="height" constant="3720" id="cGm-EK-Zi5"/>
+                                <constraint firstAttribute="height" constant="3700" id="cGm-EK-Zi5"/>
                                 <constraint firstItem="f94-8q-CqL" firstAttribute="centerX" secondItem="dpX-oe-XLD" secondAttribute="centerX" id="dFp-Xa-bnJ"/>
                                 <constraint firstAttribute="trailing" secondItem="G3E-BC-Xs8" secondAttribute="trailing" constant="20" id="drO-Bs-J7r"/>
                                 <constraint firstAttribute="trailing" secondItem="sje-If-xhA" secondAttribute="trailing" id="drn-tb-I4I"/>
