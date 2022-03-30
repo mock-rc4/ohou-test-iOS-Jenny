@@ -142,4 +142,11 @@ extension UIViewController {
         IndicatorView.shared.dismiss()
     }
     
+    // MARK: 북마크 알림창 띄우기
+    func presentBookmark() {
+        let vc = BookMarkViewController()
+        vc.hidesBottomBarWhenPushed = true
+        vc.modalPresentationStyle = .overFullScreen
+        self.present(vc, animated: true)
+    }
 }

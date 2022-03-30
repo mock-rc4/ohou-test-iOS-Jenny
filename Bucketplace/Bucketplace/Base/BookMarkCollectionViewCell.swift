@@ -7,13 +7,20 @@
 
 import UIKit
 
+protocol BookMarkDelegate {
+    func presentView()
+}
+
 class BookMarkCollectionViewCell: UICollectionViewCell {
+    
+    var delegate: BookMarkDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
     func didSuccessBookMark(_ result: BookMarkResponse) {
+        delegate?.presentView()
         print("📎 스크랩했습니다.")
     }
     

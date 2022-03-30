@@ -20,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7lf-oZ-xbX">
                         <rect key="frame" x="0.0" y="0.0" width="400" height="370"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hw1" translatesAutoresizingMaskIntoConstraints="NO" id="IER-uf-1Ft">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IER-uf-1Ft">
                                 <rect key="frame" x="15" y="10" width="370" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="PXD-Di-HzD"/>
@@ -31,6 +31,19 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ssr-9c-hcg">
+                                <rect key="frame" x="340" y="215" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="DsA-7S-Xc5"/>
+                                    <constraint firstAttribute="height" constant="30" id="JZd-gM-sfp"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="bookmarkw"/>
+                                <connections>
+                                    <action selector="bookmarkBtnClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="HZX-8X-U0D"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INFJ의 계획과 꿈이 가득✨ 베란다가 있는 복층집" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYv-aE-oje">
                                 <rect key="frame" x="0.0" y="275" width="400" height="21.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
@@ -67,11 +80,13 @@
                         <constraints>
                             <constraint firstItem="jYv-aE-oje" firstAttribute="top" secondItem="IER-uf-1Ft" secondAttribute="bottom" constant="15" id="Cvm-U9-FJp"/>
                             <constraint firstItem="pdI-1w-EXQ" firstAttribute="centerX" secondItem="7lf-oZ-xbX" secondAttribute="centerX" id="IOq-l4-C1s"/>
+                            <constraint firstItem="IER-uf-1Ft" firstAttribute="trailing" secondItem="Ssr-9c-hcg" secondAttribute="trailing" constant="15" id="Sc7-GN-ojm"/>
                             <constraint firstItem="jYv-aE-oje" firstAttribute="leading" secondItem="7lf-oZ-xbX" secondAttribute="leading" id="XNl-wH-LSt"/>
                             <constraint firstAttribute="trailing" secondItem="IER-uf-1Ft" secondAttribute="trailing" constant="15" id="ZPm-h0-4A2"/>
                             <constraint firstItem="pdI-1w-EXQ" firstAttribute="top" secondItem="gcH-9v-s4C" secondAttribute="bottom" constant="10" id="cJe-Rj-jbT"/>
                             <constraint firstItem="gcH-9v-s4C" firstAttribute="centerY" secondItem="Fnb-fU-cVV" secondAttribute="centerY" id="e1F-YY-g4G"/>
                             <constraint firstItem="Fnb-fU-cVV" firstAttribute="top" secondItem="jYv-aE-oje" secondAttribute="bottom" constant="15" id="h7P-C0-koO"/>
+                            <constraint firstItem="IER-uf-1Ft" firstAttribute="bottom" secondItem="Ssr-9c-hcg" secondAttribute="bottom" constant="15" id="hDt-wT-4yO"/>
                             <constraint firstItem="Fnb-fU-cVV" firstAttribute="leading" secondItem="gcH-9v-s4C" secondAttribute="trailing" constant="5" id="kVP-rY-8bV"/>
                             <constraint firstItem="IER-uf-1Ft" firstAttribute="top" secondItem="7lf-oZ-xbX" secondAttribute="top" constant="10" id="mog-jr-qRW"/>
                             <constraint firstItem="IER-uf-1Ft" firstAttribute="leading" secondItem="7lf-oZ-xbX" secondAttribute="leading" constant="15" id="nP8-2Y-iet"/>
@@ -90,6 +105,7 @@
             </constraints>
             <connections>
                 <outlet property="Info" destination="pdI-1w-EXQ" id="UIU-Vz-QS1"/>
+                <outlet property="bookmarkBtn" destination="Ssr-9c-hcg" id="0bN-Hm-kLZ"/>
                 <outlet property="img" destination="IER-uf-1Ft" id="qGL-HI-RSU"/>
                 <outlet property="name" destination="Fnb-fU-cVV" id="3Tb-Mb-xtB"/>
                 <outlet property="profileImg" destination="gcH-9v-s4C" id="bSm-xo-6Lz"/>
@@ -99,7 +115,7 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="hw1" width="684" height="455"/>
+        <image name="bookmarkw" width="48" height="49"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

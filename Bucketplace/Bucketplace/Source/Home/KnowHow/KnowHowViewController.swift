@@ -72,10 +72,18 @@ extension KnowHowViewController: UICollectionViewDelegate, UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CELL, for: indexPath) as! KnowHowCollectionViewCell
         cell.setData(knowhowModel[indexPath.row])
+        cell.delegate = self
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: self.collectionView.frame.width, height: 140)
+    }
+}
+
+// MARK: 북마크 Alert창 표시하기 위함
+extension KnowHowViewController: BookMarkDelegate {
+    func presentView() {
+        self.presentBookmark()
     }
 }

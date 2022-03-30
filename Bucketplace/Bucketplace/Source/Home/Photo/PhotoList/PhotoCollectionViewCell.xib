@@ -36,12 +36,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnw-W1-8x5">
+                                <rect key="frame" x="160" y="275" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="8Mi-De-Mdb"/>
+                                    <constraint firstAttribute="width" constant="25" id="PVI-QT-gfz"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="bookmarkw"/>
+                                <connections>
+                                    <action selector="bookmarkBtnClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="mlX-Oz-bEY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="WJ9-8W-Hlm" firstAttribute="top" secondItem="Mvm-VK-3rq" secondAttribute="top" constant="10" id="5cE-n5-Ezl"/>
                             <constraint firstAttribute="bottom" secondItem="yTQ-IS-gQE" secondAttribute="bottom" constant="10" id="SqR-Pw-zY6"/>
                             <constraint firstItem="yTQ-IS-gQE" firstAttribute="leading" secondItem="Mvm-VK-3rq" secondAttribute="leading" constant="10" id="TuP-38-bGX"/>
+                            <constraint firstItem="yTQ-IS-gQE" firstAttribute="top" secondItem="qnw-W1-8x5" secondAttribute="bottom" constant="15" id="aBc-dv-bG5"/>
+                            <constraint firstAttribute="trailing" secondItem="qnw-W1-8x5" secondAttribute="trailing" constant="15" id="b1E-pf-nEo"/>
                             <constraint firstItem="WJ9-8W-Hlm" firstAttribute="centerX" secondItem="Mvm-VK-3rq" secondAttribute="centerX" id="bZj-4k-YvY"/>
                             <constraint firstAttribute="trailing" secondItem="WJ9-8W-Hlm" secondAttribute="trailing" id="e56-q8-KL4"/>
                             <constraint firstItem="yTQ-IS-gQE" firstAttribute="centerX" secondItem="WJ9-8W-Hlm" secondAttribute="centerX" id="fAT-7v-Fy4"/>
@@ -62,6 +77,7 @@
                 <constraint firstItem="Mvm-VK-3rq" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="xle-E9-8D6"/>
             </constraints>
             <connections>
+                <outlet property="bookmarkBtn" destination="qnw-W1-8x5" id="GRi-Fs-HWh"/>
                 <outlet property="photoDescription" destination="yTQ-IS-gQE" id="8a5-rM-1NK"/>
                 <outlet property="photoImg" destination="WJ9-8W-Hlm" id="T7C-vA-QDe"/>
             </connections>
@@ -69,6 +85,7 @@
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="bookmarkw" width="48" height="49"/>
         <image name="hd" width="357" height="357"/>
     </resources>
 </document>

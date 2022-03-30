@@ -55,6 +55,8 @@
 		A92FBDD427F3EB8300BE3A19 /* BookMarkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92FBDD327F3EB8300BE3A19 /* BookMarkResponse.swift */; };
 		A92FBDD627F3EBB500BE3A19 /* BookMarkDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92FBDD527F3EBB500BE3A19 /* BookMarkDataManager.swift */; };
 		A92FBDD827F3EC5D00BE3A19 /* BookMarkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92FBDD727F3EC5D00BE3A19 /* BookMarkCollectionViewCell.swift */; };
+		A92FBDDC27F3FEF300BE3A19 /* BookMarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92FBDDA27F3FEF300BE3A19 /* BookMarkViewController.swift */; };
+		A92FBDDD27F3FEF300BE3A19 /* BookMarkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A92FBDDB27F3FEF300BE3A19 /* BookMarkViewController.xib */; };
 		A9A6621A27E5F7C90081064C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621927E5F7C90081064C /* AppDelegate.swift */; };
 		A9A6621C27E5F7C90081064C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621B27E5F7C90081064C /* SceneDelegate.swift */; };
 		A9A6621E27E5F7C90081064C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621D27E5F7C90081064C /* TabBarController.swift */; };
@@ -200,6 +202,8 @@
 		A92FBDD327F3EB8300BE3A19 /* BookMarkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkResponse.swift; sourceTree = "<group>"; };
 		A92FBDD527F3EBB500BE3A19 /* BookMarkDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkDataManager.swift; sourceTree = "<group>"; };
 		A92FBDD727F3EC5D00BE3A19 /* BookMarkCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkCollectionViewCell.swift; sourceTree = "<group>"; };
+		A92FBDDA27F3FEF300BE3A19 /* BookMarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkViewController.swift; sourceTree = "<group>"; };
+		A92FBDDB27F3FEF300BE3A19 /* BookMarkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookMarkViewController.xib; sourceTree = "<group>"; };
 		A9A6621627E5F7C90081064C /* Bucketplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bucketplace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A6621927E5F7C90081064C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9A6621B27E5F7C90081064C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -478,6 +482,15 @@
 			path = ProHousewarmingEntity;
 			sourceTree = "<group>";
 		};
+		A92FBDD927F3FED900BE3A19 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A92FBDDB27F3FEF300BE3A19 /* BookMarkViewController.xib */,
+				A92FBDDA27F3FEF300BE3A19 /* BookMarkViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		A9A6620D27E5F7C90081064C = {
 			isa = PBXGroup;
 			children = (
@@ -526,6 +539,7 @@
 		A9BC5C1C27E6FD5200D91901 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				A92FBDD927F3FED900BE3A19 /* ViewControllers */,
 				A9C9ADB527F0631F0051D469 /* Entity */,
 				A9C9ADB627F063260051D469 /* DataManager */,
 				A9A6621F27E5F7C90081064C /* Main.storyboard */,
@@ -921,6 +935,7 @@
 				A9A6622327E5F7CA0081064C /* Assets.xcassets in Resources */,
 				A9EA079E27EDEF8900158FCF /* TodayDealCollectionViewCell.xib in Resources */,
 				A90B1C1627E89F12007A70D0 /* KnowHowViewController.xib in Resources */,
+				A92FBDDD27F3FEF300BE3A19 /* BookMarkViewController.xib in Resources */,
 				A9EA67AF27E863B1001B1C68 /* Login.storyboard in Resources */,
 				A9C9ADD627F1B38A0051D469 /* BuyViewController.xib in Resources */,
 				A9FFE49127EAE2A3004F3B33 /* StoreAdCollectionViewCell.xib in Resources */,
@@ -1014,6 +1029,7 @@
 				A90B1C1927E89F1B007A70D0 /* QnAViewController.swift in Sources */,
 				A9A6621E27E5F7C90081064C /* TabBarController.swift in Sources */,
 				A9C9ADA227F02F1A0051D469 /* PhotoListDataManager.swift in Sources */,
+				A92FBDDC27F3FEF300BE3A19 /* BookMarkViewController.swift in Sources */,
 				A9EA079D27EDEF8900158FCF /* TodayDealCollectionViewCell.swift in Sources */,
 				A9EA077E27EDAE0F00158FCF /* HomeFirstDataManager.swift in Sources */,
 				A92308D827F1EC6700534AA4 /* PopularCollectionViewCell.swift in Sources */,

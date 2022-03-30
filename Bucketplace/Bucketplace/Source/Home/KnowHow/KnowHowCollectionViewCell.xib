@@ -33,7 +33,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="패밀리 레스토랑처럼! 나만의 완벽한 메뉴 조합법 📝" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nyf-v4-Upu">
-                                <rect key="frame" x="190" y="10" width="145" height="61"/>
+                                <rect key="frame" x="190" y="10" width="150" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -51,10 +51,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1W-Ok-pvS">
-                                <rect key="frame" x="350" y="57.5" width="30" height="25"/>
+                                <rect key="frame" x="355" y="57.5" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="30E-FE-Kpz"/>
-                                    <constraint firstAttribute="width" constant="30" id="Hog-oD-dXP"/>
+                                    <constraint firstAttribute="width" constant="25" id="Hog-oD-dXP"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -103,7 +103,7 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="bookmark" width="55" height="51"/>
+        <image name="bookmark" width="40" height="43"/>
         <image name="kh" width="310" height="193"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

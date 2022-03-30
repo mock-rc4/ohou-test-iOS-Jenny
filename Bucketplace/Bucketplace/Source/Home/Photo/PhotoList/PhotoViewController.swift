@@ -54,6 +54,7 @@ extension PhotoViewController: UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PHOTO_CELL, for: indexPath) as! PhotoCollectionViewCell
         cell.setData(photoListModel[indexPath.row].baseInformation)
+        cell.delegate = self
         return cell
     }
     
@@ -64,5 +65,11 @@ extension PhotoViewController: UICollectionViewDelegate, UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: self.collectionView.frame.width/2 - 20, height: 350)
+    }
+}
+
+extension PhotoViewController: BookMarkDelegate {
+    func presentView() {
+        self.presentBookmark()
     }
 }

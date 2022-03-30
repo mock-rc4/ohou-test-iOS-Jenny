@@ -54,11 +54,18 @@ extension HousewarmingViewController: UICollectionViewDelegate, UICollectionView
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CELL, for: indexPath) as! HousewarmingCollectionViewCell
+        cell.delegate = self
         cell.setData(housewarmingModel[indexPath.row])
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: self.collectionView.frame.width, height: 370)
+    }
+}
+
+extension HousewarmingViewController: BookMarkDelegate {
+    func presentView() {
+        self.presentBookmark()
     }
 }
