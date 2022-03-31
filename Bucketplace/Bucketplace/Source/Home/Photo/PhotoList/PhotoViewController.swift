@@ -14,6 +14,7 @@ class PhotoViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     let PHOTO_CELL = "PhotoCollectionViewCell"
+    @IBOutlet weak var scrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,7 @@ class PhotoViewController: UIViewController {
     }
     
     private func setupControllers() {
+        scrollView.delegate = self
         let backImg = UIImage(systemName: "arrow.backward")
         self.navigationController?.navigationBar.backIndicatorImage = backImg
         self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = backImg
@@ -77,5 +79,17 @@ extension PhotoViewController: UICollectionViewDelegate, UICollectionViewDataSou
 extension PhotoViewController: BookMarkDelegate {
     func presentView() {
         self.presentBookmark()
+    }
+}
+
+extension PhotoViewController: UIScrollViewDelegate {
+    
+    func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
+       if scrollView.panGestureRecognizer.translation(in: scrollView).y < 0 {
+           self.navigationController?.setNavigationBarHidden(true, animated: true)
+
+       } else {
+           self.navigationController?.setNavigationBarHidden(false, animated: true)
+       }
     }
 }

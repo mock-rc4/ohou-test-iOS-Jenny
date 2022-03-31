@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProHousewarmingViewController" customModule="Bucketplace" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="0sK-mA-Hd7" id="VT3-1W-nmE"/>
+                <outlet property="scrollView" destination="Z12-eP-3mJ" id="0Fj-Ee-Yra"/>
                 <outlet property="totalCnt" destination="VHz-Tj-JYf" id="kdV-CI-vtv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

@@ -39,7 +39,10 @@ class TopViewController: UIViewController {
         setupPageControl()
         bannerTimer()
         setupSections()
-        getAPI()
+        if LoginKey.shared.jwt != "" {
+            getAPI()
+            
+        }
     }
     
     // 광고 배너 넣는 collectionView 설정
@@ -136,8 +139,8 @@ class TopViewController: UIViewController {
     }
     
     private func getAPI() {
-        //self.showIndicator()
-        //self.homeFirstDataManager.getHomeFirst(self)
+        self.showIndicator()
+        self.homeFirstDataManager.getHomeFirst(self)
     }
     
     // 집들이로 화면전환
@@ -284,6 +287,16 @@ extension TopViewController: UICollectionViewDelegateFlowLayout {
 
 
 extension TopViewController: UIScrollViewDelegate {
+    
+    func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
+       if scrollView.panGestureRecognizer.translation(in: scrollView).y < 0 {
+           self.navigationController?.setNavigationBarHidden(true, animated: true)
+
+       } else {
+           self.navigationController?.setNavigationBarHidden(false, animated: true)
+       }
+    }
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if secondFlag == false {
             if ((topScrollView.contentOffset.y) >= 290) {
@@ -294,8 +307,8 @@ extension TopViewController: UIScrollViewDelegate {
         }
         if thirdFlag == false {
             if (topScrollView.contentOffset.y) >= 870 {
-                //self.showIndicator()
-                //self.homeThirdDataManager.getHomeThird(self)
+                self.showIndicator()
+                self.homeThirdDataManager.getHomeThird(self)
                 thirdFlag = true
             }
         }

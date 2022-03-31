@@ -173,6 +173,14 @@ extension ProfileViewController: UIScrollViewDelegate {
             print("🌳 새로고침")
         }
     }
+    func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
+        if scrollView.panGestureRecognizer.translation(in: scrollView).y < 0 {
+            self.navigationController?.setNavigationBarHidden(true, animated: true)
+            
+        } else {
+            self.navigationController?.setNavigationBarHidden(false, animated: true)
+        }
+    }
 }
 
 extension ProfileViewController {

@@ -13,6 +13,7 @@ class StoreHomeViewController: UIViewController {
     var recentModel: [ViewProductList]!
     @IBOutlet weak var recentCollectionView: UICollectionView!
     
+    @IBOutlet weak var scrollView: UIScrollView!
     lazy var popularDataManager = PopularDataManager()
     var popularModel: [PopularProductList]!
     @IBOutlet weak var popularCollectionView: UICollectionView!
@@ -34,6 +35,7 @@ class StoreHomeViewController: UIViewController {
         setupCategory()
         getRecentAPI()
         getPopularAPI()
+        scrollView.delegate = self
     }
     
     @IBOutlet weak var categoryView: UIView!
@@ -228,5 +230,14 @@ extension StoreHomeViewController: UIScrollViewDelegate {
         if pageControl.currentPage != newPage {
             pageControl.currentPage = newPage
         }
+    }
+    
+    func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
+       if scrollView.panGestureRecognizer.translation(in: scrollView).y < 0 {
+           self.navigationController?.setNavigationBarHidden(true, animated: true)
+
+       } else {
+           self.navigationController?.setNavigationBarHidden(false, animated: true)
+       }
     }
 }

@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KnowHowViewController" customModule="Bucketplace" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="ubH-rb-6dv" id="y1J-Ta-ePK"/>
+                <outlet property="scrollView" destination="MQu-MO-C8o" id="68b-5W-2F6"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

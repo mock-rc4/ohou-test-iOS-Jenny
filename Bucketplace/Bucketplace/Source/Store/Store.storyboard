@@ -1519,6 +1519,7 @@
                         <outlet property="pageControl" destination="J5E-4J-Xge" id="YsN-nu-3Ez"/>
                         <outlet property="popularCollectionView" destination="QJA-5v-Mj4" id="JL9-5j-tnS"/>
                         <outlet property="recentCollectionView" destination="bpF-fm-Lnx" id="2wM-db-o5I"/>
+                        <outlet property="scrollView" destination="2gC-7O-9eb" id="teM-nY-Rcf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KXi-8H-NRg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

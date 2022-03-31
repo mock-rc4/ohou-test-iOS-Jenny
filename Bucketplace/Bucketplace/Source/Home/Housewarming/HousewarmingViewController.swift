@@ -15,9 +15,12 @@ class HousewarmingViewController: UIViewController {
     var housewarmingModel: [HomewarmingFeed]!
     @IBOutlet weak var totalCnt: UILabel!
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         getHousewarmingAPI()
+        scrollView.delegate = self
     }
 
 }
@@ -67,5 +70,17 @@ extension HousewarmingViewController: UICollectionViewDelegate, UICollectionView
 extension HousewarmingViewController: BookMarkDelegate {
     func presentView() {
         self.presentBookmark()
+    }
+}
+
+extension HousewarmingViewController: UIScrollViewDelegate {
+    
+    func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
+       if scrollView.panGestureRecognizer.translation(in: scrollView).y < 0 {
+           self.navigationController?.setNavigationBarHidden(true, animated: true)
+
+       } else {
+           self.navigationController?.setNavigationBarHidden(false, animated: true)
+       }
     }
 }

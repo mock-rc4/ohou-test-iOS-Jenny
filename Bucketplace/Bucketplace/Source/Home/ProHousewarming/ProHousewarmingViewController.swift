@@ -15,9 +15,12 @@ class ProHousewarmingViewController: UIViewController {
     let CELL = "ProHousewarmingCollectionViewCell"
     @IBOutlet weak var totalCnt: UILabel!
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         getProAPI()
+        scrollView.delegate = self
     }
 
 }
@@ -64,3 +67,14 @@ extension ProHousewarmingViewController: UICollectionViewDelegate, UICollectionV
     }
 }
 
+extension ProHousewarmingViewController: UIScrollViewDelegate {
+    
+    func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
+       if scrollView.panGestureRecognizer.translation(in: scrollView).y < 0 {
+           self.navigationController?.setNavigationBarHidden(true, animated: true)
+
+       } else {
+           self.navigationController?.setNavigationBarHidden(false, animated: true)
+       }
+    }
+}

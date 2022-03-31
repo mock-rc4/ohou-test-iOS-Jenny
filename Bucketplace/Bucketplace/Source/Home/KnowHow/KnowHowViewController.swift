@@ -14,9 +14,12 @@ class KnowHowViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     let CELL = "KnowHowCollectionViewCell"
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         getKnowHowAPI()
+        scrollView.delegate = self
     }
     
     @IBAction func btn1Click(_ btn: UIButton) {
@@ -85,5 +88,17 @@ extension KnowHowViewController: UICollectionViewDelegate, UICollectionViewDataS
 extension KnowHowViewController: BookMarkDelegate {
     func presentView() {
         self.presentBookmark()
+    }
+}
+
+extension KnowHowViewController: UIScrollViewDelegate {
+    
+    func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
+       if scrollView.panGestureRecognizer.translation(in: scrollView).y < 0 {
+           self.navigationController?.setNavigationBarHidden(true, animated: true)
+
+       } else {
+           self.navigationController?.setNavigationBarHidden(false, animated: true)
+       }
     }
 }
