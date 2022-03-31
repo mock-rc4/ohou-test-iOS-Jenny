@@ -39,10 +39,10 @@ class TopViewController: UIViewController {
         setupPageControl()
         bannerTimer()
         setupSections()
-        if LoginKey.shared.jwt != "" {
+        //if LoginKey.shared.jwt != "" {
             getAPI()
             
-        }
+        //}
     }
     
     // 광고 배너 넣는 collectionView 설정
@@ -175,7 +175,9 @@ extension TopViewController {
         let firstInfo = result.result
         for i in 0 ... 3 {
             Functions.shared.urlToImg(firstInfo[i].thumbnailUrl, self.firstImgs[i])
-            firstLabels[i].text = firstInfo[i].description + firstInfo[i].title
+            firstLabels[i].attributedText = NSMutableAttributedString()
+                .bold(string: firstInfo[i].description, fontSize: 15)
+                .regular(string: " \(firstInfo[i].title)", fontSize: 15)
         }
         self.dismissIndicator()
     }
@@ -184,7 +186,9 @@ extension TopViewController {
         let secondInfo = result.result
         for i in 0 ... 3 {
             Functions.shared.urlToImg(secondInfo[i].thumbnailUrl, self.secondImgs[i])
-            secondLabels[i].text = secondInfo[i].description + secondInfo[i].title
+            secondLabels[i].attributedText = NSMutableAttributedString()
+                .bold(string: secondInfo[i].description, fontSize: 15)
+                .regular(string: " \(secondInfo[i].title)", fontSize: 15)
         }
         self.dismissIndicator()
     }
@@ -193,7 +197,9 @@ extension TopViewController {
         let thirdInfo = result.result
         for i in 0 ... 3 {
             Functions.shared.urlToImg(thirdInfo[i].thumbnailUrl, self.thirdImgs[i])
-            thirdLabels[i].text = thirdInfo[i].description + thirdInfo[i].title
+            thirdLabels[i].attributedText = NSMutableAttributedString()
+                .bold(string: thirdInfo[i].description, fontSize: 15)
+                .regular(string: " \(thirdInfo[i].title)", fontSize: 15)
         }
         self.dismissIndicator()
     }

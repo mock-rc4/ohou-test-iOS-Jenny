@@ -68,6 +68,7 @@
 		A92FBDFB27F4521700BE3A19 /* PhotoScrapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92FBDF927F4521700BE3A19 /* PhotoScrapViewController.swift */; };
 		A92FBDFC27F4521700BE3A19 /* PhotoScrapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A92FBDFA27F4521700BE3A19 /* PhotoScrapViewController.xib */; };
 		A92FBE0927F4550500BE3A19 /* ScrapBookDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92FBE0827F4550500BE3A19 /* ScrapBookDataManager.swift */; };
+		A937A34327F5E70F00D6DC32 /* NSMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = A937A34227F5E70F00D6DC32 /* NSMutableAttributedString.swift */; };
 		A99224C927F5BED6000F705D /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99224C827F5BED6000F705D /* UITextField.swift */; };
 		A9A6621A27E5F7C90081064C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621927E5F7C90081064C /* AppDelegate.swift */; };
 		A9A6621C27E5F7C90081064C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A6621B27E5F7C90081064C /* SceneDelegate.swift */; };
@@ -244,6 +245,7 @@
 		A92FBDF927F4521700BE3A19 /* PhotoScrapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoScrapViewController.swift; sourceTree = "<group>"; };
 		A92FBDFA27F4521700BE3A19 /* PhotoScrapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoScrapViewController.xib; sourceTree = "<group>"; };
 		A92FBE0827F4550500BE3A19 /* ScrapBookDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrapBookDataManager.swift; sourceTree = "<group>"; };
+		A937A34227F5E70F00D6DC32 /* NSMutableAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedString.swift; sourceTree = "<group>"; };
 		A99224C827F5BED6000F705D /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		A9A6621627E5F7C90081064C /* Bucketplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bucketplace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A6621927E5F7C90081064C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -678,6 +680,7 @@
 				A9FFE4A027EB28B8004F3B33 /* UIView.swift */,
 				A9FFE4B127ECA30B004F3B33 /* UITabBarController.swift */,
 				A99224C827F5BED6000F705D /* UITextField.swift */,
+				A937A34227F5E70F00D6DC32 /* NSMutableAttributedString.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -1278,6 +1281,7 @@
 				A92FBDC827F31DBE00BE3A19 /* TopListResponse.swift in Sources */,
 				A92FBDC227F2EB4100BE3A19 /* KnowHowDataManager.swift in Sources */,
 				A9EA078827EDC15600158FCF /* HomeThirdDataManager.swift in Sources */,
+				A937A34327F5E70F00D6DC32 /* NSMutableAttributedString.swift in Sources */,
 				A9D9B77F27F4573D00C65FF5 /* HousewarmingScrapViewController.swift in Sources */,
 				A9C9ADB827F063340051D469 /* FeedUserResponse.swift in Sources */,
 				A9EA078227EDBF1400158FCF /* HomeSecondDataManager.swift in Sources */,
