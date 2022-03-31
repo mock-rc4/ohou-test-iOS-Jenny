@@ -15,7 +15,7 @@ class PhotoDetailViewController: FollowViewController {
     lazy var metaDataManager = MetaDataManager()
     let feedId = FeedId.shared.feedId
     var userId = UserId.shared.userId
-    var followFlag: Int = 0
+    var followFlag: Bool = false
     
     @IBOutlet weak var homeType: UILabel!
     @IBOutlet weak var thumailImg: UIImageView!
@@ -41,6 +41,7 @@ class PhotoDetailViewController: FollowViewController {
     
     private func setupRightItems() {
         self.navigationController?.navigationBar.backItem?.title = ""
+        self.navigationController?.navigationBar.topItem?.title = ""
         self.navigationController?.navigationBar.tintColor = .black
         
         let moreBtn = UIButton()
@@ -50,16 +51,16 @@ class PhotoDetailViewController: FollowViewController {
     
     @IBAction func followBtnClick(_ sender: Any) {
         let followId = userId
-        if followFlag == 0 {
+        if followFlag == false {
         self.followDataManager.postFollow(FollowRequest(userId: followId), self)
             followBtn.setTitle("팔로잉", for: .normal)
             followBtn.backgroundColor = .lightGray
-            followFlag = 1
+            followFlag = true
         } else {
             self.followDataManager.unFollow(FollowRequest(userId: followId), self)
             followBtn.setTitle("팔로우", for: .normal)
             followBtn.backgroundColor = .mainBlue
-            followFlag = 0
+            followFlag = false
         }
     }
     
@@ -73,11 +74,11 @@ extension PhotoDetailViewController {
     }
     func didSuccessFeedUser(_ result: FeedUserResponse) {
         userId = result.result.userId
-        followFlag = result.result.isFollowed
         print("📎\(userId)")
-        if followFlag == 1 {
+        if result.result.isFollowed == 1 {
             followBtn.setTitle("팔로잉", for: .normal)
             followBtn.backgroundColor = .lightGray
+            followFlag = true
         }
         Functions.shared.urlToImg(result.result.profileImageUrl, feedUserImg)
         let url = URL(string: result.result.profileImageUrl)

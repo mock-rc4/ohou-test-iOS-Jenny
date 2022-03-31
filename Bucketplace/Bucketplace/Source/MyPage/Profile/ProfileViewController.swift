@@ -76,13 +76,15 @@ extension ProfileViewController {
     
     func didSuccessProfile(_ result: ProfileResponse) {
         let info = result.result
-        Functions.shared.urlToImg(info.profileImageUrl, profileImg)
+        //Functions.shared.urlToImg(info.profileImageUrl, profileImg)
         nickname.text = info.nickname
         follower.text = "\(info.follower)"
         following.text = "\(info.followee)"
         scrapBook.text = "\(info.scrapBookFeeds)"
         like.text = "\(info.likeFeed)"
         UserId.shared.userId = info.id
+        print("🔥 \(info.id)")
+        print("✨ \(UserId.shared.userId)")
         self.dismissIndicator()
         getScrapBookAPI()
     }

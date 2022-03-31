@@ -11,7 +11,7 @@ class ScrapBookDataManager {
     
     let header: HTTPHeaders = [
         "Content-Type": "application/json",
-        "X-ACCESS-TOKEN": "eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOjUsImlhdCI6MTY0ODE5NjU4MywiZXhwIjoxNjQ5NjY3ODEyfQ.ygg04yayv5JtdEgz88TDMMuVcbuLI3eha6F8cZNmkmc"
+        "X-ACCESS-TOKEN": LoginKey.shared.jwt
     ]
     
     func getScrapBook(_ userId: Int, _ delegate: ProfileViewController) {
@@ -75,7 +75,7 @@ class ScrapBookDataManager {
     func getPhotoScrap(_ scrapbookId: Int, _ delegate: PhotoScrapViewController) {
 
         let url = "\(Constant.BASE_URL)/app/feeds/scrapped/media-feeds/\(scrapbookId)"
-        
+        print("⭐️ \(scrapbookId)")
         AF.request(url,
                    method: .get,
                    parameters: nil,

@@ -37,6 +37,7 @@ class SignUpViewController: UIViewController {
         setupValues()
         setupDisplay()
         self.navigationController?.navigationBar.topItem?.title = ""
+        self.navigationController?.navigationBar.backItem?.title = ""
         self.navigationController?.navigationBar.tintColor = .black
     }
     
@@ -71,9 +72,11 @@ class SignUpViewController: UIViewController {
         
         // 회원가입 요청
         self.dismissKeyboard()
-        self.showIndicator()
         let input = SignUpRequest(email: email, password: password, nickname: nickname)
-        dataManager.postSignUp(input, delegate: self)
+        if signInFlag == true {
+            self.showIndicator()
+            dataManager.postSignUp(input, delegate: self)
+        }
     }
     
     // MARK: 약관 동의

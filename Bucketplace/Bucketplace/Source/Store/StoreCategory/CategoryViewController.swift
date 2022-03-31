@@ -15,6 +15,7 @@ class CategoryViewController: UIViewController {
     
     private var nowPage: Int = 0
     var images:[String] = ["광고1", "광고2", "광고3","광고4"]
+    var products: [String] = ["deal1", "deal2", "deal3", "deal4","deal1", "deal2", "deal3", "deal4"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,7 +85,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
         case self.adCollectionView:
             return images.count
         default:
-            return 6
+            return products.count
         }
     }
     
@@ -96,6 +97,7 @@ extension CategoryViewController: UICollectionViewDelegate, UICollectionViewData
             return cell
         default:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CELL, for: indexPath) as! ProductCollectionViewCell
+            cell.setData(products[indexPath.row])
             return cell
         }
     }

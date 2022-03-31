@@ -71,6 +71,7 @@ extension OptionSelectViewController {
         self.orderDataManager.postOrder(self)
     }
     func didSuccessOrder(_ result: OrderResult){
+        TabManIndex.shared.index = 0
         self.presentVCAlert(title: "\(result.orderId)번 상품 구매완료", sb: "Main", vc: "TabBarController")
     }
     func failedToRequest(_ message: String) {

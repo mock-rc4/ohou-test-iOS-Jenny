@@ -22,7 +22,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mbt-it-j34">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="Mbt-it-j34">
                                 <rect key="frame" x="147.5" y="100.5" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Mbt-it-j34" secondAttribute="height" multiplier="1:1" id="0U9-dH-ccS"/>
@@ -78,7 +78,7 @@
             <objects>
                 <viewController storyboardIdentifier="ScrapBookTabManViewController" id="zoF-6B-hQX" customClass="ScrapBookTabManViewController" customModule="Bucketplace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AuV-yf-MIV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="745"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="745.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Mh-pq-SNw">
@@ -89,6 +89,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="h74-QZ-zat"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="4Mh-pq-SNw" secondAttribute="trailing" id="7lo-xr-5Fs"/>
@@ -106,6 +107,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="profile" width="178" height="181"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

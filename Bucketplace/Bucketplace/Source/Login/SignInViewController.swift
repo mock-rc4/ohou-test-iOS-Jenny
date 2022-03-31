@@ -18,6 +18,7 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupDisplay()
+        self.navigationController?.navigationBar.topItem?.title = ""
         self.navigationController?.navigationBar.backItem?.title = ""
         self.navigationController?.navigationBar.tintColor = .black
     }

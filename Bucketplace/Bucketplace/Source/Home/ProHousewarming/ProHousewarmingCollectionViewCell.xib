@@ -20,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ffU-Eo-dqa">
                         <rect key="frame" x="0.0" y="0.0" width="220" height="300"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hw1" translatesAutoresizingMaskIntoConstraints="NO" id="ORO-JT-GUx">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ORO-JT-GUx">
                                 <rect key="frame" x="15" y="10" width="190" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="xic-A8-f6T"/>
@@ -31,6 +31,19 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDZ-5V-Olm">
+                                <rect key="frame" x="170" y="110" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="7gX-O5-Sax"/>
+                                    <constraint firstAttribute="width" constant="25" id="wTa-sP-r0Q"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="bookmarkw"/>
+                                <connections>
+                                    <action selector="bookmarkBtnClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="KhM-bd-RGW"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전문가 집들이" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYP-03-Er2">
                                 <rect key="frame" x="15" y="150" width="71" height="16"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
@@ -78,10 +91,12 @@
                             <constraint firstItem="ORO-JT-GUx" firstAttribute="top" secondItem="ffU-Eo-dqa" secondAttribute="top" constant="10" id="5It-kI-Cq6"/>
                             <constraint firstItem="l2K-JB-0Bd" firstAttribute="top" secondItem="jYP-03-Er2" secondAttribute="bottom" constant="5" id="8hS-fU-z3V"/>
                             <constraint firstItem="Tnj-yg-Vxh" firstAttribute="top" secondItem="l2K-JB-0Bd" secondAttribute="bottom" constant="5" id="90f-I1-bxY"/>
+                            <constraint firstItem="ORO-JT-GUx" firstAttribute="bottom" secondItem="hDZ-5V-Olm" secondAttribute="bottom" constant="5" id="MZV-z8-KQt"/>
                             <constraint firstItem="ORO-JT-GUx" firstAttribute="leading" secondItem="ffU-Eo-dqa" secondAttribute="leading" constant="15" id="OlY-Zj-DKl"/>
                             <constraint firstItem="jYP-03-Er2" firstAttribute="leading" secondItem="ORO-JT-GUx" secondAttribute="leading" id="TPf-A6-Jxa"/>
                             <constraint firstItem="cDW-PX-5np" firstAttribute="leading" secondItem="sqg-aW-oGV" secondAttribute="leading" id="WAx-NP-yWF"/>
                             <constraint firstAttribute="trailing" secondItem="ORO-JT-GUx" secondAttribute="trailing" constant="15" id="eC4-i1-pQV"/>
+                            <constraint firstItem="ORO-JT-GUx" firstAttribute="trailing" secondItem="hDZ-5V-Olm" secondAttribute="trailing" constant="10" id="hHr-GE-Dcn"/>
                             <constraint firstItem="Tnj-yg-Vxh" firstAttribute="leading" secondItem="sqg-aW-oGV" secondAttribute="trailing" constant="5" id="j5r-3T-Cf6"/>
                             <constraint firstItem="cDW-PX-5np" firstAttribute="top" secondItem="sqg-aW-oGV" secondAttribute="bottom" constant="10" id="jZR-lm-f4X"/>
                             <constraint firstItem="jYP-03-Er2" firstAttribute="top" secondItem="ORO-JT-GUx" secondAttribute="bottom" constant="10" id="jhe-1b-7I9"/>
@@ -100,6 +115,7 @@
                 <constraint firstItem="ffU-Eo-dqa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="nrc-c6-1kk"/>
             </constraints>
             <connections>
+                <outlet property="bookmarkBtn" destination="hDZ-5V-Olm" id="cWc-v3-gbh"/>
                 <outlet property="img" destination="ORO-JT-GUx" id="CLk-cN-HtG"/>
                 <outlet property="info" destination="cDW-PX-5np" id="vtx-3k-4Bp"/>
                 <outlet property="name" destination="Tnj-yg-Vxh" id="9wm-gV-sZG"/>
@@ -111,7 +127,7 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="hw1" width="684" height="455"/>
+        <image name="bookmarkw" width="48" height="49"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

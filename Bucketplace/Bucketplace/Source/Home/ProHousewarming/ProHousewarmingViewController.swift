@@ -59,11 +59,18 @@ extension ProHousewarmingViewController: UICollectionViewDelegate, UICollectionV
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CELL, for: indexPath) as! ProHousewarmingCollectionViewCell
         cell.setData(proModel[indexPath.row])
+        cell.delegate = self
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: self.collectionView.frame.width/2, height: 300)
+    }
+}
+
+extension ProHousewarmingViewController: BookMarkDelegate {
+    func presentView() {
+        self.presentBookmark()
     }
 }
 

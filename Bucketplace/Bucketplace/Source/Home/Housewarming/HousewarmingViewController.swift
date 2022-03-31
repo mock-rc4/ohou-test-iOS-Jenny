@@ -8,7 +8,7 @@
 import UIKit
 
 class HousewarmingViewController: UIViewController {
-
+    
     lazy var housewarmingDataManager = HousewarmingDataManager()
     @IBOutlet weak var collectionView: UICollectionView!
     let CELL = "HousewarmingCollectionViewCell"
@@ -16,13 +16,14 @@ class HousewarmingViewController: UIViewController {
     @IBOutlet weak var totalCnt: UILabel!
     
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var sortScrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         getHousewarmingAPI()
         scrollView.delegate = self
     }
-
+    
 }
 
 extension HousewarmingViewController {
@@ -76,11 +77,11 @@ extension HousewarmingViewController: BookMarkDelegate {
 extension HousewarmingViewController: UIScrollViewDelegate {
     
     func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
-       if scrollView.panGestureRecognizer.translation(in: scrollView).y < 0 {
-           self.navigationController?.setNavigationBarHidden(true, animated: true)
-
-       } else {
-           self.navigationController?.setNavigationBarHidden(false, animated: true)
-       }
+        if scrollView.panGestureRecognizer.translation(in: scrollView).y < 0 {
+            self.navigationController?.setNavigationBarHidden(true, animated: true)
+            
+        } else {
+            self.navigationController?.setNavigationBarHidden(false, animated: true)
+        }
     }
 }

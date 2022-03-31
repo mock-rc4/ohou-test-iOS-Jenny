@@ -11,7 +11,7 @@ class ProfileDataManager {
     
     let header: HTTPHeaders = [
         "Content-Type": "application/json",
-        "X-ACCESS-TOKEN": "eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOjUsImlhdCI6MTY0ODE5NjU4MywiZXhwIjoxNjQ5NjY3ODEyfQ.ygg04yayv5JtdEgz88TDMMuVcbuLI3eha6F8cZNmkmc"
+        "X-ACCESS-TOKEN": LoginKey.shared.jwt
     ]
     
     func getProfile(_ delegate: ProfileViewController) {

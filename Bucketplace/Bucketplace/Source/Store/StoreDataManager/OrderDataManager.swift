@@ -15,7 +15,7 @@ class OrderDataManager {
         
         let header: HTTPHeaders = [
             "Content-Type": "application/json",
-            "X-ACCESS-TOKEN": "eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWQiOjcsImlhdCI6MTY0ODExMDQ5NSwiZXhwIjoxNjQ5NTgxNzI0fQ.cWVyvkCPP1LR8sp5X0YBDd8avr7B8OP1rbGm-H9Hj_4"
+            "X-ACCESS-TOKEN": LoginKey.shared.jwt
         ]
         
         let body: [String: Any] = [

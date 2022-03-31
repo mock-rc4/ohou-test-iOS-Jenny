@@ -129,6 +129,9 @@
                 <constraint firstItem="r9l-jK-i9w" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="KKQ-Mg-nvX"/>
                 <constraint firstItem="r9l-jK-i9w" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="UXz-77-dzp"/>
             </constraints>
+            <connections>
+                <outlet property="img" destination="RrK-qF-EKI" id="3Lf-0r-494"/>
+            </connections>
             <point key="canvasLocation" x="139" y="80"/>
         </collectionViewCell>
     </objects>

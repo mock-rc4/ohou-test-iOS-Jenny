@@ -14,6 +14,8 @@ open class Functions: UIViewController {
     open func urlToImg(_ urlImg: String, _ img: UIImageView) {
         let url = URL(string: urlImg)
         let data = try? Data(contentsOf: url!)
+        print("📲 \(url) \(data)")
+        //img.image = UIImage()
         img.image = UIImage(data: data!)
     }
     

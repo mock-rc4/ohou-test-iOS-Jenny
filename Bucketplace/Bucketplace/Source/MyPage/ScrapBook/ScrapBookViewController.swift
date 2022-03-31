@@ -32,7 +32,7 @@ class ScrapBookViewController: UIViewController {
 extension ScrapBookViewController {
     private func setupDisplay() {
         name.text = ScrapBook.shared.info.scrapbookName
-        Functions.shared.urlToImg(ScrapBook.shared.info.profileImageUrl, profileImg)
+        //Functions.shared.urlToImg(ScrapBook.shared.info.profileImageUrl, profileImg)
         nickname.text = ScrapBook.shared.info.userNickname
     }
 }

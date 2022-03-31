@@ -9,9 +9,14 @@ import UIKit
 
 class ProductCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var img: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
+    func setData(_ data: String) {
+        img.image = UIImage(named: data)
+    }
 }

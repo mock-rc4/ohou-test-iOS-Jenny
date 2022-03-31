@@ -39,10 +39,9 @@ class TopViewController: UIViewController {
         setupPageControl()
         bannerTimer()
         setupSections()
-        //if LoginKey.shared.jwt != "" {
+        if LoginKey.shared.jwt != "" {
             getAPI()
-            
-        //}
+        }
     }
     
     // 광고 배너 넣는 collectionView 설정
@@ -306,8 +305,8 @@ extension TopViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if secondFlag == false {
             if ((topScrollView.contentOffset.y) >= 290) {
-                //self.showIndicator()
-                //self.homeSecondDataManager.getHomeSecond(self)
+                self.showIndicator()
+                self.homeSecondDataManager.getHomeSecond(self)
                 secondFlag = true
             }
         }

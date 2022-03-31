@@ -22,6 +22,9 @@ class TodayDealViewController: UIViewController {
     
     private func setupControllers() {
         self.title = "오늘의딜"
+        self.navigationController?.navigationBar.backItem?.title = ""
+        self.navigationController?.navigationBar.topItem?.title = ""
+        self.navigationController?.navigationBar.tintColor = .black
     }
 }
 

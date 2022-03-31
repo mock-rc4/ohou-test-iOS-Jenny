@@ -20,9 +20,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="200" height="350"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hd" translatesAutoresizingMaskIntoConstraints="NO" id="WJ9-8W-Hlm">
-                                <rect key="frame" x="0.0" y="10" width="200" height="300"/>
+                                <rect key="frame" x="0.0" y="10" width="200" height="280"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="pm9-hR-IuX"/>
+                                    <constraint firstAttribute="height" constant="280" id="pm9-hR-IuX"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -31,13 +31,13 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="설명" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTQ-IS-gQE">
-                                <rect key="frame" x="10" y="315" width="180" height="25"/>
+                                <rect key="frame" x="10" y="295" width="180" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnw-W1-8x5">
-                                <rect key="frame" x="160" y="275" width="25" height="25"/>
+                                <rect key="frame" x="160" y="255" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="8Mi-De-Mdb"/>
                                     <constraint firstAttribute="width" constant="25" id="PVI-QT-gfz"/>
@@ -53,7 +53,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="WJ9-8W-Hlm" firstAttribute="top" secondItem="Mvm-VK-3rq" secondAttribute="top" constant="10" id="5cE-n5-Ezl"/>
-                            <constraint firstAttribute="bottom" secondItem="yTQ-IS-gQE" secondAttribute="bottom" constant="10" id="SqR-Pw-zY6"/>
+                            <constraint firstAttribute="bottom" secondItem="yTQ-IS-gQE" secondAttribute="bottom" constant="5" id="SqR-Pw-zY6"/>
                             <constraint firstItem="yTQ-IS-gQE" firstAttribute="leading" secondItem="Mvm-VK-3rq" secondAttribute="leading" constant="10" id="TuP-38-bGX"/>
                             <constraint firstItem="yTQ-IS-gQE" firstAttribute="top" secondItem="qnw-W1-8x5" secondAttribute="bottom" constant="15" id="aBc-dv-bG5"/>
                             <constraint firstAttribute="trailing" secondItem="qnw-W1-8x5" secondAttribute="trailing" constant="15" id="b1E-pf-nEo"/>

@@ -27,6 +27,10 @@ class StoreHomeViewController: UIViewController {
     let RECENT_CELL = "RecentCollectionViewCell"
     let POPULAR_CELL = "PopularCollectionViewCell"
     
+    override func viewWillAppear(_ animated: Bool) {
+        getRecentAPI()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
@@ -36,6 +40,9 @@ class StoreHomeViewController: UIViewController {
         getRecentAPI()
         getPopularAPI()
         scrollView.delegate = self
+        let backImg = UIImage(systemName: "arrow.backward")
+        self.navigationController?.navigationBar.backIndicatorImage = backImg
+        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = backImg
     }
     
     @IBOutlet weak var categoryView: UIView!
