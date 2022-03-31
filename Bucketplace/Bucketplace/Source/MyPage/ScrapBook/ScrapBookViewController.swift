@@ -16,6 +16,13 @@ class ScrapBookViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupDisplay()
+        setupRightItems()
+    }
+    
+    private func setupRightItems() {
+        let shareBtn = makeBtn("nv_share")
+        // 공백 만들기
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: shareBtn)
     }
 
 }

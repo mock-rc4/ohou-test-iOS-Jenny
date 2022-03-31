@@ -149,4 +149,11 @@ extension UIViewController {
         vc.modalPresentationStyle = .overFullScreen
         self.present(vc, animated: true)
     }
+    
+    // MARK: 버튼 이미지로 만들기
+    func makeBtn( _ name: String) -> UIButton {
+        let btn = UIButton()
+        btn.setImage(UIImage(named: name), for: .normal)
+        return btn
+    }
 }

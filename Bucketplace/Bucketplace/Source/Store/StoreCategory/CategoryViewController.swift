@@ -16,6 +16,18 @@ class CategoryViewController: UIViewController {
         super.viewDidLoad()
         self.title = "커피메이커/머신"
         setupCollectionView()
+        setupRightItems()
+    }
+    
+    private func setupRightItems() {
+//        let homeBtn = makeBtn("nv_home")
+//        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: homeBtn)
+        let searchBtn = makeBtn("nv_search")
+        let cartBtn = makeBtn("nv_cart")
+        // 공백 만들기
+        let spacer = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
+        spacer.width = 12
+        self.navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: cartBtn), spacer, UIBarButtonItem(customView: searchBtn)]
     }
 
 }

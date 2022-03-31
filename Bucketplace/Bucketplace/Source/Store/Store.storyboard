@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--스토어-->
+        <!--Store View Controller-->
         <scene sceneID="Zc3-Lz-jsG">
             <objects>
                 <viewController storyboardIdentifier="StoreViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y8p-iw-h60" customClass="StoreViewController" customModule="Bucketplace" customModuleProvider="target" sceneMemberID="viewController">
@@ -33,7 +33,7 @@
                             <constraint firstItem="5Yj-Sv-Hjz" firstAttribute="trailing" secondItem="6Jl-fv-W4E" secondAttribute="trailing" id="oMl-f5-tyd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="스토어" id="zkv-IE-aiK"/>
+                    <navigationItem key="navigationItem" id="zkv-IE-aiK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XKh-fQ-Xd1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

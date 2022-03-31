@@ -53,3 +53,13 @@ class Buy {
         optionId = 0
     }
 }
+
+class Placeholder {
+    static var shared = Placeholder()
+    
+    var placeholder: String
+    
+    private init() {
+        placeholder = "오늘의집 검색"
+    }
+}

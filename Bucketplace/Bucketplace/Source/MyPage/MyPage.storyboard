@@ -30,7 +30,7 @@
             </objects>
             <point key="canvasLocation" x="1714" y="799"/>
         </scene>
-        <!--마이페이지-->
+        <!--My Page View Controller-->
         <scene sceneID="twn-2p-YUg">
             <objects>
                 <viewController storyboardIdentifier="MyPageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YSp-fO-YWt" customClass="MyPageViewController" customModule="Bucketplace" customModuleProvider="target" sceneMemberID="viewController">
@@ -54,7 +54,7 @@
                             <constraint firstItem="SHM-ST-MqC" firstAttribute="leading" secondItem="YIN-cb-0y7" secondAttribute="leading" id="xiH-wj-YSE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="마이페이지" id="WJY-LX-JaJ"/>
+                    <navigationItem key="navigationItem" id="WJY-LX-JaJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vum-8q-jHG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

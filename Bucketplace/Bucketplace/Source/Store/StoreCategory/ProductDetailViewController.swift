@@ -29,9 +29,10 @@ class ProductDetailViewController: UIViewController {
     }
     
     @IBAction func buyBtnClick(_ sender: Any) {
-        let vc = BuyViewController()
+        let vc = UIStoryboard(name: "Buy", bundle: nil).instantiateViewController(withIdentifier: "BuyViewController")
         vc.hidesBottomBarWhenPushed = true
         vc.modalPresentationStyle = .overFullScreen
+        vc.modalTransitionStyle = .crossDissolve
         self.present(vc, animated: true)
     }
     
