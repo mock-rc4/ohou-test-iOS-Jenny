@@ -35,6 +35,8 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
         setupValues()
         setupDisplay()
+        self.navigationController?.navigationBar.topItem?.title = ""
+        self.navigationController?.navigationBar.tintColor = .black
     }
     
     // MARK: 값들 초기화

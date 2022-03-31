@@ -17,6 +17,13 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupControllers()
+    }
+    
+    private func setupControllers() {
+        let backImg = UIImage(systemName: "arrow.backward")
+        self.navigationController?.navigationBar.backIndicatorImage = backImg
+        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = backImg
     }
     
     @IBAction func goMainBtnClick(_ sender: Any) {

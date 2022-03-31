@@ -18,8 +18,14 @@ class PhotoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getPhotoListAPI()
+        setupControllers()
     }
     
+    private func setupControllers() {
+        let backImg = UIImage(systemName: "arrow.backward")
+        self.navigationController?.navigationBar.backIndicatorImage = backImg
+        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = backImg
+    }
 }
 
 // MARK: 사진 목록 API 조회

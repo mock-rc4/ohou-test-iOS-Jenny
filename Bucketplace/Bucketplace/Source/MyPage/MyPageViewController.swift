@@ -15,6 +15,11 @@ class MyPageViewController: UIViewController {
     }
     
     private func setupRightItems() {
+        // backBtn 이미지 넣기
+        let backImg = UIImage(systemName: "arrow.backward")
+        self.navigationController?.navigationBar.backIndicatorImage = backImg
+        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = backImg
+        
         let settingBtn = makeBtn("nv_setting")
         let shareBtn = makeBtn("nv_share")
         let cartBtn = makeBtn("nv_cart")

@@ -20,8 +20,17 @@ class CategoryViewController: UIViewController {
     }
     
     private func setupRightItems() {
-//        let homeBtn = makeBtn("nv_home")
-//        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: homeBtn)
+        let backImg = UIImage(systemName: "arrow.backward")
+        self.navigationController?.navigationBar.backIndicatorImage = backImg
+        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = backImg
+        
+        self.navigationController?.navigationBar.topItem?.title = ""
+        self.navigationController?.navigationBar.tintColor = .black
+        
+        // back 버튼과 leftitem 같이 넣기 위함
+        self.navigationItem.leftItemsSupplementBackButton = true
+        let homeBtn = makeBtn("nv_home")
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: homeBtn)
         let searchBtn = makeBtn("nv_search")
         let cartBtn = makeBtn("nv_cart")
         // 공백 만들기

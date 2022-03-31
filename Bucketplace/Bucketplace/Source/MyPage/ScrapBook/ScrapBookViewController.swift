@@ -20,6 +20,8 @@ class ScrapBookViewController: UIViewController {
     }
     
     private func setupRightItems() {
+        self.navigationController?.navigationBar.topItem?.title = ""
+        self.navigationController?.navigationBar.tintColor = .black
         let shareBtn = makeBtn("nv_share")
         // 공백 만들기
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: shareBtn)

@@ -29,6 +29,10 @@ class StoreViewController: UIViewController {
     }
     
     private func setupControllers() {
+        let backImg = UIImage(systemName: "arrow.backward")
+        self.navigationController?.navigationBar.backIndicatorImage = backImg
+        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = backImg
+        
         self.tabBarController?.setupTabBarLine()
         let navigationBarWidth = self.navigationController?.navigationBar.frame.width ?? 0
         searchText.snp.makeConstraints() {

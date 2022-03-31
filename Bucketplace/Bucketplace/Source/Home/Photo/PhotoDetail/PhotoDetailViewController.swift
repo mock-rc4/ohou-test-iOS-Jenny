@@ -35,7 +35,17 @@ class PhotoDetailViewController: FollowViewController {
         super.viewDidLoad()
         getFeedUserAPI()
         getPhotoDetailAPI()
+        setupRightItems()
         getMetaAPI()
+    }
+    
+    private func setupRightItems() {
+        self.navigationController?.navigationBar.backItem?.title = ""
+        self.navigationController?.navigationBar.tintColor = .black
+        
+        let moreBtn = UIButton()
+        moreBtn.setImage(UIImage(systemName: "ellipsis"), for: .normal)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: moreBtn)
     }
     
     @IBAction func followBtnClick(_ sender: Any) {

@@ -26,6 +26,19 @@ class ProductDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getProductAPI()
+        setupRightItems()
+    }
+    
+    private func setupRightItems() {
+        self.navigationController?.navigationBar.topItem?.title = ""
+        self.navigationController?.navigationBar.tintColor = .black
+        
+        let searchBtn = makeBtn("nv_search")
+        let cartBtn = makeBtn("nv_cart")
+        // 공백 만들기
+        let spacer = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
+        spacer.width = 12
+        self.navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: cartBtn), spacer, UIBarButtonItem(customView: searchBtn)]
     }
     
     @IBAction func buyBtnClick(_ sender: Any) {

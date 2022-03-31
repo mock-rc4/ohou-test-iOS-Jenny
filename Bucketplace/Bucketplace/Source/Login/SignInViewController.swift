@@ -18,7 +18,10 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupDisplay()
+        self.navigationController?.navigationBar.backItem?.title = ""
+        self.navigationController?.navigationBar.tintColor = .black
     }
+    
     
     private func setupDisplay() {
         pwTextField.isSecureTextEntry = true
