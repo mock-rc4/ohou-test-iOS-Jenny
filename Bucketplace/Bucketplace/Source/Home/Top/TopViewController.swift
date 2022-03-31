@@ -25,7 +25,7 @@ class TopViewController: UIViewController {
     @IBOutlet weak var pageControl: UIPageControl!
     
     // 광고 마지막 페이지면 다시 처음부터 자동 스크롤 해주기 위해 선언한 변수
-    var nowPage: Int = 0
+    private var nowPage: Int = 0
     
     var images:[String] = ["광고1", "광고2", "광고3","광고4"]
     
