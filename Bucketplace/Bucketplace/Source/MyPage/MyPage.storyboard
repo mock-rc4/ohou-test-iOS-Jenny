@@ -1187,6 +1187,8 @@
                         <outlet property="collectionView" destination="ail-om-czs" id="6bd-Gq-BPT"/>
                         <outlet property="follower" destination="c4t-qu-TXl" id="Ttk-S8-uXB"/>
                         <outlet property="following" destination="r8P-CU-Dvj" id="DX7-nA-vrE"/>
+                        <outlet property="housewarmingCnt" destination="d5X-5G-x75" id="eJi-6G-R3S"/>
+                        <outlet property="knowhowCnt" destination="9SZ-qK-cNn" id="4X6-xB-qXB"/>
                         <outlet property="like" destination="nz8-iD-vsU" id="W5x-Vw-itD"/>
                         <outlet property="nickname" destination="nbM-2o-KBB" id="Gvs-Oz-cY7"/>
                         <outlet property="pageControl" destination="Dcf-NH-CEG" id="ZWY-uA-QQc"/>
@@ -1194,6 +1196,7 @@
                         <outlet property="profileImg" destination="Tex-Zd-8Jt" id="e9F-FR-b91"/>
                         <outlet property="scrapBook" destination="P5U-gf-A8B" id="qGk-ca-GTb"/>
                         <outlet property="scrapBookView" destination="Jxq-1K-zIh" id="8qj-Rt-3LO"/>
+                        <outlet property="scrapbookCnt" destination="QDi-36-zqG" id="r3S-EA-Doq"/>
                         <outlet property="scrollView" destination="1ev-IB-9jD" id="1Dv-Ow-oV1"/>
                     </connections>
                 </viewController>

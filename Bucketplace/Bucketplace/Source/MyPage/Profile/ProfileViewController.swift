@@ -15,6 +15,11 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var pageControl: UIPageControl!
     var nowPage: Int = 0
     var images:[String] = ["광고1", "광고2", "광고3","광고4"]
+    var nums = ScrapIndex.shared.index
+    
+    @IBOutlet weak var scrapbookCnt: UILabel!
+    @IBOutlet weak var housewarmingCnt: UILabel!
+    @IBOutlet weak var knowhowCnt: UILabel!
     
     lazy var scrapbookDataManager = ScrapBookDataManager()
     
@@ -28,6 +33,15 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var photoNum: UILabel!
     
     @IBOutlet weak var scrapBookView: UIView!
+    
+    // MARK: 새로고침
+    override func viewWillAppear(_ animated: Bool) {
+        setupProfile()
+        nums = ScrapIndex.shared.index
+        scrapbookCnt.text = "\(nums[0])"
+        housewarmingCnt.text = "\(nums[1])"
+        knowhowCnt.text = "\(nums[2])"
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -169,7 +183,7 @@ extension ProfileViewController: UIScrollViewDelegate {
     // 아래로 당겨서 새로고침
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         if (scrollView.contentOffset.y < -200) {
-            setupProfile()
+            viewWillAppear(true)
             print("🌳 새로고침")
         }
     }
