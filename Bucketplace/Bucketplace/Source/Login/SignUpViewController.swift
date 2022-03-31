@@ -14,6 +14,7 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var pwTextField: UITextField!
+    @IBOutlet weak var pwCheckTextField: UITextField!
     @IBOutlet weak var nicknameTextField: UITextField!
     
     var agreeList: [Bool] = [false, false, false, false]
@@ -153,6 +154,7 @@ class SignUpViewController: UIViewController {
     // MARK: 커스텀
     private func setupDisplay() {
         pwTextField.isSecureTextEntry = true
+        pwCheckTextField.isSecureTextEntry = true
         agreeTitleView.layer.borderColor = UIColor.lightGray.cgColor
         agreeTitleView.layer.borderWidth = 0.5
         agreeView.layer.borderColor = UIColor.lightGray.cgColor

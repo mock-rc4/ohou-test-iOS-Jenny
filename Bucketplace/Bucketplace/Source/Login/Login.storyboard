@@ -258,8 +258,8 @@
                                                                 <color key="textColor" red="0.3921568627" green="0.76078431369999999" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teo-hP-QvN">
-                                                                <rect key="frame" x="332" y="23" width="27" height="24"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teo-hP-QvN">
+                                                                <rect key="frame" x="332" y="22.5" width="27" height="25"/>
                                                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" image="square" catalog="system">
@@ -308,7 +308,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzx-40-Jd5">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzx-40-Jd5">
                                                         <rect key="frame" x="332" y="83.5" width="27" height="24"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="27" id="TZ3-xI-x83"/>
@@ -324,7 +324,7 @@
                                                             <action selector="firstBtnClick:" destination="eRA-cl-wI7" eventType="touchUpInside" id="Wjp-KM-kiP"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dD-PE-Gih">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dD-PE-Gih">
                                                         <rect key="frame" x="332" y="119.5" width="27" height="24"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="24" id="MBW-wt-7A8"/>
@@ -340,7 +340,7 @@
                                                             <action selector="secondBtnClick:" destination="eRA-cl-wI7" eventType="touchUpInside" id="yF4-nn-TUk"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjP-1o-kv6">
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjP-1o-kv6">
                                                         <rect key="frame" x="332" y="155.5" width="27" height="24"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="27" id="Q16-Je-tby"/>
@@ -356,7 +356,7 @@
                                                             <action selector="thirdBtnClick:" destination="eRA-cl-wI7" eventType="touchUpInside" id="8ev-dM-coC"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lud-ys-ui3">
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lud-ys-ui3">
                                                         <rect key="frame" x="332" y="191.5" width="27" height="24"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="27" id="aNu-zl-iyM"/>
@@ -538,6 +538,7 @@
                         <outlet property="firstBtn" destination="mzx-40-Jd5" id="Wl1-Bk-rqV"/>
                         <outlet property="fourthBtn" destination="Lud-ys-ui3" id="7rR-ct-4LM"/>
                         <outlet property="nicknameTextField" destination="y6K-B7-wvy" id="f50-UL-eej"/>
+                        <outlet property="pwCheckTextField" destination="feM-zT-MLt" id="sTy-J2-zsM"/>
                         <outlet property="pwTextField" destination="21c-Lt-Rwd" id="qf5-be-Dth"/>
                         <outlet property="secondBtn" destination="7dD-PE-Gih" id="Jal-dM-4Cd"/>
                         <outlet property="thirdBtn" destination="cjP-1o-kv6" id="IYL-tc-H9s"/>
